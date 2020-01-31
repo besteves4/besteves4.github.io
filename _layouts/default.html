@@ -22,9 +22,12 @@
       </header>
 
       <div id="banner">
-        <span id="logo"></span>
-
-        <a href="https://github.com/besteves4/besteves4.github.io" class="button fork"><strong>View On GitHub</strong></a>
+        {% for item in site.data.navigation %}
+          <a href="{{ item.link }}" class="button">
+            <strong>{{ item.name }}</strong>
+          </a>
+        {% endfor %}
+        <a href="https://github.com/besteves4/besteves4.github.io" class="button"><strong>View On GitHub</strong></a>
       </div>
 
     <div class="wrapper">
