@@ -17,7 +17,7 @@
   <body>
 
       <header>
-        <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+        <h1>{{ site.title }}</h1>
         <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
       </header>
 
@@ -27,13 +27,12 @@
             <strong>{{ item.name }}</strong>
           </a>
         {% endfor %}
-        <a href="https://github.com/besteves4/besteves4.github.io" class="button"><strong>View On GitHub</strong></a>
+        <a href="https://github.com/besteves4/besteves4.github.io" class="button">
+          <strong>View On GitHub</strong>
+        </a>
       </div>
 
     <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
       <section>
         {{ content }}
 
