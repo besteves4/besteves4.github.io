@@ -45,8 +45,24 @@ strong {
   }
 }
 
+ul {
+  list-style-image: url(../images/bullet-point.png);
+}
+
 section {
   background: #eeeeee;
+
+  a {
+    color: #8b0000;
+
+    &:hover {
+      color: #d18978;
+    }
+  }
+
+  h2 {
+    color: #8b0000;
+  }
 }
 
 footer {
