@@ -65,6 +65,16 @@ section {
   }
 }
 
+section img {
+  max-width: 190px;
+}
+
+hr.darkred {
+  border-top: 3px solid #8b0000;
+  background: 0;
+  height: 0;
+}
+
 footer {
   color: #fff;
   a {
