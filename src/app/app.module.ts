@@ -14,6 +14,9 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { CvComponent } from './cv/cv.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { CommonModule } from '@angular/common';
+import { CvModalComponent } from './cv-modal/cv-modal.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ModalModule } from 'ngx-bootstrap';
 
 @NgModule({
    declarations: [
@@ -25,14 +28,20 @@ import { CommonModule } from '@angular/common';
       PublicationsListComponent,
       CurrentJobComponent,
       ContactsComponent,
-      CvComponent
+      CvComponent,
+      CvModalComponent
    ],
    imports: [
-       CommonModule,
+      CommonModule,
       BrowserModule,
       AppRoutingModule,
       RouterModule,
       FontAwesomeModule,
+      BrowserAnimationsModule,
+      ModalModule.forRoot()
+   ],
+   entryComponents: [
+    CvModalComponent
    ],
    providers: [],
    bootstrap: [

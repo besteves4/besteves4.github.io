@@ -1,3 +1,14 @@
-<p>
-  cv works!
-</p>
+<div class="row mt-5">
+    <div class="col-1"></div>
+    <div class="col" *ngFor="let job of cv">
+        <div class="card clickable w-100" (click)="handleClick(job)">
+            <img src="{{job.thumbnail}}" class="card-img-top" alt="">
+            <div class="card-body">
+                {{job.company}}
+            </div>
+        </div>        
+    </div>
+    <div class="col-1"></div>
+</div>
+
+<app-cv-modal #cvModal [job]="activeJob"></app-cv-modal>
