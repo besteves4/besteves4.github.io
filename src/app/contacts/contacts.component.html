@@ -1,0 +1,12 @@
+<h2>
+    {{contacts.title}}
+</h2>
+
+<div class="list-group list-group-flush">
+    <div class="list-group-item item" *ngFor="let item of contacts.list">
+        <a href="{{item.href}}" target="_blank">
+            <fa-icon [icon]="item.icon" class="mr-3"></fa-icon>
+            {{item.title}}
+        </a>
+    </div>
+</div>
