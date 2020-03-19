@@ -22,17 +22,17 @@ export class ContactsComponent implements OnInit {
             {
                 icon: faEnvelope,
                 title: 'beatriz.gc.esteves@gmail.com',
-                href: ''
+                href: 'mailto:beatriz.gc.esteves@gmail.com'
             },
             {
                 icon: faEnvelope,
                 title: 'beatriz.gesteves@upm.es',
-                href: ''
+                href: 'mailto:beatriz.gesteves@upm.es'
             },
             {
                 icon: faSkype,
                 title: 'b.esteves4',
-                href: ''
+                href: 'skype:b.esteves4?add'
             },
             {
                 icon: faLinkedin,
