@@ -28,8 +28,8 @@ export class CvComponent implements OnInit {
 
     cv = [
         {
-            company: 'company 1',
-            thumbnail: '/assets/uni.jpg',
+            company: 'Early Stage Researcher in PROTECT project',
+            thumbnail: '/assets/logo_protect.png',
             projects: [
                 {
                     title: 'PROJECTO 1',
@@ -82,20 +82,20 @@ export class CvComponent implements OnInit {
             ]
         },
         {
-            company: 'company 2',
+            company: 'Data Scientist at CLOSER CONSULTING',
+            thumbnail: '/assets/logo_closer.png'
+        },
+        {
+            company: 'Jr. Consultant at ALTRAN',
+            thumbnail: '/assets/logo_altran.png'
+        },
+		{
+            company: 'PhD in Artificial Intelligence',
             thumbnail: '/assets/uni.jpg'
         },
         {
-            company: 'company 3',
-            thumbnail: '/assets/uni.jpg'
-        },
-        {
-            company: 'company 4',
-            thumbnail: '/assets/uni.jpg'
-        },
-        {
-            company: 'company 5',
-            thumbnail: '/assets/uni.jpg'
+            company: 'Integrated Master in Biomedical Engineering',
+            thumbnail: '/assets/logo_fct.gif'
         }
     ]
 
