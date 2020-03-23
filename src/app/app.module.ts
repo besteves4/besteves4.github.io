@@ -17,6 +17,7 @@ import { CommonModule } from '@angular/common';
 import { CvModalComponent } from './cv-modal/cv-modal.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ModalModule } from 'ngx-bootstrap';
+import { DividerPipe } from './pipes/divider.pipe';
 
 @NgModule({
    declarations: [
@@ -29,7 +30,8 @@ import { ModalModule } from 'ngx-bootstrap';
       CurrentJobComponent,
       ContactsComponent,
       CvComponent,
-      CvModalComponent
+      CvModalComponent,
+      DividerPipe
    ],
    imports: [
       CommonModule,

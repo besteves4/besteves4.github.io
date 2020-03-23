@@ -1,5 +1,4 @@
-<div class="modal fade" bsModal #cvModal="bs-modal" tabindex="-1" role="dialog"
-    aria-labelledby="dialog-nested-name1">
+<div class="modal fade" bsModal #cvModal="bs-modal" tabindex="-1" role="dialog" aria-labelledby="dialog-nested-name1">
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
             <div class="modal-body">
@@ -8,10 +7,55 @@
                 </button>
                 <div class="row">
                     <div class="col-8">
-
+                        <div class="row">
+                            <h2 class="chapter-title">
+                                <img src="{{job?.thumbnail}}" alt="">
+                                {{job?.company}}
+                            </h2>
+                            <div *ngFor="let proj of job?.projects">
+                                <p class="title proj-title">
+                                    insert icon
+                                    {{proj.title}}
+                                </p>
+                                <p class="proj-text">
+                                    {{proj.description}} <br>
+                                    <span style="font-weight: 500;">Technologies:</span> {{proj.technologies}}
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-4">
-                        
+                        <div class="row">
+                            <h2 class="chapter-title">
+                                insert icon
+                                Certifications
+                            </h2>
+                            <p class="right-col-text" *ngFor="let cert of job?.certifications">
+                                {{cert}}
+                            </p>
+                        </div>
+                        <div class="row">
+                            <h2 class="chapter-title">
+                                insert icon
+                                Skills
+                            </h2>
+                            <p class="right-col-text">
+                                {{job?.skills | divider: ' / '}}
+                            </p>
+                        </div>
+                        <div class="row">
+                            <h2 class="chapter-title">
+                                insert icon
+                            </h2>
+                            <div *ngFor="let tech of job?.technologies">
+                                <p class="title tech-title">
+                                    {{tech.type}}
+                                </p>
+                                <p class="right-col-text">
+                                    {{tech.elements | divider: ' / '}}
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
