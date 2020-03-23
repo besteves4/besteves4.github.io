@@ -28,6 +28,7 @@ export class CvComponent implements OnInit {
 
     cv = [
         {
+            position: 1, 
             company: 'Early Stage Researcher in PROTECT project',
             thumbnail: '/assets/logo_protect.png',
             projects: [
@@ -82,18 +83,71 @@ export class CvComponent implements OnInit {
             ]
         },
         {
+            position: 2, 
             company: 'Data Scientist at CLOSER CONSULTING',
             thumbnail: '/assets/logo_closer.png'
         },
         {
+            position: 3,
             company: 'Jr. Consultant at ALTRAN',
-            thumbnail: '/assets/logo_altran.png'
+            thumbnail: '/assets/logo_altran.png',
+            projects:
+            [
+                {
+                    title: 'Pedestrian Detection using Convolutional Neural Networks (CNN)',
+                    description: "Research and selection of methods of object detection in images with the aim of implementing a pedestrian detection model in the context of autonomous driving. Improvement of the training sets' data quality and parameter tuning of the training process of neural network models.",
+                    technologies: 'Python (TensorFlow, OpenCV), GitLab'
+                },
+                {
+                    title: 'Technical writing support to P2020 projects',
+                    description: '',
+                    technologies: ''
+                }
+            ],
+            certifications: [
+                "Training in Big Data & Analytics Technologies - Altran Portugal in partnership with NOVA LINCS – FCT",
+            ],
+            skills: [
+                "Feature extraction / selection techniques",
+                "Machine learning algorithms",
+                "Convolutional Neural Networks (CNN)",
+                "Hyperparameter tuning",
+                "Data quality"
+            ],
+            technologies: [
+                {
+                    type: "database",
+                    elements: [
+                        "MySQL",
+                        "PostgreSQL"
+                    ]
+                },
+                {
+                    type: "tools",
+                    elements: [
+                        "Microsoft Office",
+                        "GitLab",
+                        "PyCharm",
+                        "Tableau",
+                        "RStudio"
+                    ]
+                },
+                {
+                    type: "development",
+                    elements: [
+                        "Python",
+                        "R"
+                    ]
+                }
+            ]
         },
 		{
+            position: 4,
             company: 'PhD in Artificial Intelligence',
             thumbnail: '/assets/uni.jpg'
         },
         {
+            position: 5,
             company: 'Integrated Master in Biomedical Engineering',
             thumbnail: '/assets/logo_fct.gif',
 			projects:
@@ -145,7 +199,8 @@ export class CvComponent implements OnInit {
                         "LaTeX",
                         "Microsoft Office",
                         "GitHub",
-                        "PyCharm / Microsoft Visual Studio"
+                        "PyCharm",
+                        "Microsoft Visual Studio"
                     ]
                 },
                 {
