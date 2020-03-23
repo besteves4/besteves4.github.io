@@ -95,7 +95,68 @@ export class CvComponent implements OnInit {
         },
         {
             company: 'Integrated Master in Biomedical Engineering',
-            thumbnail: '/assets/logo_fct.gif'
+            thumbnail: '/assets/logo_fct.gif',
+			projects:
+            [
+                {
+                    title: 'Master thesis: Personality assessment based on biosignals during a decision-making task',
+                    description: 'Implementation of a predictive model of human personality based on the processing of biosignals and consequent extraction of significant features from them',
+                    technologies: 'Python (pandas, scikit-learn, seaborn, numpy, matplotlib, scipy), GitHub, LaTeX, Excel'
+                },
+                {
+                    title: 'Bachelor project: Characterization and comparison of lyophilised gelatin matrices',
+                    description: "Study and comparison of matrices of different crosslinking agents, based on the analysis of the matrices' water absorption capacity, mechanical resistance, porosity, among others, and tests on the cell's behavior in relation to these three-dimensional porous supports",
+                    technologies: 'Excel'
+                },
+                {
+                    title: 'Relevant courses',
+                    description: '',
+                    technologies: ''
+                }
+            ],
+            certifications: [
+                "Bachelor's Degree in Biomedical Engineering - FCT NOVA",
+                "Master's Degree in Biomedical Engineering - FCT NOVA"
+            ],
+            skills: [
+                "Signal processing",
+                "Physiological data modeling",
+                "Feature extraction / selection techniques",
+                "Machine learning algorithms",
+                "Hyperparameter tuning",
+                "Tissue engineering",
+                "Lyophilisation",
+                "SEM (Scanning Electron Microscope)",
+                "Stress–strain analysis",
+                "ATR-FTIR (Attenuated Total Reflectance Fourier Transform InfraRed Spectroscopy)",
+                "DSC (Differrential Scanning Calorimetry)",
+                "Cell culture"
+            ],
+            technologies: [
+                {
+                    type: "database",
+                    elements: [
+                        "MySQL"
+                    ]
+                },
+                {
+                    type: "tools",
+                    elements: [
+                        "LaTeX",
+                        "Microsoft Office",
+                        "GitHub",
+                        "PyCharm / Microsoft Visual Studio"
+                    ]
+                },
+                {
+                    type: "development",
+                    elements: [
+                        "Python",
+                        "C / C# / C++",
+                        "MatLab"
+                    ]
+                }
+            ]
         }
     ]
 
