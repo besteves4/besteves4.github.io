@@ -31,42 +31,38 @@ export class CvComponent implements OnInit {
             position: 1, 
             company: 'Early Stage Researcher in PROTECT project',
             thumbnail: '/assets/logo_protect.png',
+            dates: 'January/2020 - Present',
             projects: [
                 {
                     title: 'PROJECTO 1',
-                    description: '',
+                    description: [],
                     technologies: ''
                 },
                 {
                     title: 'PROJECTO 2',
-                    description: '',
+                    description: [],
                     technologies: ''
                 },
                 {
                     title: 'PROJECTO 3',
-                    description: '',
+                    description: [],
                     technologies: ''
                 }
             ],
-            certifications: [
-            ],
-            skills: [
-            ],
+            certifications: [],
+            skills: [],
             technologies: [
                 {
                     type: "database",
-                    elements: [
-                    ]
+                    elements: []
                 },
                 {
                     type: "tools",
-                    elements: [
-                    ]
+                    elements: []
                 },
                 {
                     type: "development",
-                    elements: [
-                    ]
+                    elements: []
                 }
             ]
         },
@@ -74,17 +70,24 @@ export class CvComponent implements OnInit {
             position: 2, 
             company: 'Data Scientist at CLOSER CONSULTING',
             thumbnail: '/assets/logo_closer.png',
+            dates: 'July/2018 - December/2020',
             projects:
             [
                 {
                     title: 'Data Scientist / Analyst in BNP Paribas CIB – Global Markets Resources',
-                    description:
-                        "→ Development of tools to analyze and explain large amounts of data related to the balance sheet and other financial resources; → Implementation of predictive models that explain seasonal variations of data linked to financial resources with specific focus on balance sheet metrics; → Predict the evolution of metrics linked to banking regulation based on financial market data; → Implement Shiny R interactive dashboards to monitor resources and detect errors in databases systems; → Implementation of a G-SIB indicators’ pricing model for derivative transactions and respective user interface; → Development of the prudential netting key and respective allocation logic for SFTs (Securities Financing Transactions) balance sheet computation; → Demonstration of built-in tool features and how to use them.",
+                    description: [
+                        "Development of tools to analyze and explain large amounts of data related to the balance sheet and other financial resources",
+                        "Implementation of predictive models that explain seasonal variations of data linked to financial resources with specific focus on balance sheet metrics",
+                        "Predict the evolution of metrics linked to banking regulation based on financial market data",
+                        "Implement Shiny R interactive dashboards to monitor resources and detect errors in databases systems",
+                        "Implementation of a G-SIB indicators’ pricing model for derivative transactions and respective user interface",
+                        "Development of the prudential netting key and respective allocation logic for SFTs (Securities Financing Transactions) balance sheet computation",
+                        "Demonstration of built-in tool features and how to use them"
+                    ],
                     technologies: 'R (Shiny, tidyverse, plotly, datatable), Python (pandas, numpy, plotly), C#, VBA, TortoiseSVN'
                     }
             ],
-            certifications: [
-            ],
+            certifications: [],
             skills: [
                 "Data preparation",
                 "Timse series modelling",
@@ -133,16 +136,20 @@ export class CvComponent implements OnInit {
             position: 3,
             company: 'Jr. Consultant at ALTRAN',
             thumbnail: '/assets/logo_altran.png',
+            dates: 'October/2017 - June/2018',
             projects:
             [
                 {
                     title: 'Pedestrian Detection using Convolutional Neural Networks (CNN)',
-                    description: "Research and selection of methods of object detection in images with the aim of implementing a pedestrian detection model in the context of autonomous driving. Improvement of the training sets' data quality and parameter tuning of the training process of neural network models.",
+                    description: [
+                        "Research and selection of methods of object detection in images with the aim of implementing a pedestrian detection model in the context of autonomous driving",
+                        "Improvement of the training sets' data quality and parameter tuning of the training process of neural network models"
+                    ],
                     technologies: 'Python (TensorFlow, OpenCV, Matplotlib, Seaborn, Bokeh, Plotly, nxviz), GitLab'
                 },
                 {
                     title: 'Technical writing support to P2020 projects',
-                    description: '',
+                    description: [],
                     technologies: ''
                 }
             ],
@@ -194,42 +201,38 @@ export class CvComponent implements OnInit {
             position: 4,
             company: 'PhD in Artificial Intelligence',
             thumbnail: '/assets/uni.jpg',
+            dates: 'January/2020 - Present',
             projects: [
                 {
                     title: 'PROJECTO 1',
-                    description: '',
+                    description: [],
                     technologies: ''
                 },
                 {
                     title: 'PROJECTO 2',
-                    description: '',
+                    description: [],
                     technologies: ''
                 },
                 {
                     title: 'PROJECTO 3',
-                    description: '',
+                    description: [],
                     technologies: ''
                 }
             ],
-            certifications: [
-            ],
-            skills: [
-            ],
+            certifications: [],
+            skills: [],
             technologies: [
                 {
                     type: "database",
-                    elements: [
-                    ]
+                    elements: []
                 },
                 {
                     type: "tools",
-                    elements: [
-                    ]
+                    elements: []
                 },
                 {
                     type: "development",
-                    elements: [
-                    ]
+                    elements: []
                 }
             ]
         },
@@ -237,21 +240,26 @@ export class CvComponent implements OnInit {
             position: 5,
             company: 'Integrated Master in Biomedical Engineering',
             thumbnail: '/assets/logo_fct.gif',
+            dates: 'September/2011 - November/2017',
 			projects:
             [
                 {
                     title: 'Master thesis: Personality assessment based on biosignals during a decision-making task',
-                    description: 'Implementation of a predictive model of human personality based on the processing of biosignals and consequent extraction of significant features from them',
+                    description: [
+                        'Implementation of a predictive model of human personality based on the processing of biosignals and consequent extraction of significant features from them'
+                    ],
                     technologies: 'Python (pandas, scikit-learn, seaborn, numpy, matplotlib, scipy), GitHub, LaTeX, Excel'
                 },
                 {
                     title: 'Bachelor project: Characterization and comparison of lyophilised gelatin matrices',
-                    description: "Study and comparison of matrices of different crosslinking agents, based on the analysis of the matrices' water absorption capacity, mechanical resistance, porosity, among others, and tests on the cell's behavior in relation to these three-dimensional porous supports",
+                    description: [
+                        "Study and comparison of matrices of different crosslinking agents, based on the analysis of the matrices' water absorption capacity, mechanical resistance, porosity, among others, and tests on the cell's behavior in relation to these three-dimensional porous supports"
+                    ],
                     technologies: 'Excel'
                 },
                 {
                     title: 'Relevant courses',
-                    description: '',
+                    description: [],
                     technologies: ''
                 }
             ],
