@@ -34,50 +34,38 @@ export class CvComponent implements OnInit {
             projects: [
                 {
                     title: 'PROJECTO 1',
-                    description: 'Gestão de projeto, Análise, desenho e implementação de uma solução de Business Intelligence consolidada para 13 países e 3 sistemas fonte diferentes (SQL Server, DB2, Insphire, outras.)',
-                    technologies: 'SQL Server 2016 (Database Engine, SSIS, SSAS), MDS, Power BI.'
+                    description: '',
+                    technologies: ''
                 },
                 {
                     title: 'PROJECTO 2',
-                    description: 'Gestão de projeto, Análise, desenho e implementação de uma solução de Business Intelligence consolidada para 13 países e 3 sistemas fonte diferentes (SQL Server, DB2, Insphire, outras.)',
-                    technologies: 'SQL Server 2016 (Database Engine, SSIS, SSAS), MDS, Power BI.'
+                    description: '',
+                    technologies: ''
                 },
                 {
                     title: 'PROJECTO 3',
-                    description: 'Gestão de projeto, Análise, desenho e implementação de uma solução de Business Intelligence consolidada para 13 países e 3 sistemas fonte diferentes (SQL Server, DB2, Insphire, outras.)',
-                    technologies: 'SQL Server 2016 (Database Engine, SSIS, SSAS), MDS, Power BI.'
+                    description: '',
+                    technologies: ''
                 }
             ],
-            certifications: [ //aquela tradução bem zuca
-                "Licenciatura em Informática de Gestão – Instituto Superior Miguel Torga",
-                "Workshop \"SSIS Performance Design Patterns\" - Matt Masson Gestão Dinérgica® - Dynargie"
+            certifications: [
             ],
             skills: [
-                "Análise e Levantamento de Requisitos",
-                "Arquitetura (Hardware e Software)",
-                "Modelação Relacional"
             ],
             technologies: [
                 {
                     type: "database",
                     elements: [
-                        "Microsoft ServerSQL Server 2008to 2016"
                     ]
                 },
                 {
                     type: "tools",
                     elements: [
-                        "Microsoft ServerSQL Server 2008 to 2016 (Database Engine, Integration Services, Reporting Services, Analysis Services Tabular)",
-                        "Visual Studio .NET",
-                        "Sharepoint (BI Center)"
                     ]
                 },
                 {
                     type: "development",
                     elements: [
-                        "C#.NET",
-                        "T-SQL",
-                        "DAX"
                     ]
                 }
             ]
@@ -85,7 +73,61 @@ export class CvComponent implements OnInit {
         {
             position: 2, 
             company: 'Data Scientist at CLOSER CONSULTING',
-            thumbnail: '/assets/logo_closer.png'
+            thumbnail: '/assets/logo_closer.png',
+            projects:
+            [
+                {
+                    title: 'Data Scientist / Analyst in BNP Paribas CIB – Global Markets Resources',
+                    description:
+                        "→ Development of tools to analyze and explain large amounts of data related to the balance sheet and other financial resources; → Implementation of predictive models that explain seasonal variations of data linked to financial resources with specific focus on balance sheet metrics; → Predict the evolution of metrics linked to banking regulation based on financial market data; → Implement Shiny R interactive dashboards to monitor resources and detect errors in databases systems; → Implementation of a G-SIB indicators’ pricing model for derivative transactions and respective user interface; → Development of the prudential netting key and respective allocation logic for SFTs (Securities Financing Transactions) balance sheet computation; → Demonstration of built-in tool features and how to use them.",
+                    technologies: 'R (Shiny, tidyverse, plotly, datatable), Python (pandas, numpy, plotly), C#, VBA, TortoiseSVN'
+                    }
+            ],
+            certifications: [
+            ],
+            skills: [
+                "Data preparation",
+                "Timse series modelling",
+                "Vector autoregression (VAR)",
+                "Data quality",
+                "Version control",
+                "Software architecture",
+                "Data reconciliation between systems",
+                "Creation and management of databases",
+                "Error detection",
+                "Reporting",
+                "Dashboard design",
+                "Big Data technologies",
+                "Financial resources"
+            ],
+            technologies: [
+                {
+                    type: "database",
+                    elements: [
+                        "MySQL",
+                        "PostgreSQL"
+                    ]
+                },
+                {
+                    type: "tools",
+                    elements: [
+                        "Microsoft Office",
+                        "PyCharm",
+                        "TortoiseSVN",
+                        "RStudio",
+                        "Microsoft Visual Studio"
+                    ]
+                },
+                {
+                    type: "development",
+                    elements: [
+                        "Python",
+                        "R",
+                        "C#",
+                        "VBA"
+                    ]
+                }
+            ]
         },
         {
             position: 3,
@@ -96,7 +138,7 @@ export class CvComponent implements OnInit {
                 {
                     title: 'Pedestrian Detection using Convolutional Neural Networks (CNN)',
                     description: "Research and selection of methods of object detection in images with the aim of implementing a pedestrian detection model in the context of autonomous driving. Improvement of the training sets' data quality and parameter tuning of the training process of neural network models.",
-                    technologies: 'Python (TensorFlow, OpenCV), GitLab'
+                    technologies: 'Python (TensorFlow, OpenCV, Matplotlib, Seaborn, Bokeh, Plotly, nxviz), GitLab'
                 },
                 {
                     title: 'Technical writing support to P2020 projects',
@@ -106,13 +148,20 @@ export class CvComponent implements OnInit {
             ],
             certifications: [
                 "Training in Big Data & Analytics Technologies - Altran Portugal in partnership with NOVA LINCS – FCT",
+                "Participant in the Portugal eHealth Summit event",
+                "Demonstrator in the Altran Open Day event"
             ],
             skills: [
                 "Feature extraction / selection techniques",
+                "Data mining",
+                "Data preparation",
                 "Machine learning algorithms",
                 "Convolutional Neural Networks (CNN)",
                 "Hyperparameter tuning",
-                "Data quality"
+                "Data quality",
+                "Version control",
+                "Reporting",
+                "Big Data technologies"
             ],
             technologies: [
                 {
@@ -144,7 +193,45 @@ export class CvComponent implements OnInit {
 		{
             position: 4,
             company: 'PhD in Artificial Intelligence',
-            thumbnail: '/assets/uni.jpg'
+            thumbnail: '/assets/uni.jpg',
+            projects: [
+                {
+                    title: 'PROJECTO 1',
+                    description: '',
+                    technologies: ''
+                },
+                {
+                    title: 'PROJECTO 2',
+                    description: '',
+                    technologies: ''
+                },
+                {
+                    title: 'PROJECTO 3',
+                    description: '',
+                    technologies: ''
+                }
+            ],
+            certifications: [
+            ],
+            skills: [
+            ],
+            technologies: [
+                {
+                    type: "database",
+                    elements: [
+                    ]
+                },
+                {
+                    type: "tools",
+                    elements: [
+                    ]
+                },
+                {
+                    type: "development",
+                    elements: [
+                    ]
+                }
+            ]
         },
         {
             position: 5,
@@ -170,7 +257,8 @@ export class CvComponent implements OnInit {
             ],
             certifications: [
                 "Bachelor's Degree in Biomedical Engineering - FCT NOVA",
-                "Master's Degree in Biomedical Engineering - FCT NOVA"
+                "Master's Degree in Biomedical Engineering - FCT NOVA",
+                "Participant in the Jortec Biomédica events"
             ],
             skills: [
                 "Signal processing",
@@ -178,6 +266,7 @@ export class CvComponent implements OnInit {
                 "Feature extraction / selection techniques",
                 "Machine learning algorithms",
                 "Hyperparameter tuning",
+                "Data quality",
                 "Tissue engineering",
                 "Lyophilisation",
                 "SEM (Scanning Electron Microscope)",
