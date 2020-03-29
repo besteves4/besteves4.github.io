@@ -1,7 +1,7 @@
 <div class="row mt-5">
     <div class="col-1"></div>
     <div class="col-10 card-group">
-        <div class="card clickable w-100" (click)="handleClick(job)" *ngFor="let job of cv">
+        <div class="card clickable w-100" (click)="handleClick(job)" *ngFor="let job of cv | orderByPosition">
             <div class="img-box">
                 <img src="{{job.thumbnail}}" class="card-img-top" alt="">
             </div>
