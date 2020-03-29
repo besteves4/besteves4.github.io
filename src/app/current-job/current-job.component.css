@@ -1,0 +1,29 @@
+
+.item {
+    height: 100px;
+}
+
+.img-wrapper {
+    height: 100%;
+    width: 135px;
+    background-color: white;
+}
+
+.item img {
+    height: 100%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.item:hover {
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(30, 18, 77, 1);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(30, 18, 77, 1);
+    box-shadow: 10px 10px 5px 0px rgba(30, 18, 77, 1);
+    background-color: #007bff;
+    z-index: 100;
+}
+
+.item:hover a {
+    color: white;
+}

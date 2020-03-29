@@ -1,0 +1,16 @@
+<h2>
+    {{job.position}}
+</h2>
+
+<div class="list-group list-group-flush">
+    <div class="list-group-item item clickable" *ngFor="let item of job.employer">
+        <a href="{{item.href}}" class="card-link" target="_blank">
+            <div class="float-right img-wrapper">
+                <img src="{{item.imageSrc}}" alt="">
+            </div>
+            <span>
+                {{item.title}}
+            </span>
+        </a>
+    </div>
+</div>

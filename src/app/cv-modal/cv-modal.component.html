@@ -1,0 +1,67 @@
+<div class="modal fade" bsModal #cvModal="bs-modal" tabindex="-1" role="dialog" aria-labelledby="dialog-nested-name1">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close pull-right" aria-label="Close" (click)="cvModal.hide()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="row border-between">
+                    <div class="col-8">
+                        <div class="row pr-2">
+                            <div class="col-12">
+                                <h2 class="chapter-title mb-4">
+                                    <img src="{{job?.thumbnail}}" alt="" width="60" class="mr-2">
+                                    {{job?.company}}
+                                </h2>
+                            </div>
+                            <div *ngFor="let proj of job?.projects" class="col-12">
+                                <p class="title proj-title mb-0">
+                                    <fa-icon [icon]="faCheck"></fa-icon>
+                                    {{proj.title}}
+                                </p>
+                                <p class="proj-text">
+                                    {{proj.description}} <br>
+                                    <span style="font-weight: 500; color: black;">Technologies:</span> {{proj.technologies}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="row mb-4 pl-3">
+                            <fa-icon [icon]="faGraduationCap" class="mr-3" style="font-size: 40px; color: #00000099;"></fa-icon>
+                            <h2 class="chapter-title mb-4 pt-3">
+                                Certifications
+                            </h2>
+                            <p class="right-col-text mb-1 pl-4" *ngFor="let cert of job?.certifications">
+                                {{cert}}
+                            </p>
+                        </div>
+                        <div class="row mb-4 pl-3">
+                            <fa-icon [icon]="faCog" class="mr-3" style="font-size: 40px; color: #00000099;"></fa-icon>
+                            <h2 class="chapter-title mb-4 pt-3">
+                                Skills
+                            </h2>
+                            <p class="right-col-text pl-4">
+                                {{job?.skills | divider: ' / '}}
+                            </p>
+                        </div>
+                        <div class="row pl-3">
+                            <fa-icon [icon]="faLaptopCode" class="mr-3" style="font-size: 40px; color: #00000099;"></fa-icon>
+                            <h2 class="chapter-title mb-4 pt-3">
+                                Technologies
+                            </h2>
+                            <div *ngFor="let tech of job?.technologies" class="col-12">
+                                <p class="title tech-title pl-4 mb-0">
+                                    {{tech.type}}
+                                </p>
+                                <p class="right-col-text pl-4">
+                                    {{tech.elements | divider: ' / '}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
