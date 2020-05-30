@@ -1660,13 +1660,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
 
     var _c0 = ["cvModal"];
 
-    function CvComponent_div_2_Template(rf, ctx) {
+    function CvComponent_div_5_Template(rf, ctx) {
       if (rf & 1) {
         var _r48 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 5);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 7);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function CvComponent_div_2_Template_div_click_0_listener() {
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function CvComponent_div_5_Template_div_click_0_listener() {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r48);
 
           var job_r46 = ctx.$implicit;
@@ -1676,13 +1676,13 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           return ctx_r47.handleClick(job_r46);
         });
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 6);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 8);
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "img", 7);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "img", 9);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 8);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 10);
 
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](4);
 
@@ -1710,6 +1710,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       function CvComponent() {
         _classCallCheck(this, CvComponent);
 
+        this.cv_pdf = '/assets/cv/CV Beatriz Esteves.pdf';
         this.cv = [{
           position: 1,
           company: 'Early Stage Researcher in PROTECT Project',
@@ -1899,30 +1900,44 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.cvModal = _t.first);
         }
       },
-      decls: 6,
-      vars: 4,
-      consts: [[1, "row", "border-between", "mt-5"], [1, "col-10", "offset-1", "card-group"], ["class", "card clickable w-100", 3, "click", 4, "ngFor", "ngForOf"], [3, "job"], ["cvModal", ""], [1, "card", "clickable", "w-100", 3, "click"], [1, "img-box"], ["alt", "", 1, "card-img-top", 3, "src"], [1, "card-body"]],
+      decls: 9,
+      vars: 5,
+      consts: [[1, "row", "mt-5"], ["role", "button", "target", "_blank", 1, "btn", "btn-lg", "btn-block", "cv-button", 3, "href"], [1, "row", "border-between", "mt-3"], [1, "col-10", "offset-1", "card-group"], ["class", "card clickable w-100", 3, "click", 4, "ngFor", "ngForOf"], [3, "job"], ["cvModal", ""], [1, "card", "clickable", "w-100", 3, "click"], [1, "img-box"], ["alt", "", 1, "card-img-top", 3, "src"], [1, "card-body"]],
       template: function CvComponent_Template(rf, ctx) {
         if (rf & 1) {
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "a", 1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, CvComponent_div_2_Template, 5, 2, "div", 2);
-
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](3, "orderByPosition");
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](2, "Curriculum Vitae");
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](4, "app-cv-modal", 3, 4);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](3, "div", 2);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 3);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](5, CvComponent_div_5_Template, 5, 2, "div", 4);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipe"](6, "orderByPosition");
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](7, "app-cv-modal", 5, 6);
         }
 
         if (rf & 2) {
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
 
-          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](3, 2, ctx.cv));
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpropertyInterpolate"]("href", ctx.cv_pdf, _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵsanitizeUrl"]);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](4);
+
+          _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngForOf", _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵpipeBind1"](6, 3, ctx.cv));
 
           _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](2);
 
@@ -1931,7 +1946,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       },
       directives: [_angular_common__WEBPACK_IMPORTED_MODULE_1__["NgForOf"], _cv_modal_cv_modal_component__WEBPACK_IMPORTED_MODULE_2__["CvModalComponent"]],
       pipes: [_pipes_order_by_position_pipe__WEBPACK_IMPORTED_MODULE_3__["OrderByPositionPipe"]],
-      styles: [".card[_ngcontent-%COMP%] {\r\n    padding: 0.5rem;\r\n    border-bottom: none;\r\n    border-top: none;\r\n    border-radius: none;\r\n        \r\n}\r\n\r\n.card[_ngcontent-%COMP%]:hover {\r\n    font-size: 15px;\r\n    box-shadow: 10px 10px 5px 0px rgba(26, 188, 156, 1);\r\n    background-color: #dbfaf4;\r\n    z-index: 100;\r\n}\r\n\r\n.card-body[_ngcontent-%COMP%] {\r\n    padding: 0.5rem 0.5rem 0 0.5rem;\r\n    text-align: center;\r\n    font-size: 13px;\r\n}\r\n\r\n.img-box[_ngcontent-%COMP%] {\r\n    position: relative;\r\n    width: 50%;\r\n    margin: 0.5rem auto 0.5rem auto;\r\n    padding-top: 50%;\r\n}\r\n\r\n.card-img-top[_ngcontent-%COMP%] {\r\n    position: absolute;\r\n    top: 50%;\r\n    transform: translateY(-50%);\r\n    right: 0;\r\n    width: 100%;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY3YvY3YuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGVBQWU7SUFDZixtQkFBbUI7SUFDbkIsZ0JBQWdCO0lBQ2hCLG1CQUFtQjs7QUFFdkI7O0FBRUE7SUFDSSxlQUFlO0lBR2YsbURBQW1EO0lBQ25ELHlCQUF5QjtJQUN6QixZQUFZO0FBQ2hCOztBQUVBO0lBQ0ksK0JBQStCO0lBQy9CLGtCQUFrQjtJQUNsQixlQUFlO0FBQ25COztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLFVBQVU7SUFDViwrQkFBK0I7SUFDL0IsZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLFFBQVE7SUFLUiwyQkFBMkI7SUFDM0IsUUFBUTtJQUNSLFdBQVc7QUFDZiIsImZpbGUiOiJzcmMvYXBwL2N2L2N2LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY2FyZCB7XHJcbiAgICBwYWRkaW5nOiAwLjVyZW07XHJcbiAgICBib3JkZXItYm90dG9tOiBub25lO1xyXG4gICAgYm9yZGVyLXRvcDogbm9uZTtcclxuICAgIGJvcmRlci1yYWRpdXM6IG5vbmU7XHJcbiAgICAgICAgXHJcbn1cclxuXHJcbi5jYXJkOmhvdmVyIHtcclxuICAgIGZvbnQtc2l6ZTogMTVweDtcclxuICAgIC13ZWJraXQtYm94LXNoYWRvdzogMTBweCAxMHB4IDVweCAwcHggcmdiYSgyNiwgMTg4LCAxNTYsIDEpO1xyXG4gICAgLW1vei1ib3gtc2hhZG93OiAxMHB4IDEwcHggNXB4IDBweCByZ2JhKDI2LCAxODgsIDE1NiwgMSk7XHJcbiAgICBib3gtc2hhZG93OiAxMHB4IDEwcHggNXB4IDBweCByZ2JhKDI2LCAxODgsIDE1NiwgMSk7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZGJmYWY0O1xyXG4gICAgei1pbmRleDogMTAwO1xyXG59XHJcblxyXG4uY2FyZC1ib2R5IHtcclxuICAgIHBhZGRpbmc6IDAuNXJlbSAwLjVyZW0gMCAwLjVyZW07XHJcbiAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgICBmb250LXNpemU6IDEzcHg7XHJcbn1cclxuXHJcbi5pbWctYm94IHtcclxuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcclxuICAgIHdpZHRoOiA1MCU7XHJcbiAgICBtYXJnaW46IDAuNXJlbSBhdXRvIDAuNXJlbSBhdXRvO1xyXG4gICAgcGFkZGluZy10b3A6IDUwJTtcclxufVxyXG5cclxuLmNhcmQtaW1nLXRvcCB7XHJcbiAgICBwb3NpdGlvbjogYWJzb2x1dGU7XHJcbiAgICB0b3A6IDUwJTtcclxuICAgIC13ZWJraXQtdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC01MCUpO1xyXG4gICAgLW1vei10cmFuc2Zvcm06IHRyYW5zbGF0ZVkoLTUwJSk7XHJcbiAgICAtbXMtdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC01MCUpO1xyXG4gICAgLW8tdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC01MCUpO1xyXG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC01MCUpO1xyXG4gICAgcmlnaHQ6IDA7XHJcbiAgICB3aWR0aDogMTAwJTtcclxufSJdfQ== */"]
+      styles: [".card[_ngcontent-%COMP%] {\r\n    padding: 0.5rem;\r\n    border-bottom: none;\r\n    border-top: none;\r\n    border-radius: none;\r\n        \r\n}\r\n\r\n.card[_ngcontent-%COMP%]:hover {\r\n    font-size: 15px;\r\n    box-shadow: 10px 10px 5px 0px rgba(26, 188, 156, 1);\r\n    background-color: #dbfaf4;\r\n    z-index: 100;\r\n}\r\n\r\n.card-body[_ngcontent-%COMP%] {\r\n    padding: 0.5rem 0.5rem 0 0.5rem;\r\n    text-align: center;\r\n    font-size: 13px;\r\n}\r\n\r\n.img-box[_ngcontent-%COMP%] {\r\n    position: relative;\r\n    width: 50%;\r\n    margin: 0.5rem auto 0.5rem auto;\r\n    padding-top: 50%;\r\n}\r\n\r\n.card-img-top[_ngcontent-%COMP%] {\r\n    position: absolute;\r\n    top: 50%;\r\n    transform: translateY(-50%);\r\n    right: 0;\r\n    width: 100%;\r\n}\r\n\r\n.cv-button[_ngcontent-%COMP%] {\r\n    background-color: #dbfaf4;\r\n    color: black;\r\n}\r\n\r\n.cv-button[_ngcontent-%COMP%]:hover {\r\n    background-color: #1abc9c;\r\n    color: black;\r\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY3YvY3YuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGVBQWU7SUFDZixtQkFBbUI7SUFDbkIsZ0JBQWdCO0lBQ2hCLG1CQUFtQjs7QUFFdkI7O0FBRUE7SUFDSSxlQUFlO0lBR2YsbURBQW1EO0lBQ25ELHlCQUF5QjtJQUN6QixZQUFZO0FBQ2hCOztBQUVBO0lBQ0ksK0JBQStCO0lBQy9CLGtCQUFrQjtJQUNsQixlQUFlO0FBQ25COztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLFVBQVU7SUFDViwrQkFBK0I7SUFDL0IsZ0JBQWdCO0FBQ3BCOztBQUVBO0lBQ0ksa0JBQWtCO0lBQ2xCLFFBQVE7SUFLUiwyQkFBMkI7SUFDM0IsUUFBUTtJQUNSLFdBQVc7QUFDZjs7QUFFQTtJQUNJLHlCQUF5QjtJQUN6QixZQUFZO0FBQ2hCOztBQUVBO0lBQ0kseUJBQXlCO0lBQ3pCLFlBQVk7QUFDaEIiLCJmaWxlIjoic3JjL2FwcC9jdi9jdi5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNhcmQge1xyXG4gICAgcGFkZGluZzogMC41cmVtO1xyXG4gICAgYm9yZGVyLWJvdHRvbTogbm9uZTtcclxuICAgIGJvcmRlci10b3A6IG5vbmU7XHJcbiAgICBib3JkZXItcmFkaXVzOiBub25lO1xyXG4gICAgICAgIFxyXG59XHJcblxyXG4uY2FyZDpob3ZlciB7XHJcbiAgICBmb250LXNpemU6IDE1cHg7XHJcbiAgICAtd2Via2l0LWJveC1zaGFkb3c6IDEwcHggMTBweCA1cHggMHB4IHJnYmEoMjYsIDE4OCwgMTU2LCAxKTtcclxuICAgIC1tb3otYm94LXNoYWRvdzogMTBweCAxMHB4IDVweCAwcHggcmdiYSgyNiwgMTg4LCAxNTYsIDEpO1xyXG4gICAgYm94LXNoYWRvdzogMTBweCAxMHB4IDVweCAwcHggcmdiYSgyNiwgMTg4LCAxNTYsIDEpO1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2RiZmFmNDtcclxuICAgIHotaW5kZXg6IDEwMDtcclxufVxyXG5cclxuLmNhcmQtYm9keSB7XHJcbiAgICBwYWRkaW5nOiAwLjVyZW0gMC41cmVtIDAgMC41cmVtO1xyXG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xyXG4gICAgZm9udC1zaXplOiAxM3B4O1xyXG59XHJcblxyXG4uaW1nLWJveCB7XHJcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XHJcbiAgICB3aWR0aDogNTAlO1xyXG4gICAgbWFyZ2luOiAwLjVyZW0gYXV0byAwLjVyZW0gYXV0bztcclxuICAgIHBhZGRpbmctdG9wOiA1MCU7XHJcbn1cclxuXHJcbi5jYXJkLWltZy10b3Age1xyXG4gICAgcG9zaXRpb246IGFic29sdXRlO1xyXG4gICAgdG9wOiA1MCU7XHJcbiAgICAtd2Via2l0LXRyYW5zZm9ybTogdHJhbnNsYXRlWSgtNTAlKTtcclxuICAgIC1tb3otdHJhbnNmb3JtOiB0cmFuc2xhdGVZKC01MCUpO1xyXG4gICAgLW1zLXRyYW5zZm9ybTogdHJhbnNsYXRlWSgtNTAlKTtcclxuICAgIC1vLXRyYW5zZm9ybTogdHJhbnNsYXRlWSgtNTAlKTtcclxuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgtNTAlKTtcclxuICAgIHJpZ2h0OiAwO1xyXG4gICAgd2lkdGg6IDEwMCU7XHJcbn1cclxuXHJcbi5jdi1idXR0b24ge1xyXG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2RiZmFmNDtcclxuICAgIGNvbG9yOiBibGFjaztcclxufVxyXG5cclxuLmN2LWJ1dHRvbjpob3ZlciB7XHJcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjMWFiYzljO1xyXG4gICAgY29sb3I6IGJsYWNrO1xyXG59Il19 */"]
     });
     /*@__PURE__*/
 
@@ -2877,7 +2892,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
       if (rf & 2) {
         var publication_r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]().$implicit;
 
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](publication_r2.Authors.ShortName);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtextInterpolate"](publication_r2.Authors[0].ShortName);
       }
     }
 
