@@ -37,7 +37,7 @@
 
   /***/
   function node_modulesAngularDevkitBuildAngularSrcAngularCliFilesPluginsRawCssLoaderJsNode_modulesPostcssLoaderSrcIndexJsNode_modulesSassLoaderDistCjsJsSrcStylesScss(module, exports) {
-    module.exports = [[module.i, "/* You can add global styles to this file, and also import other style files */\n.clickable {\n  cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9DOlxcVXNlcnNcXGJlYXRyXFxEb2N1bWVudHNcXEdpdEh1Ylxcd2VicGFnZVNvdXJjZUNvZGUvc3JjXFxzdHlsZXMuc2NzcyIsInNyYy9zdHlsZXMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQSw4RUFBQTtBQUVBO0VBQ0ksZUFBQTtBQ0FKIiwiZmlsZSI6InNyYy9zdHlsZXMuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIFlvdSBjYW4gYWRkIGdsb2JhbCBzdHlsZXMgdG8gdGhpcyBmaWxlLCBhbmQgYWxzbyBpbXBvcnQgb3RoZXIgc3R5bGUgZmlsZXMgKi9cclxuXHJcbi5jbGlja2FibGUge1xyXG4gICAgY3Vyc29yOiBwb2ludGVyO1xyXG59IiwiLyogWW91IGNhbiBhZGQgZ2xvYmFsIHN0eWxlcyB0byB0aGlzIGZpbGUsIGFuZCBhbHNvIGltcG9ydCBvdGhlciBzdHlsZSBmaWxlcyAqL1xuLmNsaWNrYWJsZSB7XG4gIGN1cnNvcjogcG9pbnRlcjtcbn0iXX0= */", '', '']];
+    module.exports = [[module.i, "/* You can add global styles to this file, and also import other style files */\n.clickable {\n  cursor: pointer;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9DOlxcVXNlcnNcXGJlYXRyXFxPbmVEcml2ZVxcRG9jdW1lbnRzXFxHaXRIdWJcXHdlYnBhZ2VTb3VyY2VDb2RlL3NyY1xcc3R5bGVzLnNjc3MiLCJzcmMvc3R5bGVzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsOEVBQUE7QUFFQTtFQUNJLGVBQUE7QUNBSiIsImZpbGUiOiJzcmMvc3R5bGVzLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKiBZb3UgY2FuIGFkZCBnbG9iYWwgc3R5bGVzIHRvIHRoaXMgZmlsZSwgYW5kIGFsc28gaW1wb3J0IG90aGVyIHN0eWxlIGZpbGVzICovXHJcblxyXG4uY2xpY2thYmxlIHtcclxuICAgIGN1cnNvcjogcG9pbnRlcjtcclxufSIsIi8qIFlvdSBjYW4gYWRkIGdsb2JhbCBzdHlsZXMgdG8gdGhpcyBmaWxlLCBhbmQgYWxzbyBpbXBvcnQgb3RoZXIgc3R5bGUgZmlsZXMgKi9cbi5jbGlja2FibGUge1xuICBjdXJzb3I6IHBvaW50ZXI7XG59Il19 */", '', '']];
     /***/
   },
 
@@ -447,15 +447,15 @@
   /***/
   function _(module, exports, __webpack_require__) {
     __webpack_require__(
-    /*! C:\Users\beatr\Documents\GitHub\webpageSourceCode\node_modules\bootstrap\dist\css\bootstrap.min.css */
+    /*! C:\Users\beatr\OneDrive\Documents\GitHub\webpageSourceCode\node_modules\bootstrap\dist\css\bootstrap.min.css */
     "./node_modules/bootstrap/dist/css/bootstrap.min.css");
 
     __webpack_require__(
-    /*! C:\Users\beatr\Documents\GitHub\webpageSourceCode\node_modules\ngx-bootstrap\datepicker\bs-datepicker.css */
+    /*! C:\Users\beatr\OneDrive\Documents\GitHub\webpageSourceCode\node_modules\ngx-bootstrap\datepicker\bs-datepicker.css */
     "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css");
 
     module.exports = __webpack_require__(
-    /*! C:\Users\beatr\Documents\GitHub\webpageSourceCode\src\styles.scss */
+    /*! C:\Users\beatr\OneDrive\Documents\GitHub\webpageSourceCode\src\styles.scss */
     "./src/styles.scss");
     /***/
   }
