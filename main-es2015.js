@@ -557,7 +557,18 @@ class BlogListComponent {
   - data controllers and data subjects in the negotiation of privacy policies;<br>
   - data controllers and data subjects in the management of their GDPR rights and obligations.
   <br><br><br><br>
-  <img src="../../assets/blog_posts/20200801_protect_h2020/research schema.png" width="800">`;
+  <img src="../../assets/blog_posts/20200801_protect_h2020/research schema.png" width="800">
+  <br><br><br><br>
+  <div class="row">
+    <div class="col-2">
+      <img src="../../assets/eu_flag.jpg" height="60" mr-1>
+    </div>
+    <div class="col-10">
+      This project has received funding from the European Union’s Horizon 2020 research and innovation programme under 
+      the Marie Skłodowska-Curie grant agreement No 
+      <a href="https://cordis.europa.eu/project/id/813497" target="_blank">813497</a>.
+    </div>
+  </div>`;
         this.timeline = [
             { id: 'digital_identity', caption: 'Digital Identity', date: new Date(2019, 1, 12), selected: false, title: 'Digital Identity', content: this.digital_identity },
             { id: 'protect_h2020', caption: 'About PROTECT', date: new Date(2020, 8, 1), selected: true, title: 'About PROTECT', content: this.protect_h2020 },
