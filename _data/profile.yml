@@ -51,16 +51,26 @@ education:
   position: B.Sc. & M.Sc. in Biomedical Engineering
   date: Sep. 2011 - Dec. 2017
 
-# =experience:
-# - name: Peking University
-#   logo: /assets/images/badges/PKU_red.png
-#   position: Research Intern
-#   date: Sep. 2019 - Jul. 2021
+experience:
+- name: Ghent University
+  logo: /assets/images/badges/ugent.png
+  position: Postdoctoral Researcher / Team Lead
+  date: Jan. 2024 - present
+- name: Universidad Politécnica de Madrid
+  logo: /assets/images/badges/upm.png
+  position: Early Stage Researcher in MSCA ITN (<a href="https://cordis.europa.eu/project/id/813497" target="_blank">PROTECT</a>)
+  date: Jan. 2020 - Dec. 2022
+- name: Closer Consulting
+  logo: /assets/images/badges/closer.jpeg
+  position: Consultant
+  date: Jul. 2018 - Dec. 2019
+- name: Altran
+  logo: /assets/images/badges/altran.png
+  position: Jr. Consultant / Engineer in Big Data Analytics
+  date: Oct. 2017 - Jun. 2018
 
 awards:
-- name: Award Name 2
+- name: Finished Ph.D. with <i>Cum Laude</i> honours
   date: 2024
-- name: Award Name 1 
-  date: 2021
-- name: A quick brown fox jumps over the lazy dog and runs away award
-  date: 2021
+- name: Best Paper Award at <a href="https://odpa.github.io/workshop-on-ontology-design-and-patterns/2023/" target="_blank">WOP2023</a>, co-located with <a href="https://iswc2023.semanticweb.org" target="_blank">ISWC2023</a>
+  date: 2023
