@@ -6,7 +6,7 @@ pub: "14th Workshop on Ontology Design and Patterns (WOP 2023) co-located with t
 # pub_pre: "Submitted to "
 # pub_post: 'Under review.'
 pub_last: ' <span class="badge badge-pill badge-publication badge-warning">Workshop</span>'
-pub_date: "2023"
+#pub_date: "2023"
 
 abstract: >-
   This paper introduces PLASMA, a metadata language designed to enhance transparency, accountability, and data governance in the Solid ecosystem by providing a structured vocabulary and framework for managing entities, infrastructure, legal roles, policies, notices, and records.
