@@ -9,7 +9,7 @@ pub_last: ' <span class="badge badge-pill badge-publication badge-success">Journ
 pub_date: "2022"
 
 abstract: >-
-  This article surveys ontologies and policy languages for modeling 57 GDPR-referenced informational items, identifying the ODRL and LegalRuleML languages, as well as DPV and GDPRtEXT ontologies, as the most comprehensive solutions.
+  This article surveys ontologies and policy languages for modeling 57 <a href="http://data.europa.eu/eli/reg/2016/679/oj" target="_blank">GDPR</a>-referenced informational items, identifying the <a href="https://www.w3.org/TR/odrl-model/" target="_blank">ODRL</a> and <a href="https://docs.oasis-open.org/legalruleml/legalruleml-core-spec/v1.0/legalruleml-core-spec-v1.0.html" target="_blank">LegalRuleML</a> languages, as well as <a href="https://w3id.org/dpv" target="_blank">DPV</a> and <a href="https://w3id.org/GDPRtEXT" target="_blank">GDPRtEXT</a> ontologies, as the most comprehensive solutions.
 
 cover: /assets/images/pubs/2022/architecture.png
 authors: # * for equal contribution # for corresponding author

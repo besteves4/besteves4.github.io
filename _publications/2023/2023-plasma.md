@@ -9,7 +9,7 @@ pub_last: ' <span class="badge badge-pill badge-publication badge-warning">Works
 #pub_date: "2023"
 
 abstract: >-
-  This paper introduces PLASMA, a metadata language designed to enhance transparency, accountability, and data governance in the Solid ecosystem by providing a structured vocabulary and framework for managing entities, infrastructure, legal roles, policies, notices, and records.
+  This paper introduces <a href="https://w3id.org/plasma" target="_blank">PLASMA</a>, a metadata language designed to enhance transparency, accountability, and data governance in the <a href="https://solidproject.org/" target="_blank">Solid</a> ecosystem by providing a structured vocabulary and framework for managing entities, infrastructure, legal roles, policies, notices, and records.
 
 cover: /assets/images/pubs/2023/plasma.png
 authors: # * for equal contribution # for corresponding author
