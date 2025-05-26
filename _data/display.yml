@@ -8,3 +8,15 @@ homepage:
 # if you keep the link to the template so that more people can benefit from it. Thanks!
 footer_text: >-
   <a href="https://github.com/luost26/academic-homepage" target="_blank"><i class="fas fa-pencil-ruler"></i> academic-homepage</a>
+  designed by <i><a href="https://github.com/luost26" target="_blank">luost26</a></i>, 
+  <i><a href="https://github.com/besteves4" target="_blank">besteves4</a></i>,
+  <a href="https://getbootstrap.com/" target="_blank" title="" data-toggle="tooltip" data-placement="top" data-original-title="Built with Bootstrap"><i class="fa-brands fa-bootstrap"></i></a>,
+  <a href="https://jekyllrb.com/" target="_blank" title="" data-toggle="tooltip" data-placement="top" data-original-title="Powered by Jekyll"><i class="fa-solid fa-vial"></i></a>, and
+  <a href="https://pages.github.com/" target="_blank" title="" data-toggle="tooltip" data-placement="top" data-original-title="Hosted on GitHub Pages"><i class="fa-brands fa-github"></i></a>.
+
+license: >-
+  This website does not collect any personal data nor does it track user activity or 
+  <a href="https://noyb.eu/en/project/cookie-banners" target="_blank"><i class="fa-solid fa-cookie"></i></a>.<br>
+  Licensed under 
+  <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>
+  except where otherwise noted.
