@@ -21,18 +21,21 @@ orcid: 0000-0003-0259-7560
 short_bio_text_justify: false
 short_bio: >-
   <p>
-    Hi! I'm Beatriz, a postdoctoral researcher and data protection enthusiast working on the intersection of policy modelling, 
-    Semantic Web, personal data protection, trusted data flows and decentralised datastores.
+    Hi! I'm Beatriz, a postdoctoral researcher and <a href="https://www.wikidata.org/wiki/Q23647168" target="_blank">data protection</a> 
+    enthusiast working on the intersection of policy modelling, 
+    <a href="https://www.wikidata.org/wiki/Q54837" target="_blank">Semantic Web</a>, personal data protection, trusted data flows and 
+    <a href="https://www.wikidata.org/wiki/Q188961" target="_blank">decentralised datastores</a>.
   </p>
   <p>
-    My line of research is directed at machine-interpretable representation of information related to the data protection domain,
+    My line of research is directed at machine-interpretable representation of information related to the 
+    <a href="https://www.wikidata.org/wiki/Q23647168" target="_blank">data protection</a> domain,
     focusing on semantic and decentralised technologies that promote trust and transparency on the publication and 
     sharing of personal data on the Web while complying with data protection regulatory requirements.
   </p>
   <p>
     I'm also an active contributor and editor of specifications for the following W3C CGs: 
-    Data Privacy Vocabularies and Controls Community Group (W3C DPVCG);
-    Open Digital Rights Language Community Group (W3C ODRL CG).
+    Data Privacy Vocabularies and Controls Community Group (<a href="https://www.w3.org/community/dpvcg/" target="_blank">W3C DPVCG</a>);
+    Open Digital Rights Language Community Group (<a href="https://www.w3.org/community/odrl/" target="_blank">W3C ODRL CG</a>).
   </p>
 
 portrait_url: https://solidweb.me/besteves4/profile/profile.jpg
