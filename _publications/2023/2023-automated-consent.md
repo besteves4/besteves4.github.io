@@ -10,6 +10,7 @@ pub_date: "2023"
 
 abstract: >-
   This paper explores how <a href="https://solidproject.org/" target="_blank">Solid</a> can comply with <a href="http://data.europa.eu/eli/reg/2016/679/oj" target="_blank">GDPR</a> requirements by analyzing the introduction of a policy layer for obtaining consent to process EU citizens' personal data, and whether such consent can be considered freely given, specific, informed and unambiguous.
+keywords: personal information management systems, Solid, semantic web, data protection, consent
 
 cover: /assets/images/pubs/2023/consent.png
 authors: # * for equal contribution # for corresponding author

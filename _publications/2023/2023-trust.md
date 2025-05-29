@@ -10,6 +10,7 @@ pub_date: "2023"
 
 abstract: >-
   This paper examines the shortcomings of current data management practices in protecting data subjects and explores the use of standardized, machine-readable policies to enhance transparency and accountability in decentralized personal data stores.
+keywords: data governance, digital age, transparency, personal data management, identity management
 
 cover: /assets/images/pubs/2023/trust.png
 authors: # * for equal contribution # for corresponding author

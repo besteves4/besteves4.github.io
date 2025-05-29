@@ -10,6 +10,7 @@ pub_last: ' <span class="badge badge-pill badge-publication badge-warning">Works
 
 abstract: >-
   This paper introduces <a href="https://w3id.org/plasma" target="_blank">PLASMA</a>, a metadata language designed to enhance transparency, accountability, and data governance in the <a href="https://solidproject.org/" target="_blank">Solid</a> ecosystem by providing a structured vocabulary and framework for managing entities, infrastructure, legal roles, policies, notices, and records.
+keywords: Solid, access control, policies, GDPR, regulatory compliance, ontology design patterns
 
 cover: /assets/images/pubs/2023/plasma.png
 authors: # * for equal contribution # for corresponding author
