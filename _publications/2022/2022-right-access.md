@@ -22,6 +22,7 @@ links:
   Open-Access: http://www.cosasbuenas.es/pdf/109.pdf
   API: https://w3id.org/people/besteves/access-right/api
   App: https://w3id.org/people/besteves/access-right/solid
+  Ricardo's thesis: https://oa.upm.es/71724/1/TFM_RICARDO_MARIA_LONGARES_DIEZ.pdf
   #Demo: https://empushy.github.io/nldb22
-  # Slides: 
+  Slides: https://w3id.org/people/besteves/slides/2022/right-access
 ---
