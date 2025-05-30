@@ -56,10 +56,13 @@
   url: https://orcid.org/0000-0003-0770-2737
 
 "Pieter Colpaert":
-  url: https://pietercolpaert.be/
+  url: https://pietercolpaert.be
+
+"Ruben Dedecker":
+  url: https://rubendedecker.be
 
 "Ruben Verborgh":
-  url: https://ruben.verborgh.org/
+  url: https://ruben.verborgh.org
 
 "Shridhar Kulkarni":
   url: http://orcid.org/0000-0001-8077-4011
@@ -72,6 +75,9 @@
 
 "Wout Slabbinck":
   url: https://woutslabbinck.com
+
+"Wouter Termont":
+  url: https://wouter.termont.online
 
 #"Charles Green (MIT)":
 #  name: Charles Green
