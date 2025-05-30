@@ -26,5 +26,5 @@ links:
   Abstract: https://openreview.net/pdf?id=FBwLQd6rSK
   Repo: https://github.com/SolidLabResearch/user-managed-access/
   #Demo: https://w3id.org/people/besteves/phd/sota/searcher
-  #Slides: https://w3id.org/people/besteves/slides/2023/PLASMA
+  Slides: https://besteves4.github.io/sosy2025-privacy/slides/uma.pdf
 ---
