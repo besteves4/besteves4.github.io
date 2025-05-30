@@ -29,8 +29,13 @@ short_bio: >-
   <p>
     My line of research is directed at machine-interpretable representation of information related to the 
     <a href="https://www.wikidata.org/wiki/Q23647168" target="_blank">data protection</a> domain,
-    focusing on semantic and decentralised technologies that promote trust and transparency on the publication and 
-    sharing of personal data on the Web while complying with data protection regulatory requirements.
+    focusing on 
+    <a href="https://www.wikidata.org/wiki/Q54837" target="_blank">semantic</a> and 
+    <a href="https://www.wikidata.org/wiki/Q188961" target="_blank">decentralised</a>
+    technologies that promote trust and transparency on the publication and 
+    sharing of <a href="https://www.wikidata.org/wiki/Q3702971" target="_blank">personal data</a>
+    on the Web while complying with 
+    <a href="https://www.wikidata.org/wiki/Q23647168" target="_blank">data protection</a> regulatory requirements.
   </p>
   <p>
     I'm also an active contributor and editor of specifications for the following W3C CGs: 
@@ -46,12 +51,14 @@ education:
 - name: Universidad Politécnica de Madrid
   logo: /assets/images/badges/upm.png
   position: >- 
-    Escuela Técnica Superior de Ingenieros Informáticos <br/>
-    Ph.D. Candidate
+    Escuela Técnica Superior de Ingenieros Informáticos <br>
+    Ph.D. in Artificial Intelligence
   date: Jan. 2020 - Dec. 2024
-- name: Faculdade de Ciências e Tecnologia da Universidade NOVA de Lisboa
+- name: Universidade NOVA de Lisboa
   logo: /assets/images/badges/fct.png
-  position: B.Sc. & M.Sc. in Biomedical Engineering
+  position: >-
+    Faculdade de Ciências e Tecnologia <br>
+    B.Sc. & M.Sc. in Biomedical Engineering
   date: Sep. 2011 - Dec. 2017
 
 experience:
