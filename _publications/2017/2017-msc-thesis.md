@@ -10,7 +10,7 @@ pub_last: ' <span class="badge badge-pill badge-publication badge-dark">M.Sc. Th
 
 abstract: >-
   This thesis investigates the relationship between biosignals and personality traits by recording participants' physiological responses during the Iowa Gambling Task (IGT) and using machine learning to predict traits based on extracted features. Results show that combining features from multiple biosignals yields better predictive performance, with specific signals (e.g., ECG, EDA, BVP) effectively predicting traits like Openness to Experience, Agreeableness, and Extraversion. Notably, personality indicators were most prominent in the early stages of the task, suggesting stronger trait expression at the beginning of decision-making processes.<br>
-  <b>Advisers:</b> Prof. Dr. Hugo Gamboa; Prof. Doctor Marcus Cheetham
+  <b>Advisers:</b> Prof. Dr. Hugo Gamboa; Prof. Dr. Marcus Cheetham
 keywords: Biosignals, Signal Processing, Feature Selection, Machine Learning, Iowa Gambling Task, Five Factor Model, Maximization
 
 cover: /assets/images/pubs/2017/brain.png

@@ -6,3 +6,4 @@
 [ ] Add official proceedings link to [_publications/2025/2025-sosy-uma.md](_publications/2025/2025-sosy-uma.md)
 [ ] Add RubenD's ESWC poster
 [ ] Add OPAL papers
+[ ] Add PhD thesis
