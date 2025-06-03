@@ -1,7 +1,7 @@
 ---
 title: "Interoperable Interpretation and Evaluation of ODRL Policies"
 date: 2025-05-30 00:01:00 +0800 # to be updated
-selected: false
+selected: true
 pub: "Extended Semantic Web Conference (ESWC)"
 # pub_pre: "Submitted to "
 # pub_post: 'Under review.'
