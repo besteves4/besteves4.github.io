@@ -20,7 +20,7 @@ authors: # * for equal contribution # for corresponding author
   - Pieter Colpaert
   - Ruben Verborgh
 links:
-  #Proceedings: https://doi.org/10.1007/978-3-031-11609-4_3 TODO
+  Proceedings: https://doi.org/10.1007/978-3-031-94578-6_11
   Open-Access: https://raw.githubusercontent.com/woutslabbinck/papers/main/2025/Interoperable-Interpretation-and-Evaluation-of-ODRL-Policies.pdf
   Compliance Report Model: https://w3id.org/force/compliance-report
   Test Suite: https://w3id.org/force/test-suite/repo
