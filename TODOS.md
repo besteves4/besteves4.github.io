@@ -6,3 +6,4 @@
 [ ] Add RubenD's ESWC poster
 [ ] Add OPAL papers
 [ ] Add PhD thesis
+[ ] Add 'Interoperable Interpretation and Evaluation of ODRL Policies [pdf, Best Resource Nominee]'
