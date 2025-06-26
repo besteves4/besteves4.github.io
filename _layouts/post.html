@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+<i style="padding-right: 10px;">Published on <b>{{ page.date | date: "%B %d, %Y" }}</b></i>
+{% for tag in page.tags %}
+<a href="{{site.baseurl}}/archive.html#{{tag | slugize}}" style="padding-right: 10px;">
+    <i class="fa-solid fa-hashtag fa-sm"></i>{{ tag }}
+</a>
+{% endfor %}
+<hr>
+{{ page.excerpt }}
+<hr>
+{{ content }}

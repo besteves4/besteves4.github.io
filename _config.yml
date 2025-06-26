@@ -17,8 +17,13 @@ baseurl: "" # the subpath of your site, e.g. /blog
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 plugins:
   - jekyll-email-protect
+  - jekyll-archives-v2
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
