@@ -1,5 +1,5 @@
 ---
-title: "Interoperable Interpretation and Evaluation of ODRL Policies"
+title: "Interoperable Interpretation and Evaluation of ODRL Policies <span class='badge badge-pill badge-publication badge-light'>Best Paper Nominee 🌟</span>"
 date: 2025-05-30 00:01:00 +0800 # to be updated
 selected: true
 pub: "Extended Semantic Web Conference (ESWC)"

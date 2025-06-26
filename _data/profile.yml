@@ -70,6 +70,10 @@ experience:
   logo: /assets/images/badges/upm.png
   position: Early Stage Researcher in MSCA ITN (<a href="https://cordis.europa.eu/project/id/813497" target="_blank">PROTECT</a>)
   date: Jan. 2020 - Dec. 2022
+- name: BNP Paribas
+  logo: /assets/images/badges/bnp.jpeg
+  position: Data Scientist
+  date: Jul. 2018 - Dec. 2019
 - name: Closer Consulting
   logo: /assets/images/badges/closer.jpeg
   position: Consultant
@@ -80,6 +84,8 @@ experience:
   date: Oct. 2017 - Jun. 2018
 
 awards:
+- name: Best Resource Paper Nominee at <a href="https://2025.eswc-conferences.org/" target="_blank">ESWC2025</a>
+  date: Jun. 2025
 - name: Finished Ph.D. with <i>Cum Laude</i> honours
   date: Dec. 2024
 - name: Best Paper Award at <a href="https://odpa.github.io/workshop-on-ontology-design-and-patterns/2023/" target="_blank">WOP2023</a>, co-located with <a href="https://iswc2023.semanticweb.org" target="_blank">ISWC2023</a>
