@@ -1,0 +1,41 @@
+---
+layout: default
+title: My Travel Map
+---
+
+<h1>Places I've Been</h1>
+<div id="map" style="height: 500px;"></div>
+
+<script>
+  // Initialize the map
+  var map = L.map('map').setView([20, 0], 2); // Global view
+
+  // Add OpenStreetMap tiles
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution:
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  }).addTo(map);
+
+  // Add markers for your visited places
+  var places = [
+    {
+      name: 'Paris, France',
+      lat: 48.8566,
+      lon: 2.3522,
+      description: 'Visited the Eiffel Tower in 2023',
+    },
+    {
+      name: 'Kyoto, Japan',
+      lat: 35.0116,
+      lon: 135.7681,
+      description: 'Cherry blossoms were in full bloom',
+    },
+    // Add more places here
+  ];
+
+  places.forEach(function (place) {
+    L.marker([place.lat, place.lon])
+      .addTo(map)
+      .bindPopup('<b>' + place.name + '</b><br>' + place.description);
+  });
+</script>
