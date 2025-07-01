@@ -26,5 +26,5 @@ links:
   Test Suite: https://w3id.org/force/test-suite/repo
   ODRL Evaluator: https://w3id.org/force/evaluator
   Demo: https://w3id.org/force/ESWC2025-demo
-  #Poster: https://doi.org/10.5281/zenodo.6616633
+  Slides: https://docs.google.com/presentation/d/1_bGV6QkydgzWYaKnBtLtgS-d0Xe_k5ItwnarVCvjXi4/edit?usp=sharing
 ---
