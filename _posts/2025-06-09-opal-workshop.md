@@ -180,7 +180,7 @@ More on that on a future post 😜
 
 ### Looking towards the future
 
-That's a wrap! I'm looking forward to seeing what the rest of 2025 and 2026 brings us in terms of work
+That's a wrap! I'm looking forward to seeing what the second half of 2025 (and 2026) brings us in terms of work
 on policies and particular on ODRL.
 
 Beatriz
