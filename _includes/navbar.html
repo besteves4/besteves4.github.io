@@ -6,13 +6,6 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-
-<a class="dropdown-item {% if page.url == child.url %}active{% endif %}" href="{{ child.url | relative_url }}">
-  {{ child.name }}
-</a>
-
-
-
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav ml-auto">
         {% for item in site.data.navigation.pages %}
