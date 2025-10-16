@@ -77,3 +77,9 @@ a {
     color: #fff;
     background-color: #3F4448;
     }
+
+.dropdown-menu .dropdown-item.active,
+.dropdown-menu .dropdown-item:active {
+  background-color: #6A9A9C;
+  color: #fff;
+}
