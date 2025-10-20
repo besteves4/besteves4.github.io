@@ -10,7 +10,7 @@
       <ul class="navbar-nav ml-auto">
         {% for item in site.data.navigation.pages %}
           {% if item.children %}
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown {% if item.name == page.navbar_title %}active{% endif %}">
               <a class="nav-link {% if page.url == item.url %}active{% endif %} dropdown-toggle" href="{{ item.url | relative_url }}" id="navbarDropdown{{ forloop.index }}"
                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 {{ item.name }}
