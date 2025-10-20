@@ -6,6 +6,18 @@
 [ ] Add RubenD's ESWC poster - poster link https://drive.google.com/file/d/1tX8vQ-3XrO3mg50LcbCUHdYbzsJaEZfC/view
 [ ] Add ISWC publications
 
+## Talks
+[] slides missing & figure 2021-SaP
+[] slides missing & figure & event link 2022-common
+[] slides missing & figure 2022-DKG
+[] slides missing & figure 2022-SEMIC
+[] slides missing & figure 2023-DPSN
+[] slides missing & figure 2023-DKG
+[] slides missing & figure 2023-SoSy
+[] slides missing & figure 2023-GAI
+[] slides missing & figure 2024-ESPRESSO
+[] slides missing & figure 2025-LDAC
+
 ## Others
 [ ] Add ODRL and DPV contributor roles to main page
 [ ] Add AIUP as best poster nominee
