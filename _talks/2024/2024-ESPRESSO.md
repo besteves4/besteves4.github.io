@@ -8,7 +8,7 @@ location: 'London, UK'
 
 keywords: Privacy, Health data, Access control
 
-cover: https://spec.knows.idlab.ugent.be/force/latest/img/test-suite-cropped.jpg
+cover: 
 authors: # * for equal contribution # for corresponding author
   - Beatriz Esteves
 # links:

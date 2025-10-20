@@ -17,6 +17,8 @@
 [] slides missing & figure 2023-GAI
 [] slides missing & figure 2024-ESPRESSO
 [] slides missing & figure 2025-LDAC
+[] slides missing & figure 2025-ESWC
+[] slides missing & figure & event link 2025-Japan
 
 ## Others
 [ ] Add ODRL and DPV contributor roles to main page

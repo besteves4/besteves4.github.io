@@ -8,7 +8,7 @@ location: 'Online'
 
 keywords: Trust, Decentralisation, Data governance, Data protection
 
-cover: https://spec.knows.idlab.ugent.be/force/latest/img/test-suite-cropped.jpg
+cover: 
 authors: # * for equal contribution # for corresponding author
   - Haleh Asgarinia
   - Andres Chomczyk Penedo

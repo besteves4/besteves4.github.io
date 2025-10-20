@@ -8,7 +8,7 @@ location: 'Online'
 
 keywords: Data sharing agreements, Semantics, Legal compliance
 
-cover: https://spec.knows.idlab.ugent.be/force/latest/img/test-suite-cropped.jpg
+cover: 
 authors: # * for equal contribution # for corresponding author
   - Beatriz Esteves
 # links:
