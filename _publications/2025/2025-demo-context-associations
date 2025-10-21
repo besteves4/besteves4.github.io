@@ -1,0 +1,28 @@
+---
+title: "Demonstrating a Pragmatic Solution to Context Associations in RDF Using Blank Node Graphs"
+date: 2025-06-03 00:01:00 +0800
+selected: false
+pub: "22nd Extended Semantic Web Conference (ESWC)"
+# pub_pre: "Submitted to "
+# pub_post: 'Under review.'
+pub_last: ' <span class="badge badge-pill badge-publication badge-info">Demo</span>'
+pub_date: "2025"
+
+abstract: >-
+  The paper proposes a pragmatic approach for modeling contextual associations in RDF by introducing the <a href="https://w3id.org/context-associations/specification" target="_blank">RDF context associations specification</a>, which uses Blank Node Graphs to ensure clear, interoperable handling of contextual information such as provenance, confidence, and policies across web data ecosystems. A <a href="https://knowledgeonwebscale.github.io/rdf-context-associations-demo/" target="_blank">demonstrator</a> illustrates how this model supports contextual data representation and SPARQL-based filtering.
+keywords: Linked Data, RDF, Context Associations, Blank Node Graphs, Personal Data
+
+cover: 
+authors: # * for equal contribution # for corresponding author
+  - Ruben Dedecker
+  - Jos De Roo
+  - Beatriz Esteves
+  - Pieter Colpaert 
+links:
+  Specification: https://w3id.org/context-associations/specification
+  Proceedings: https://doi.org/10.1007/978-3-031-99554-5_11
+  #Open-Access: https://doi.org/10.5281/zenodo.6614777
+  Repo: https://github.com/KNowledgeOnWebScale/rdf-context-associations-demo
+  Demo: https://knowledgeonwebscale.github.io/rdf-context-associations-demo/
+  Poster: https://drive.google.com/file/d/1tX8vQ-3XrO3mg50LcbCUHdYbzsJaEZfC/view
+---
