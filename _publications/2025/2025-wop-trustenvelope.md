@@ -2,7 +2,7 @@
 title: "Incentivizing Sustainable Data Exchanges through Unique Contextualization of History and Destiny"
 date: 2025-11-03 00:01:00 +0800
 selected: false
-pub: "16th Workshop on Ontology Design and Patterns (WOP) co-located with the 24th International Semantic Web Conference (ESWC)"
+pub: "16th Workshop on Ontology Design and Patterns (WOP) co-located with the 24th International Semantic Web Conference (ISWC)"
 # pub_pre: "Submitted to "
 # pub_post: 'Under review.'
 pub_last: ' <span class="badge badge-pill badge-publication badge-warning">Workshop</span>'
