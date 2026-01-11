@@ -12,7 +12,7 @@ abstract: >-
   This article analyzes the EU <a href="http://data.europa.eu/eli/reg/2023/2854/oj" target="_blank">Data Act</a>'s requirements for multiparty data access in connected products, proposes a conceptual model supported by technologies like identity and consent management to deal with these requirements, and illustrates its application through an “agentic home” use case that combines <a href="https://solidproject.org/" target="_blank">personal data stores</a> with generative AI to promote ethical innovation and EU competitiveness.
 keywords: Data Act, personal data store, data space
 
-cover: /assets/images/pubs/2025/as-rs.png
+cover: https://ars.els-cdn.com/content/image/1-s2.0-S2352340925006730-gr2_lrg.jpg
 authors: # * for equal contribution # for corresponding author
   - Tanguy Coenen
   - Michiel Fierens
