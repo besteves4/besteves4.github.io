@@ -5,6 +5,8 @@ navbar_name: "Beatriz Esteves"
 positions:
 - logo: /assets/images/badges/ugent.png  # Logo is optional
   name: Postdoctoral Researcher in the <a href="https://knows.idlab.ugent.be" target="_blank">KNoWS</a> group at <a href="https://idlab.ugent.be" target="_blank">IDLab</a>, <a href="https://www.ugent.be" target="_blank">Ghent University</a> - <a href="https://www.imec-int.com/" target="_blank">imec</a>
+- logo: /assets/images/badges/dpv.png
+  name: <a style="padding-left:0.9em"></a>Co-chair of the <a href="https://www.w3.org/groups/cg/dpvcg/" target="_blank">W3C DPVCG</a>
 # - name: Position 2 without logo
 
 email: "beatriz.esteves@ugent.be"
@@ -88,5 +90,7 @@ awards:
   date: Jun. 2025
 - name: Finished Ph.D. with <i>Cum Laude</i> honours
   date: Dec. 2024
+- name: Best Poster Nominee at <a href="https://2024-eu.semantics.cc" target="_blank">SEMANTiCS2024</a>
+  date: Sep. 2024
 - name: Best Paper Award at <a href="https://odpa.github.io/workshop-on-ontology-design-and-patterns/2023/" target="_blank">WOP2023</a>, co-located with <a href="https://iswc2023.semanticweb.org" target="_blank">ISWC2023</a>
   date: Nov. 2023

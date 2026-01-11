@@ -7,6 +7,8 @@
 [] Add FORCE paper
 [] Add PKGs-Solid-DataSpaces review when there is a preprint
 [] Add Kush's paper when accepted
+[] Add Solid+PKG+Dataspaces paper when accepted
+[] Add evolvable trust paper when accepted
 
 ## Talks
 [] slides missing & figure 2021-SaP
@@ -21,10 +23,6 @@
 [] slides missing & figure 2025-LDAC
 [] slides missing & figure 2025-ESWC
 [] slides missing & figure & event link 2025-Japan
-
-## Others
-[ ] Add ODRL and DPV contributor roles to main page
-[ ] Add AIUP as best poster nominee
 
 ## Features
 [ ] Add keyword filtering to publications
