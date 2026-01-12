@@ -1,6 +1,6 @@
 ---
 title: "Establishing Data (Re-)Use Agreements Through Semantic Policies for Legally-aware Data Sharing"
-slides: ""
+slides: "https://w3id.org/people/besteves/slides/2022/SEMIC"
 date: 2022-12-06 00:01:00 +0800
 event: "SEMIC Conference 2022"
 event_url: "https://data.europa.eu/en/news-events/news/semic-conference-2022"
@@ -8,7 +8,7 @@ location: 'Online'
 
 keywords: Data sharing agreements, Semantics, Legal compliance
 
-cover: 
+cover: https://w3id.org/people/besteves/slides/2022/SEMIC
 authors: # * for equal contribution # for corresponding author
   - Beatriz Esteves
 # links:
