@@ -27,4 +27,5 @@ links:
   Repo: https://github.com/SolidLabResearch/FORCE
   #Demo: https://zenodo.org/records/16640205
   #Poster: https://drive.google.com/file/d/1tX8vQ-3XrO3mg50LcbCUHdYbzsJaEZfC/view
+  Slides: https://w3id.org/force/slides/NXDG2025
 ---
