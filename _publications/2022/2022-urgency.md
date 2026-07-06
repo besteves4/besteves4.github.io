@@ -22,7 +22,7 @@ authors: # * for equal contribution # for corresponding author
 links:
   APN: https://w3id.org/apn
   Proceedings: https://doi.org/10.1007/978-3-031-20436-4_4
-  Open-Access: http://www.cosasbuenas.es/pdf/108.pdf
+  #Open-Access: 
   Repo: https://github.com/besteves4/apn
   Webpage: https://empushy.github.io/momm22/
   # Slides: 

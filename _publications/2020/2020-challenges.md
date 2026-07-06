@@ -9,7 +9,7 @@ pub_last: ' <span class="badge badge-pill badge-publication badge-warning">Works
 pub_date: "2020"
 
 abstract: >-
-  This paper presents a research project that uses decentralised Web and Semantic Web technologies to create services that enable better communication and negotiation of privacy terms between data subjects and controllers under the <a href="http://data.europa.eu/eli/reg/2016/679/oj" target="_blank">GDPR</a>, with a case study in healthcare and genomics.
+  This paper presents a research project that uses decentralised Web and Semantic Web technologies to create services that enable better communication and negotiation of privacy terms between data subjects and controllers under the <a href="https://data.europa.eu/eli/reg/2016/679/oj" target="_blank">GDPR</a>, with a case study in healthcare and genomics.
 keywords: Personal data, Privacy, Data protection, GDPR, Semantic web, Policy languages, Intelligent agents
 
 cover: /assets/images/pubs/2020/timeline.png

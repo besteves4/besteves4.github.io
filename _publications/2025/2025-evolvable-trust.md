@@ -9,7 +9,7 @@ pub_last: ' <span class="badge badge-pill badge-publication badge-danger">Prepri
 pub_date: "2025"
 
 abstract: >-
-  This article argues that the core privacy challenge is not excessive data sharing but inefficient data flows that incentivize unlawful shortcuts, exacerbated by punitive interpretations of regulations like the <a href="http://data.europa.eu/eli/reg/2016/679/oj" target="_blank">GDPR</a>. It proposes evolvable, technology-assisted trust systems as a scalable alternative to ill-informed consent, aligning economic incentives with ethical and societal goals to enable sustainable and trustworthy data exchange.
+  This article argues that the core privacy challenge is not excessive data sharing but inefficient data flows that incentivize unlawful shortcuts, exacerbated by punitive interpretations of regulations like the <a href="https://data.europa.eu/eli/reg/2016/679/oj" target="_blank">GDPR</a>. It proposes evolvable, technology-assisted trust systems as a scalable alternative to ill-informed consent, aligning economic incentives with ethical and societal goals to enable sustainable and trustworthy data exchange.
 
 keywords: trust, consent, legaltech, regulatory compliance
 

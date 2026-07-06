@@ -9,7 +9,7 @@ pub_last: ' <span class="badge badge-pill badge-publication badge-primary">Confe
 pub_date: "2024"
 
 abstract: >-
-  This article proposes a semantic web-based specification using the <a href="https://w3id.org/dpv" target="_blank">Data Privacy Vocabulary (DPV)</a> to standardize and automate the exercise and management of <a href="http://data.europa.eu/eli/reg/2016/679/oj" target="_blank">GDPR</a> rights, addressing current gaps in rights implementation and enabling scalable data reuse and governance.
+  This article proposes a semantic web-based specification using the <a href="https://w3id.org/dpv" target="_blank">Data Privacy Vocabulary (DPV)</a> to standardize and automate the exercise and management of <a href="https://data.europa.eu/eli/reg/2016/679/oj" target="_blank">GDPR</a> rights, addressing current gaps in rights implementation and enabling scalable data reuse and governance.
 keywords: GDPR, rights management, rights exercise, semantic technologies
 
 cover: https://besteves4.github.io/dpv-rights-exercising/img/request-status.png

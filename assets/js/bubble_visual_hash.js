@@ -102,7 +102,7 @@ drawBubble = function (svg, bubbleInfo) {
     });
     for (var i = 0; i < bubbleInfo.length; i++) {
         var bubble = bubbleInfo[i];
-        var circle = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+        var circle = document.createElementNS("https://www.w3.org/2000/svg", "circle");
         circle.setAttribute("cx", bubble.x);
         circle.setAttribute("cy", bubble.y);
         circle.setAttribute("r", bubble.radius);

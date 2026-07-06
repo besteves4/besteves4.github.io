@@ -66,7 +66,7 @@ enabling the precise definition of terms related to arbitration, applicable law,
 liability and modification/termination clauses.
 The ultimate goal is to prevent the inclusion of unfair terms in ToSs
 and support legal requirements such as the ones coming from the
-[EU Directive on Unfair Contract Terms](http://data.europa.eu/eli/dir/2019/2161/oj).
+[EU Directive on Unfair Contract Terms](https://data.europa.eu/eli/dir/2019/2161/oj).
 
 The [Terms of Service Language ontology (TOSL)](https://w3id.org/tosl) proved itself useful to model real-world use cases,
 as well as a basis to detect abusive terms.
@@ -74,9 +74,9 @@ Check out a cool example derived from [GitHub’s ToS](https://docs.github.com/e
 (extracted from the [paper](https://ceur-ws.org/Vol-3977/OPAL2025-10.pdf)):
 
 {% highlight turtle %}
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix odrl:    <http://www.w3.org/ns/odrl/2/> .
-@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <https://purl.org/dc/terms/> .
+@prefix odrl:    <https://www.w3.org/ns/odrl/2/> .
+@prefix rdf:     <https://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix tosl:    <https://w3id.org/tosl#> .
 @prefix :        <https://ex.org/> .
 

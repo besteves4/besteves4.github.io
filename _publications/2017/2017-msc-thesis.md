@@ -19,7 +19,7 @@ authors: # * for equal contribution # for corresponding author
 links:
   #APN: https://w3id.org/apn
   Thesis: https://run.unl.pt/bitstream/10362/40258/1/Esteves_2017.pdf
-  #Open-Access: http://www.cosasbuenas.es/pdf/108.pdf
+  #Open-Access: https://www.cosasbuenas.es/pdf/108.pdf
   #Repo: https://github.com/besteves4/apn
   #Webpage: https://empushy.github.io/momm22/
   #Slides: 

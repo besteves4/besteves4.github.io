@@ -9,7 +9,7 @@ pub_last: ' <span class="badge badge-pill badge-publication badge-info">Poster</
 pub_date: "2022"
 
 abstract: >-
-  This paper outlines how the EU’s <a href="http://data.europa.eu/eli/reg/2022/868/oj" target="_blank">Data Governance Act</a> introduces requirements for data protection and regulation of data intermediaries, and explores how Semantic Web technologies can support stakeholders in meeting these obligations.
+  This paper outlines how the EU’s <a href="https://data.europa.eu/eli/reg/2022/868/oj" target="_blank">Data Governance Act</a> introduces requirements for data protection and regulation of data intermediaries, and explores how Semantic Web technologies can support stakeholders in meeting these obligations.
 keywords: Data Governance Act, Semantic Web, Solid, Data Intermediaries
 
 cover: /assets/images/pubs/2022/dga.png

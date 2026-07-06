@@ -9,7 +9,7 @@ pub_last: ' <span class="badge badge-pill badge-publication badge-light">White P
 pub_date: "2024"
 
 abstract: >-
-  The <a href="https://docs.kantarainitiative.org/uma/wg/rec-oauth-uma-grant-2.0.html" target="_blank">User-Managed Access (UMA)</a> extension to <a href="http://dx.doi.org/10.17487/RFC6749" target="_blank">OAuth 2.0</a> is a promising candidate for increasing Digital Trust in personal data ecosystems like <a href="https://solidproject.org/" target="_blank">Solid</a>. With minor modifications, it can achieve many requirements regarding usage control and transaction contextualization, even though additional specification is needed to address delegation of control and retraction of usage policies.
+  The <a href="https://docs.kantarainitiative.org/uma/wg/rec-oauth-uma-grant-2.0.html" target="_blank">User-Managed Access (UMA)</a> extension to <a href="https://dx.doi.org/10.17487/RFC6749" target="_blank">OAuth 2.0</a> is a promising candidate for increasing Digital Trust in personal data ecosystems like <a href="https://solidproject.org/" target="_blank">Solid</a>. With minor modifications, it can achieve many requirements regarding usage control and transaction contextualization, even though additional specification is needed to address delegation of control and retraction of usage policies.
 keywords: UMA, digital trust, Solid, usage control, policies
 
 cover: /assets/images/pubs/2024/uma.jpeg
