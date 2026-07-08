@@ -83,11 +83,11 @@ a:hover {
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
-    background-color: #3F4448;
+    background-color: #fd5959;
     }
 
 .dropdown-menu .dropdown-item.active,
 .dropdown-menu .dropdown-item:active {
-  background-color: #6A9A9C;
+  background-color: #ff9c6d;
   color: #fff;
 }
