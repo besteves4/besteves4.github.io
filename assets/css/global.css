@@ -3,7 +3,8 @@
 body {
     font-family: Georgia, "Lato", sans-serif;
     font-weight: 400;
-    padding-top: 5.0rem;
+    /* padding-top: 5.0rem; */
+    padding-top: 100px;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -23,7 +24,37 @@ h1, h2, h3, h4, h5, h6,
 .navbar {
     opacity: 0.95;
     background-color: #fd5959;
-    color: white !important; 
+    color: white !important;
+    overflow: visible;
+}
+
+.navbar-brand {
+    margin-left: 1rem;
+    font-size: 1.25rem;
+}
+
+.navbar-brand-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 70px;   /* Reserve space for the avatar */
+}
+
+.navbar-profile {
+    position: absolute;
+    left: 0;
+    bottom: -26px;
+
+    width: 72px;
+    height: 72px;
+
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 4px solid white;
+    box-shadow: 0 8px 20px rgba(0,0,0,.18);
+
+    z-index: 1050;
 }
 
 .inline-badge {
@@ -90,4 +121,20 @@ a:hover {
 .dropdown-menu .dropdown-item:active {
   background-color: #ff9c6d;
   color: #fff;
+}
+
+@media (max-width: 576px) {
+    .navbar-brand-wrapper {
+        padding-left: 50px;
+    }
+
+    .navbar-profile {
+        width: 52px;
+        height: 52px;
+        bottom: -18px;
+    }
+
+    body {
+        padding-top: 90px;
+    }
 }

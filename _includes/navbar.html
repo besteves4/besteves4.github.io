@@ -1,6 +1,17 @@
 <nav class="navbar navbar-expand-sm navbar-dark fixed-top mb-5 shadow-sm">
   <div class="container">
-    <a class="navbar-brand" href="{{ '/' | relative_url }}"><strong>{{site.data.profile.navbar_name}}</strong></a>
+    
+    <div class="navbar-brand-wrapper">
+      <img
+          src="{{ site.data.profile.portrait_url }}"
+          class="navbar-profile"
+          alt="Profile picture">
+
+      <a class="navbar-brand mb-0" href="{{ '/' | relative_url }}">
+        <strong>{{ site.data.profile.navbar_name }}</strong>
+      </a>
+    </div>
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" style="font-size: 1em; padding: 0.5em;">
       <span class="navbar-toggler-icon"></span>
