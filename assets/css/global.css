@@ -1,10 +1,20 @@
 @charset "utf-8";
 @import "native.css";
+
+:root {
+    --navbar-height: 80px;
+    --hero-height: calc(var(--navbar-height) / 2);
+    /* --avatar-size: 80px; */
+    --avatar-size: 100px;
+    --navbar-color: #e8751a;
+    --hero-color: #c51350;
+}
+
 body {
     font-family: Georgia, "Lato", sans-serif;
     font-weight: 400;
     /* padding-top: 5.0rem; */
-    padding-top: 100px;
+    padding-top: 74px;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -23,44 +33,80 @@ h1, h2, h3, h4, h5, h6,
 
 .navbar {
     opacity: 0.95;
-    background-color: #fd5959;
-    color: white !important;
+    background-color: var(--navbar-color);
+    color: rgb(164, 78, 78) !important;
     overflow: visible;
+    z-index: 1030;
+    padding-top: .9rem;
+    padding-bottom: .9rem;
+    height: var(--navbar-height);
 }
 
 .navbar-brand {
-    margin-left: 1rem;
+    /* margin-left: 1rem; */
     font-size: 1.25rem;
+    margin-left: 2.5rem;
 }
 
 .navbar-brand-wrapper {
     position: relative;
     display: flex;
     align-items: center;
-    padding-left: 70px;   /* Reserve space for the avatar */
+    padding-left: 74px;   /* Reserve space for the avatar */
 }
 
 .navbar-profile {
     position: absolute;
     left: 0;
-    bottom: -26px;
+    bottom: calc(-1 * var(--avatar-size) / 2);
 
-    width: 72px;
-    height: 72px;
+    width: var(--avatar-size);
+    height: var(--avatar-size);
 
     border-radius: 50%;
     object-fit: cover;
 
-    border: 4px solid white;
-    box-shadow: 0 8px 20px rgba(0,0,0,.18);
+    border: 4px solid var(--hero-color);
+    box-shadow: 0 8px 18px rgba(0,0,0,.15);
 
     z-index: 1050;
 }
 
+.hero-tagline {
+    width: 100%;
+    height: var(--hero-height);
+
+    /* Push the text below the lower half of the avatar */
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 12px;
+
+    background: var(--hero-color);
+
+    border-bottom: 1px solid rgba(0,0,0,.08);
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero-message {
+    margin: 0;
+
+    text-align: center;
+
+    /* font-size: 1.2rem; */
+    /* font-weight: 300; */
+
+    color: white;
+}
+
+.space {
+    padding-top: 40px;
+}
+
 .inline-badge {
-    /* height: 16px; */
     height: 32px;
-    /* vertical-align: -10%; */
     margin-right: 2px;
     line-break: unset;
 }
@@ -103,23 +149,23 @@ div.lazy {
 }
 
 a {
-    color: #ff9c6d;
+    color: var(--hero-color);
 }
 
 a:hover {
-    color: #fd5959;
+    color: var(--navbar-color);
     opacity: 0.9;
     text-decoration: underline;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
     color: #fff;
-    background-color: #fd5959;
+    background-color: var(--hero-color);
     }
 
 .dropdown-menu .dropdown-item.active,
 .dropdown-menu .dropdown-item:active {
-  background-color: #ff9c6d;
+  background-color: var(--hero-color);
   color: #fff;
 }
 

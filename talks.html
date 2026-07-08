@@ -4,7 +4,7 @@ title: Talks
 navbar_title: CV
 permalink: /cv/talks/
 body_attr: >-
-  data-spy="scroll" data-target="#navbar-year" data-offset="100"
+  data-spy="scroll" data-target="#navbar-year" data-offset="200"
 ---
 
 {% assign talks_by_year = site.talks | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
@@ -23,7 +23,7 @@ body_attr: >-
     </div>
 
     <div class="col-2 d-none d-lg-block">
-        <div id="navbar-year" class="nav nav-pills flex-column sticky-top" style="top: 80px">
+        <div id="navbar-year" class="nav nav-pills flex-column sticky-top" style="top: 100px">
             {% for year in talks_by_year %}
             <a class="nav-link d-block" href="#year-{{ year.name }}">{{ year.name }}</a>
             {% endfor %}
