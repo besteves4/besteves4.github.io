@@ -6,7 +6,7 @@ excerpt: "Unsolicited opinion on the work presented around ODRL policies at the 
 categories: blog
 tags: [conferences, ODRL, OPAL, policies]
 image: /assets/images/blog/2025/opal/group.jpeg
-navbar_title: Blog
+navbar_title: BLOG
 ---
 
 2025 marked my second attendance of the [Extended Semantic Web Conference (ESWC 2025)](https://2025.eswc-conferences.org/)
