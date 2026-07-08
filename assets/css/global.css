@@ -22,6 +22,8 @@ h1, h2, h3, h4, h5, h6,
 
 .navbar {
     opacity: 0.95;
+    background-color: #fd5959;
+    color: white !important; 
 }
 
 .inline-badge {
@@ -70,7 +72,13 @@ div.lazy {
 }
 
 a {
-    color: cadetblue;
+    color: #ff9c6d;
+}
+
+a:hover {
+    color: #fd5959;
+    opacity: 0.9;
+    text-decoration: underline;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
