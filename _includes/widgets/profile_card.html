@@ -1,3 +1,14 @@
+<script src="../../assets/js/image_carrousel.js"></script>
+<section class="hero-slider">
+    <div class="slider-track">
+        
+        {% for hero in site.data.profile.hero_figs %}
+        <div class="slide"><img src="{{ hero.src}}" alt=""></div>
+        {% endfor %}
+
+    </div>
+</section>
+
 <div class="row">
     <div class="col">
         <div class="card border-0 shadow-sm bg-white">
@@ -18,9 +29,9 @@
                         {% endif %} -->
 
                         <div class="d-flex">
-                            <div class="h1 font-weight-normal">
+                            <!-- <div class="h1 font-weight-normal">
                                 {{ site.data.profile.primary_name }} <small>{{ site.data.profile.secondary_name }}</small>
-                            </div>
+                            </div> -->
                             <!-- {% if site.data.profile.portrait_url %}
                             <div class="ml-auto d-md-none">
                                 <a target="_blank" href="{{ site.data.profile.portrait_url | relative_url }}">

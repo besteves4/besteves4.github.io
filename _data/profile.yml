@@ -2,6 +2,13 @@ primary_name: "Beatriz Esteves"
 secondary_name: ""
 navbar_name: "BEATRIZ ESTEVES"
 
+hero_figs:
+- src: /assets/images/profile/emildai.jpeg
+- src: /assets/images/profile/krook.jpeg
+- src: /assets/images/profile/opal.jpeg
+- src: /assets/images/profile/sosy.jpeg
+- src: /assets/images/profile/sosy2.jpeg
+
 positions:
 - logo: /assets/images/badges/ugent.png  # Logo is optional
   name: Postdoctoral Researcher in the <a href="https://knows.idlab.ugent.be" target="_blank">KNoWS</a> group at <a href="https://idlab.ugent.be" target="_blank">IDLab</a>, <a href="https://www.ugent.be" target="_blank">Ghent University</a> - <a href="https://www.imec-int.com/" target="_blank">imec</a>
