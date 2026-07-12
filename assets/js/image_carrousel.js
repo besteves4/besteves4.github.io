@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const track = document.querySelector(".gallery-track");
 
-    let speed = 2; // pixels per frame (~20 px/sec at 60fps)
+    let speed = 1.4; // pixels per frame (~20 px/sec at 60fps)
     let position = 0;
     let paused = false;
 

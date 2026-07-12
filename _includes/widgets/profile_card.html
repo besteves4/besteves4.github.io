@@ -7,8 +7,8 @@
         <div class="gallery-track">
 
             {% for hero in site.data.profile.hero_figs %}
-            <div class="art"><img src="{{ hero.src}}" alt=""></div>
-            <br>
+            <div class="art mb-2"><img src="{{ hero.src}}" alt=""></div>
+            <!-- <br> -->
             {% endfor %}
 
         </div>
@@ -17,44 +17,48 @@
 
     <div class="intro">
 
-        <!-- <h2>Quote</h2> -->
+        <div class="hello">
+            <video controls autoplay muted loop playsinline>
+                <source src="{{ site.data.profile.hello }}" type="video/mp4">
+            </video>
+            <h2>Hello, I'm Beatriz!</h2>
+        </div>
 
         <div class="text-profile-bio" {% if site.data.profile.short_bio_text_justify %}style="text-align: justify;"{% endif %}>
             {{ site.data.profile.short_bio }}
         </div>
 
+        <div class="card border-0 shadow-sm">
+            <div class="card-body contact">
 
-        <div class="card border-0 shadow-sm bg-white">
-            <div class="card-body">
-
-                <p>Contact me at:</p>
+                <strong>Contact me at: </strong>
 
                 <a class="pr-3 no-break" href="mailto:{{ site.data.profile.email | encode_email }}">
                     <i class="fas fa-at"></i> <span class="email-text">{{ site.data.profile.email | replace: "@", "(at)" }}</span>
                 </a>
-
-                <!-- {% if site.data.profile.gscholar %}
-                {%- if site.data.profile.gscholar contains 'scholar.google' -%}
-                {%- assign gscholar_url = site.data.profile.gscholar -%}
-                {%- else -%}
-                {%- assign gscholar_url = 'https://scholar.google.com/citations?user=' | append: site.data.profile.gscholar -%}
-                {%- endif -%}
-                <a class="pr-3 no-break" target="_blank" href="{{ gscholar_url }}">
-                    <i class="fab fa-google-scholar"></i> Google Scholar
-                </a>
-                {% endif %} -->
-                
-                <!-- {% if site.data.profile.github %}
-                <a class="pr-3 no-break" target="_blank" href="https://github.com/{{ site.data.profile.github }}">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
-                {% endif %} -->
 
                 {% if site.data.profile.linkedin %}
                 <a class="pr-3 no-break" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}">
                     <i class="fab fa-linkedin"></i> LinkedIn
                 </a>
                 {% endif %}
+
+                {% if site.data.profile.gscholar %}
+                {%- if site.data.profile.gscholar contains 'scholar.google' -%}
+                {%- assign gscholar_url = site.data.profile.gscholar -%}
+                {%- else -%}
+                {%- assign gscholar_url = 'https://scholar.google.com/citations?user=' | append: site.data.profile.gscholar -%}
+                {%- endif -%}
+                <a class="pr-3 no-break" target="_blank" href="{{ gscholar_url }}">
+                    <i class="fab fa-google-scholar"></i> Scholar
+                </a>
+                {% endif %}
+                
+                <!-- {% if site.data.profile.github %}
+                <a class="pr-3 no-break" target="_blank" href="https://github.com/{{ site.data.profile.github }}">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                {% endif %} -->
 
                 <!-- {% if site.data.profile.orcid %}
                 <a class="pr-3 no-break" target="_blank" href="https://orcid.org/{{ site.data.profile.orcid }}">

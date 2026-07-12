@@ -6,7 +6,8 @@
     --hero-height: calc(var(--navbar-height) / 2);
     --avatar-size: 100px;
     --navbar-color: #e8751a;
-    --hero-color: #c51350;
+    --hero-color: rgb(197, 19, 80);
+    --navbar-color-soft: #FAEDD3;
 }
 
 body {
@@ -51,9 +52,9 @@ body {
 .intro{
     display:flex;
     flex-direction:column;
-    justify-content:center;
-    padding:8vw;
-    padding-top: 20px !important;
+    padding-top: 20px;
+    padding-left: 40px;
+    align-items: stretch;
 }
 
 .intro h1{
@@ -64,12 +65,31 @@ body {
 
 .intro h2{
     font-weight:400;
-    color: var(--navbar-color);
+    color: var(--hero-color);
+    text-align: right;
 }
 
 .intro p{
-    max-width:600px;
     line-height:1.8;
+}
+
+.hello {
+    display: flex;
+    align-items: center;   /* Vertically centers the text */
+    justify-content: flex-end;
+    gap: 30px;             /* Space between video and text */
+    max-width: 1000px;
+    padding-bottom: 20px;
+}
+
+video {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+.question {
+    font-size: 22px;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -83,6 +103,7 @@ h1, h2, h3, h4, h5, h6,
 
 .text-profile-bio {
     font-weight: 400;
+    width: 100%;
 }
 
 .navbar {
@@ -142,6 +163,10 @@ h1, h2, h3, h4, h5, h6,
 
 .space {
     padding-top: 20px;
+}
+
+.contact {
+    background-color: var(--navbar-color-soft);
 }
 
 .inline-badge {
