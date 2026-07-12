@@ -4,7 +4,6 @@
 :root {
     --navbar-height: 80px;
     --hero-height: calc(var(--navbar-height) / 2);
-    /* --avatar-size: 80px; */
     --avatar-size: 100px;
     --navbar-color: #e8751a;
     --hero-color: #c51350;
@@ -13,8 +12,64 @@
 body {
     font-family: Georgia, "Lato", sans-serif;
     font-weight: 400;
-    /* padding-top: 5.0rem; */
     padding-top: 74px;
+}
+
+.homepage{
+    display:grid;
+    grid-template-columns:35% 65%;
+    height:calc(100vh - 80px);
+}
+
+.gallery{
+    overflow:hidden;
+    background:#fafafa;
+    width:100%;
+    height:100%;
+}
+
+.gallery-track{
+    display:flex;
+    flex-direction:column;
+    gap:0;
+    width:100%;
+}
+
+.art{
+    width:100%;
+    height:33.333vh;   /* three images visible */
+    flex-shrink:0;
+    overflow:hidden;
+}
+
+.art img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.intro{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:8vw;
+    padding-top: 20px !important;
+}
+
+.intro h1{
+    font-size:4rem;
+    font-weight:300;
+    margin:0;
+}
+
+.intro h2{
+    font-weight:400;
+    color: var(--navbar-color);
+}
+
+.intro p{
+    max-width:600px;
+    line-height:1.8;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -27,7 +82,6 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .text-profile-bio {
-    /* font-family: "Raleway"; */
     font-weight: 400;
 }
 
@@ -43,7 +97,6 @@ h1, h2, h3, h4, h5, h6,
 }
 
 .navbar-brand {
-    /* margin-left: 1rem; */
     font-size: 1.25rem;
     margin-left: 2.5rem;
 }
@@ -59,32 +112,23 @@ h1, h2, h3, h4, h5, h6,
     position: absolute;
     left: 0;
     bottom: calc(-1 * var(--avatar-size) / 2);
-
     width: var(--avatar-size);
     height: var(--avatar-size);
-
     border-radius: 50%;
     object-fit: cover;
-
     border: 4px solid var(--hero-color);
     box-shadow: 0 8px 18px rgba(0,0,0,.15);
-
     z-index: 1050;
 }
 
 .hero-tagline {
     width: 100%;
     height: var(--hero-height);
-
-    /* Push the text below the lower half of the avatar */
     padding-left: 0;
     padding-right: 0;
     padding-top: 12px;
-
     background: var(--hero-color);
-
     border-bottom: 1px solid rgba(0,0,0,.08);
-
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -92,17 +136,12 @@ h1, h2, h3, h4, h5, h6,
 
 .hero-message {
     margin: 0;
-
     text-align: center;
-
-    /* font-size: 1.2rem; */
-    /* font-weight: 300; */
-
     color: white;
 }
 
 .space {
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .inline-badge {
@@ -169,49 +208,27 @@ a:hover {
   color: #fff;
 }
 
-.hero-slider{
-    width:100%;
-    height:calc(50vh - 80px);
-    overflow:hidden;
-    display:flex;
-    align-items:center;
-    background:#fff;
-    padding:20px 0;
-}
-
-.slider-track{
-    display:flex;
-    gap:35px;
-    transition:transform .9s ease;
-    will-change:transform;
-}
-
-.slide{
-    flex:0 0 calc((100% - 40px) / 2);
-    height:80vh;
-    border-radius:14px;
-    overflow:hidden;
-    box-shadow:0 15px 40px rgba(0,0,0,0);
-}
-
-.slide img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    display:block;
-    transition:transform 7s ease;
-}
-
-.slide:hover img{
-    transform:scale(1.05);
-}
-
 /* Mobile */
 
-@media (max-width:768px){
-    .slide{
-        flex:0 0 100vw;
-        height:70vh;
+@media(max-width:768px){
+    .homepage{
+        display:block;
+    }
+
+    .gallery{
+        height:45vh;
+    }
+
+    .art{
+        height:45vh;
+    }
+
+    .intro{
+        padding:40px 30px;
+    }
+
+    .intro h1{
+        font-size:2.5rem;
     }
 }
 

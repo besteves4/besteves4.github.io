@@ -1,102 +1,45 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const track = document.querySelector(".slider-track");
-    const originalSlides = [...track.children];
+    const track = document.querySelector(".gallery-track");
 
-    let visible = window.innerWidth <= 768 ? 1 : 3;
+    let speed = 2; // pixels per frame (~20 px/sec at 60fps)
+    let position = 0;
+    let paused = false;
 
-    function buildSlider() {
-
-        // Remove previous clones
-        track.querySelectorAll(".clone").forEach(el => el.remove());
-
-        visible = window.innerWidth <= 768 ? 1 : 3;
-
-        // Clone only the number of visible slides
-        for (let i = 0; i < visible; i++) {
-            const clone = originalSlides[i].cloneNode(true);
-            clone.classList.add("clone");
-            track.appendChild(clone);
-        }
-    }
-
-    buildSlider();
-
-    let current = 0;
-    let timer;
-
-    function slideWidth() {
-
-        const slide = track.querySelector(".slide");
+    function getStep() {
+        const first = track.firstElementChild;
         const gap = parseFloat(getComputedStyle(track).gap);
-
-        return slide.offsetWidth + gap;
-
+        return first.offsetHeight + gap;
     }
 
-    function move() {
+    function animate() {
 
-        track.style.transform =
-            `translateX(-${current * slideWidth()}px)`;
+        if (!paused) {
 
-    }
+            position += speed;
+            track.style.transform = `translateY(-${position}px)`;
 
-    function next() {
+            const step = getStep();
 
-        current++;
+            if (position >= step) {
 
-        track.style.transition = "transform 0.9s ease";
-        move();
+                position -= step;
 
-    }
+                track.appendChild(track.firstElementChild);
 
-    track.addEventListener("transitionend", () => {
+                track.style.transform = `translateY(-${position}px)`;
 
-        if (current >= originalSlides.length) {
+            }
 
-            track.style.transition = "none";
-            current = 0;
-            move();
-
-            // Force browser reflow so transition is re-enabled cleanly
-            track.offsetHeight;
-
-            track.style.transition = "transform 0.9s ease";
         }
 
-    });
-
-    function start() {
-
-        timer = setInterval(next, 4500);
+        requestAnimationFrame(animate);
 
     }
 
-    function stop() {
+    track.addEventListener("mouseenter", () => paused = true);
+    track.addEventListener("mouseleave", () => paused = false);
 
-        clearInterval(timer);
-
-    }
-
-    track.addEventListener("mouseenter", stop);
-    track.addEventListener("mouseleave", start);
-
-    window.addEventListener("resize", () => {
-
-        stop();
-
-        buildSlider();
-
-        current = 0;
-
-        track.style.transition = "none";
-        move();
-
-        start();
-
-    });
-
-    move();
-    start();
+    animate();
 
 });
