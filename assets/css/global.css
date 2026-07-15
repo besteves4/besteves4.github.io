@@ -169,6 +169,15 @@ h1, h2, h3, h4, h5, h6,
     background-color: var(--navbar-color-soft);
 }
 
+.selected-pubs {
+    background-color: var(--hero-color);
+    color: white;
+}
+
+.selected-pubs a {
+    color: white;
+}
+
 .inline-badge {
     height: 32px;
     margin-right: 2px;

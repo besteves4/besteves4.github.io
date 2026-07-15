@@ -1,7 +1,7 @@
 ---
 title: "Analysis of ontologies and policy languages to represent information flows in GDPR"
 date: 2022-06-07 00:01:00 +0800
-selected: true
+selected: false
 pub: "Semantic Web 15(3)"
 # pub_pre: "Submitted to "
 # pub_post: 'Under review.'
