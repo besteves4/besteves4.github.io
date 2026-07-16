@@ -5,7 +5,6 @@
 [] Add PKGs-Solid-DataSpaces review when there is a preprint
 [] Add Kush's paper when accepted
 [] Add evolvable trust paper when accepted
-[] Add identity white paper
 
 ## Talks
 
