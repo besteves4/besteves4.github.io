@@ -10,6 +10,7 @@
 [] OPAL ODRL3 - add official proceedings link
 [] OPAL DGA - add official proceedings link + slides
 [] OPAL risk - add official proceedings link + slides
+[] semantics - add eyeling demo
 
 ## Talks
 [] Add 1st HARNESS workshop talk - probably as teaching experience
