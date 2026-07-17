@@ -6,9 +6,10 @@ homepage:
 # Feel free to replace the footer text if you would like to, but I will greatly appreciate it 
 # if you keep the link to the template so that more people can benefit from it. Thanks!
 footer_text: >-
-  <a href="https://github.com/luost26/academic-homepage" target="_blank"><i class="fas fa-pencil-ruler"></i> academic-homepage</a>
-  designed by <i><a href="https://github.com/luost26" target="_blank">luost26</a></i>, 
-  <i><a href="https://github.com/besteves4" target="_blank">besteves4</a></i>,
+  Developed by
+  <i><a href="https://github.com/besteves4" target="_blank">besteves4</a></i>
+  (inspired by <a href="https://github.com/luost26/academic-homepage" target="_blank"><i class="fas fa-pencil-ruler"></i> academic-homepage</a>)
+  with
   <a href="https://getbootstrap.com/" target="_blank" title="" data-toggle="tooltip" data-placement="top" data-original-title="Built with Bootstrap"><i class="fa-brands fa-bootstrap"></i></a>,
   <a href="https://jekyllrb.com/" target="_blank" title="" data-toggle="tooltip" data-placement="top" data-original-title="Powered by Jekyll"><i class="fa-solid fa-vial"></i></a>, and
   <a href="https://pages.github.com/" target="_blank" title="" data-toggle="tooltip" data-placement="top" data-original-title="Hosted on GitHub Pages"><i class="fa-brands fa-github"></i></a>.
