@@ -7,7 +7,7 @@
 [] Add evolvable trust paper when accepted
 [] Sosy risk publication needs a figure + official proceedings link
 [] Add 3 OPAL papers
-[] SDS paper - add official proceedings link + slides
+[] SDS paper - add official proceedings link
 
 ## Talks
 [] Add 1st HARNESS workshop talk - probably as teaching experience

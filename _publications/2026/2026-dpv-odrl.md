@@ -17,11 +17,11 @@ authors: # * for equal contribution # for corresponding author
   - Beatriz Esteves
   - Harshvardhan J. Pandit
 links:
+  Preprint: https://beatrizesteves.org/assets/documents/2026/SDS/dpv-odrl.pdf
   DPV-ODRL profile: https://w3id.org/dpv/mappings/odrl
   Implementation guide: https://w3id.org/dpv/guides/dpv-odrl
+  Examples: https://github.com/besteves4/SDS2026-DPV-ODRL-mapping
   # Proceedings: https://doi.org/10.3233/SW-243583
-  Preprint: https://beatrizesteves.org/assets/documents/2026/SDS/dpv-odrl.pdf
-  Repo: hhttps://github.com/w3c-cg/dpv
-  # Demo: https://w3id.org/duodrl/app
-  # Slides: https://harshp.com/presentations/2024/ISWC-DPV/
+  # Repo: hhttps://github.com/w3c-cg/dpv
+  Slides: https://beatrizesteves.org/slides/2026/SDS.pdf
 ---
