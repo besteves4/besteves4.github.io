@@ -13,6 +13,7 @@
 [] semantics - add eyeling demo
 
 ## Talks
+[] Add 2025 PrivaCI symposium panel
 [] Add 1st HARNESS workshop talk - probably as teaching experience
 [] Add talk in Data Spaces workshop in Leuven - 22/23 January
 [] Add COST Action workshop - not sure if here is the best place - 28-30 January (also organiser of poster session)
