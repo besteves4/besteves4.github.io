@@ -48,6 +48,14 @@
             });
         });
     </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            new bootstrap.ScrollSpy(document.body, {
+                target: "#resume-nav",
+                offset: 140
+            });
+        });
+    </script>
     <script src="{{ '/assets/js/common.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/bubble_visual_hash.js' | relative_url }}"></script>
 </body>

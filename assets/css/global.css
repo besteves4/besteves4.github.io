@@ -299,6 +299,12 @@ a:hover {
     border-left-color:var(--hero-color);
 }
 
+.resume-nav .nav-link.active{
+    color:var(--hero-color);
+    font-weight:700;
+    border-left-color:var(--hero-color);
+}
+
 .resume-section h6{
     color:var(--hero-color);
     margin-bottom:1rem;
