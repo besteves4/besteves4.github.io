@@ -9,6 +9,7 @@
 [] Add 3 OPAL papers
 [] SDS paper - add official proceedings link
 [] OPAL ODRL3 - add official proceedings link
+[] OPAL DGA - add official proceedings link + slides
 
 ## Talks
 [] Add 1st HARNESS workshop talk - probably as teaching experience
