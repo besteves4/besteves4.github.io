@@ -26,5 +26,8 @@
 [] FAIR Data workshop - 10 June
 [] W3C ODRL - 20/21 July
 
+## Awards
+[] Add BOF fellowship
+
 ## Features
 [ ] Add keyword filtering to publications
