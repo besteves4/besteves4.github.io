@@ -10,6 +10,8 @@ pages:
 - name: CV
   url: /cv/
   children:
+    - name: EXPERIENCE
+      url: /cv/experience/
     - name: TALKS
       url: /cv/talks/
 # - name: Showcase
