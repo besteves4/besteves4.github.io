@@ -8,6 +8,7 @@
 [] Sosy risk publication needs a figure + official proceedings link
 [] Add 3 OPAL papers
 [] SDS paper - add official proceedings link
+[] OPAL ODRL3 - add official proceedings link
 
 ## Talks
 [] Add 1st HARNESS workshop talk - probably as teaching experience
@@ -20,6 +21,7 @@
 [] CPDP - 20-22 MAy
 [] Add 2nd HARNESS workshop talk - 1-5 June
 [] FAIR Data workshop - 10 June
+[] W3C ODRL - 20/21 July
 
 ## Features
 [ ] Add keyword filtering to publications
