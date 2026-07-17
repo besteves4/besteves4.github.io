@@ -1,7 +1,7 @@
 ---
 title: "Using Patterns to Manage Governance of Solid Apps <span class='badge badge-pill badge-publication badge-light'>Best Paper 🏆</span>"
 date: 2023-11-06 00:01:00 +0800
-selected: true
+selected: false
 pub: "14th Workshop on Ontology Design and Patterns (WOP 2023) co-located with the 22nd International Semantic Web Conference (ISWC 2023)"
 # pub_pre: "Submitted to "
 # pub_post: 'Under review.'
