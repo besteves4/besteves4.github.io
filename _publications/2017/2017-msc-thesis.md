@@ -5,7 +5,7 @@ selected: false
 pub: "Dissertation for the degree of Master of Science in Biomedical Engineering"
 # pub_pre: "Submitted to "
 # pub_post: 'Under review.'
-pub_last: ' <span class="badge badge-pill badge-publication badge-dark">M.Sc. Thesis</span>'
+pub_last: ' <span class="badge rounded-pill badge-publication bg-dark">M.Sc. Thesis</span>'
 #pub_date: "2017"
 
 abstract: >-

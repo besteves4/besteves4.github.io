@@ -21,18 +21,18 @@ experience:
   date: Oct. 2017 - Jun. 2018
 
 education:
-- name: Universidad Politécnica de Madrid
+- name: Universidad Politécnica de Madrid (Escuela Técnica Superior de Ingenieros Informáticos)
   logo: /assets/images/badges/upm.png
-  position: >- 
-    Escuela Técnica Superior de Ingenieros Informáticos <br>
-    Ph.D. in Artificial Intelligence
+  position: Ph.D. in Artificial Intelligence
   date: Jan. 2020 - Dec. 2024
-- name: Universidade NOVA de Lisboa
+- name: Universidade NOVA de Lisboa (Faculdade de Ciências e Tecnologia)
   logo: /assets/images/badges/fct.png
-  position: >-
-    Faculdade de Ciências e Tecnologia <br>
-    B.Sc. & M.Sc. in Biomedical Engineering
-  date: Sep. 2011 - Dec. 2017
+  position: M.Sc. in Biomedical Engineering
+  date: Sep. 2014 - Dec. 2017
+- name: Universidade NOVA de Lisboa (Faculdade de Ciências e Tecnologia)
+  logo: /assets/images/badges/fct.png
+  position: B.Sc. in Biomedical Engineering
+  date: Sep. 2011 - Jul. 2014
 
 awards:
 - name: Best Resource Paper Nominee at <a href="https://2025.eswc-conferences.org/" target="_blank">ESWC2025</a>

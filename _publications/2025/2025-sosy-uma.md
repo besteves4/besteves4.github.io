@@ -5,7 +5,7 @@ selected: false
 pub: "3rd Privacy & Personal Data Management Session (Privacy) co-located with the 3rd Solid Symposium (SoSy)"
 # pub_pre: "Submitted to "
 # pub_post: 'Under review.'
-pub_last: ' <span class="badge badge-pill badge-publication badge-warning">Workshop</span>'
+pub_last: ' <span class="badge rounded-pill badge-publication bg-warning text-dark">Workshop</span>'
 pub_date: "2025"
 
 abstract: >-

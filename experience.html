@@ -3,79 +3,87 @@ layout: default
 title: Experience
 navbar_title: CV
 permalink: /cv/experience/
+body_attr: >-
+  data-bs-spy="scroll" data-bs-target="#resume-nav" tabindex="0"
 ---
 
 <div class="resume-layout mt-3">
-
     <main class="resume-main">
+
+        {% if site.data.experience.experience %}
+        <h3 id="position">Current & Past Positions</h3>
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body p-4">
-
-                {% if site.data.experience.experience %}
-                <section id="experience" class="resume-section">
-                    <h6>Experience</h6>
+                <section class="resume-section">
                     <ul class="list-unstyled mb-1">
                         {% for item in site.data.experience.experience %}
-                        <li class="media mb-1">
-                            <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1">
-                            <div class="media-body">
+                        <li class="d-flex mb-1">
+                            <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" class="position-logo me-1 mt-1">
+                            <div class="flex-grow-1 experience-text">
                                 <div>{{ item.name }}</div>
                                 <div class="small">{{ item.dept }}</div>
                                 <div class="small d-flex">
                                     <div>{{ item.position }}</div>
-                                    <div class="mt-auto ml-auto no-break"><em>{{ item.date }}</em></div>
+                                    <div class="mt-auto ms-auto no-break"><em>{{ item.date }}</em></div>
                                 </div>
                             </div>
                         </li>
                         {% endfor %}
                     </ul>
                 </section>
-                {% endif %}
+            </div>
+        </div>
+        {% endif %}
 
-                {% if site.data.experience.education %}
-                <section id="education" class="resume-section">
-                    <h6>Education</h6>
+        {% if site.data.experience.education %}
+        <h3 id="education">Education</h3>
+        <div class="card border-0 shadow-sm bg-white">
+            <div class="card-body p-4">
+                <section class="resume-section">
                     <ul class="list-unstyled mb-1">
                         {% for item in site.data.experience.education %}
-                        <li class="media mb-1">
-                            <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" style="width: 18px;" class="mr-1 mt-1">
-                            <div class="media-body">
+                        <li class="d-flex mb-1">
+                            <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" class="position-logo me-1 mt-1">
+                            <div class="flex-grow-1 experience-text">
                                 <div>{{ item.name }}</div>
-                                <div class="small">{{ item.dept }}</div>
                                 <div class="small d-flex">
                                     <div>{{ item.position }}</div>
-                                    <div class="mt-auto ml-auto no-break"><em>{{ item.date }}</em></div>
+                                    <div class="mt-auto ms-auto no-break"><em>{{ item.date }}</em></div>
                                 </div>
                             </div>
                         </li>
                         {% endfor %}
                     </ul>
                 </section>
-                {% endif %}
+            </div>
+        </div>
+        {% endif %}
 
-                {% if site.data.experience.awards %}
-                <section id="awards" class="resume-section">
-                    <h6>Honours & Awards</h6>
+        {% if site.data.experience.awards %}
+        <h3 id="awards">Honours & Awards</h3>
+        <div class="card border-0 shadow-sm bg-white">
+            <div class="card-body p-4">
+                <section class="resume-section">
                     <ul class="list small pl-3 mb-1">
                         {% for item in site.data.experience.awards %}
                         <li>
-                            <div class="d-flex">
+                            <div class="d-flex experience-text">
                                 <div>{{ item.name }}</div>
-                                <div class="ml-auto mt-auto no-break"><em>{{ item.date }}</em></div>
+                                <div class="ms-auto mt-auto no-break"><em>{{ item.date }}</em></div>
                             </div>
                         </li>
                         {% endfor %}
                     </ul>
                 </section>
-                {% endif %}
-
             </div>
         </div>
+        {% endif %}
+
     </main>
 
     <aside class="resume-nav">
         <nav id="resume-nav">
-            <a class="nav-link" href="#experience">Experience</a>
+            <a class="nav-link" href="#position">Positions</a>
             <a class="nav-link" href="#education">Education</a>
             <a class="nav-link" href="#awards">Honours &amp; Awards</a>
         </nav>

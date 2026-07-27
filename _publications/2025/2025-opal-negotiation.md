@@ -5,7 +5,7 @@ selected: false
 pub: "1st ODRL And Beyond: Practical Applications And Challenges For Policy-Based Access And Usage Control Workshop (OPAL) co-located with the 22nd Extended Semantic Web Conference (ESWC)"
 # pub_pre: "Submitted to "
 # pub_post: 'Under review.'
-pub_last: ' <span class="badge badge-pill badge-publication badge-warning">Workshop</span>'
+pub_last: ' <span class="badge rounded-pill badge-publication bg-warning text-dark">Workshop</span>'
 pub_date: "2025"
 
 abstract: >-

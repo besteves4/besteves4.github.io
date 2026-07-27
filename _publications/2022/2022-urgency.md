@@ -5,7 +5,7 @@ selected: false
 pub: "Advances in Mobile Computing and Multimedia Intelligence (MoMM)"
 # pub_pre: "Submitted to "
 # pub_post: 'Under review.'
-pub_last: ' <span class="badge badge-pill badge-publication badge-primary">Conference</span>'
+pub_last: ' <span class="badge rounded-pill badge-publication hero-badge">Conference</span>'
 pub_date: "2022"
 
 abstract: >-

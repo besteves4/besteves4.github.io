@@ -1,11 +1,11 @@
 ---
-title: "Interoperable Interpretation and Evaluation of ODRL Policies <span class='badge badge-pill badge-publication badge-light'>Best Paper Nominee 🌟</span>"
+title: "Interoperable Interpretation and Evaluation of ODRL Policies <span class='badge rounded-pill badge-publication bg-light text-dark'>Best Paper Nominee 🌟</span>"
 date: 2025-05-30 00:01:00 +0800 # to be updated
 selected: true
 pub: "Extended Semantic Web Conference (ESWC)"
 # pub_pre: "Submitted to "
 # pub_post: 'Under review.'
-pub_last: ' <span class="badge badge-pill badge-publication badge-primary">Conference</span>'
+pub_last: ' <span class="badge rounded-pill badge-publication hero-badge">Conference</span>'
 pub_date: "2025"
 
 abstract: >-

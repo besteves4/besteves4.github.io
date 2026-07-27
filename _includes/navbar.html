@@ -18,11 +18,11 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ms-auto">
         {% for item in site.data.navigation.pages %}
           {% if item.children %}
-            <li class="nav-item dropdown {% if item.name == page.navbar_title %}active{% endif %}">
-              <a class="nav-link {% if page.url == item.url %}active{% endif %} dropdown-toggle" href="{{ item.url | relative_url }}" id="navbarDropdown{{ forloop.index }}"
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle {% if item.name == page.navbar_title %}active{% endif %}" href="{{ item.url | relative_url }}" id="navbarDropdown{{ forloop.index }}"
                 role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 {{ item.name }}
               </a>
@@ -33,8 +33,8 @@
               </ul>
             </li>
           {% else %}
-            <li class="nav-item {% if item.name == page.navbar_title %}active{% endif %}">
-              <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.name }}</a>
+            <li class="nav-item">
+              <a class="nav-link {% if item.name == page.navbar_title %}active{% endif %}" href="{{ item.url | relative_url }}">{{ item.name }}</a>
             </li>
           {% endif %}
         {% endfor %}

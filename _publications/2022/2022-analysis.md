@@ -5,7 +5,7 @@ selected: false
 pub: "Semantic Web 15(3)"
 # pub_pre: "Submitted to "
 # pub_post: 'Under review.'
-pub_last: ' <span class="badge badge-pill badge-publication badge-success">Journal</span>'
+pub_last: ' <span class="badge rounded-pill badge-publication bg-success">Journal</span>'
 pub_date: "2022"
 
 abstract: >-

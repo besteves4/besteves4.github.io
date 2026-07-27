@@ -5,7 +5,7 @@ selected: true
 pub: "Data in Brief"
 pub_pre: "Submitted to "
 pub_post: ' (Under review)'
-pub_last: ' <span class="badge badge-pill badge-publication badge-danger">Preprint</span>'
+pub_last: ' <span class="badge rounded-pill badge-publication bg-danger">Preprint</span>'
 pub_date: "2025"
 
 abstract: >-

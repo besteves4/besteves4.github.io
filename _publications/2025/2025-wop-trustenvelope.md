@@ -5,7 +5,7 @@ selected: false
 pub: "16th Workshop on Ontology Design and Patterns (WOP) co-located with the 24th International Semantic Web Conference (ISWC)"
 # pub_pre: "Submitted to "
 # pub_post: 'Under review.'
-pub_last: ' <span class="badge badge-pill badge-publication badge-warning">Workshop</span>'
+pub_last: ' <span class="badge rounded-pill badge-publication bg-warning text-dark">Workshop</span>'
 pub_date: "2025"
 
 abstract: >-

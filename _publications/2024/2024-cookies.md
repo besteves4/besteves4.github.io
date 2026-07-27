@@ -5,7 +5,7 @@ selected: false
 pub: "1st NeXt-generation Data Governance Workshop (NXDG) co-located with the 20th International Conference on Semantic Systems (SEMANTiCS)"
 # pub_pre: "Submitted to "
 # pub_post: 'Under review.'
-pub_last: ' <span class="badge badge-pill badge-publication badge-warning">Workshop</span>'
+pub_last: ' <span class="badge rounded-pill badge-publication bg-warning text-dark">Workshop</span>'
 pub_date: "2024"
 
 abstract: >-

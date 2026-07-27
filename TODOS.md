@@ -1,12 +1,16 @@
 # TODOs
 
+## Positions
+[] Add DPVCG co-chairing
+[] Add pool of experts
+
 ## Publications
 [] Add official proceedings link to [_publications/2025/2025-sosy-uma.md](_publications/2025/2025-sosy-uma.md)
 [] Add PKGs-Solid-DataSpaces review when there is a preprint
 [] Add Kush's paper when accepted
 [] Add evolvable trust paper when accepted
 [] Sosy risk publication needs a figure + official proceedings link
-[] SDS paper - add official proceedings link
+[] SDS paper - add official proceedings link + update photo to not show the legenda
 [] OPAL ODRL3 - add official proceedings link
 [] OPAL DGA - add official proceedings link + slides
 [] OPAL risk - add official proceedings link + slides
@@ -30,4 +34,8 @@
 [] Add BOF fellowship
 
 ## Features
-[ ] Add keyword filtering to publications
+[] Add keyword filtering to publications
+[] Add paper(s) associated with each talk
+[] CSS for mobile needs to be updated
+[] Add proper feature to search for posts tagged with the same topics (currently in archive.html)
+[] Select the correct badge depending of the type of paper (currently it is hardcoded in the .md files)
