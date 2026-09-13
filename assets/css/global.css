@@ -361,6 +361,15 @@ a:hover {
     color: #fff;
 }
 
+.blog-logo {
+    max-width: 65%;
+    margin: auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
 /* Mobile */
 
 @media(max-width:768px){

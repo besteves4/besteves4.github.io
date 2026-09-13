@@ -5,33 +5,21 @@ navbar_title: BLOG
 permalink: /blog/
 ---
 
-<div class="row" style="text-align: center;">
-    <div class="col">
-        <div class="card border-0 shadow-sm bg-white">
-            <div class="card-body p-5">
-                <div class="row">
-                    <div class="col">
-                        <div class="text-profile-bio mt-3">
-                            <h1><b>Beatriz's blog</b></h1>
-                        </div>
-                        <div class="text-profile-bio mt-3">
-                            This is a safe space for <b>my unsolicited opinions</b>.
-                        </div>
-                        <div class="text-profile-bio mt-3">
-                            For <b>peer-reviewed work</b>, check out my <a href="{{ 'publications' | relative_url }}">publications</a>.
-                        </div>
-                    </div>
-                </div>
-                <hr/>
-                <div class="tag-category-list">
-                    {% for tag in site.data.display.tags %}
-                        <a href="{{site.baseurl}}/archive.html#{{tag | slugize}}" style="padding-right: 10px;">
-                            <i class="fa-solid fa-hashtag fa-sm"></i>{{ tag }}
-                        </a>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>        
+<div class="row">
+    <img src="/assets/images/blog/icon-beatrizwritingwithcats.png" alt="Blog writer" class="blog-logo">
+    <div class="text-profile-bio mt-3">
+        <h1 class="text-center"><b>Blog</b></h1>
+    </div>
+    <div class="text-profile-bio text-center">
+        This is a safe space for <b>my unreviewed opinions</b>.
+        For <b>peer-reviewed work</b>, check out my <a href="{{ 'publications' | relative_url }}">publications</a>.
+    </div>
+    <div class="text-center mt-2">
+        {% for tag in site.data.display.tags %}
+            <a href="{{site.baseurl}}/archive.html#{{tag | slugize}}" style="padding-right: 10px;">
+                <i class="fa-solid fa-hashtag fa-sm"></i>{{ tag }}
+            </a>
+        {% endfor %}
     </div>
 </div>
 <br>

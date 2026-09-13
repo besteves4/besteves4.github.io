@@ -14,7 +14,7 @@
 [] OPAL ODRL3 - add official proceedings link
 [] OPAL DGA - add official proceedings link + slides
 [] OPAL risk - add official proceedings link + slides
-[] semantics - add official proceedings link + slides
+[] semantics - add official proceedings link
 [] nxdg - add official proceedings link + slides
 [] sage - add official proceedings link + slides
 
