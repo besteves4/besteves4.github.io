@@ -23,7 +23,7 @@ links:
   Risk spec for Unfair Terms: https://w3id.org/tosl/risk
   TOSL spec: https://w3id.org/tosl
   Demo: https://isa-group.github.io/risk-e-tos/
-  N3 rules: https://github.com/isa-group/risk-e-tos/tree/main/rules
+  Notation3 rules: https://github.com/isa-group/risk-e-tos/tree/main/rules
   # Proceedings: https://ceur-ws.org/Vol-3705/short04.pdf
   Preprint: /assets/documents/2026/OPAL/risk.pdf
   # Repo: https://github.com/SolidLabResearch/user-managed-access/

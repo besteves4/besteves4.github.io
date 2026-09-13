@@ -14,7 +14,9 @@
 [] OPAL ODRL3 - add official proceedings link
 [] OPAL DGA - add official proceedings link + slides
 [] OPAL risk - add official proceedings link + slides
-[] semantics - add eyeling demo
+[] semantics - add official proceedings link + slides
+[] nxdg - add official proceedings link + slides
+[] sage - add official proceedings link + slides
 
 ## Talks
 [] Add 2025 PrivaCI symposium panel
@@ -31,10 +33,11 @@
 [] W3C ODRL - 20/21 July
 
 ## Awards
-[] Add BOF fellowship
+[] Add FWO fellowship
 
 ## Features
 [] Add keyword filtering to publications
+[] Add URIs to workshop/conference webpages to publications
 [] Add paper(s) associated with each talk
 [] CSS for mobile needs to be updated
 [] Add proper feature to search for posts tagged with the same topics (currently in archive.html)
