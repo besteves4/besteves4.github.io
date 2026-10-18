@@ -35,11 +35,17 @@ education:
   date: Sep. 2011 - Jul. 2014
 
 awards:
-- name: Best Resource Paper Nominee at <a href="https://2025.eswc-conferences.org/" target="_blank">ESWC2025</a>
+- name: Awarded a <a href="https://www.fwo.be/en/" target="_blank">FWO</a> Postdoctoral Fellowship (3-year individual research grant)
+  date: Oct. 2026
+- name: Best Paper Award at <a href="https://sage2026workshop.github.io/sage2026/" target="_blank">SAGE 2026</a>, co-located with <a href="https://2026-eu.semantics.cc" target="_blank">SEMANTiCS 2026</a>
+  date: Sep. 2026
+- name: Best Demo Paper Nominee at <a href="https://2026-eu.semantics.cc" target="_blank">SEMANTiCS 2026</a>
+  date: Sep. 2026
+- name: Best Resource Paper Nominee at <a href="https://2025.eswc-conferences.org/" target="_blank">ESWC 2025</a>
   date: Jun. 2025
 - name: Finished Ph.D. with <i>Cum Laude</i> honours
   date: Dec. 2024
-- name: Best Poster Nominee at <a href="https://2024-eu.semantics.cc" target="_blank">SEMANTiCS2024</a>
+- name: Best Poster Nominee at <a href="https://2024-eu.semantics.cc" target="_blank">SEMANTiCS 2024</a>
   date: Sep. 2024
-- name: Best Paper Award at <a href="https://odpa.github.io/workshop-on-ontology-design-and-patterns/2023/" target="_blank">WOP2023</a>, co-located with <a href="https://iswc2023.semanticweb.org" target="_blank">ISWC2023</a>
+- name: Best Paper Award at <a href="https://odpa.github.io/workshop-on-ontology-design-and-patterns/2023/" target="_blank">WOP 2023</a>, co-located with <a href="https://iswc2023.semanticweb.org" target="_blank">ISWC 2023</a>
   date: Nov. 2023

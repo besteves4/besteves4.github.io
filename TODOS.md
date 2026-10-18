@@ -32,8 +32,6 @@
 [] AI 4 Health - 1 October
 
 ## Awards
-[] Add FWO fellowship
-[] Pat SAGE workshop best paper (eyeling)
 
 ## Features
 [] Add keyword filtering to publications
