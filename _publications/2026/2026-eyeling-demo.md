@@ -1,5 +1,6 @@
 ---
 title: "The Eyeling Playground: N3 rules in your browser"
+award: "Best Demo Nominee 🌟"
 date: 2026-09-16 00:01:00 +0800
 selected: false
 pub: "22nd International Conference on Semantic Systems (SEMANTiCS) conference"

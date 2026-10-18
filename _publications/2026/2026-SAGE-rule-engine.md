@@ -1,5 +1,6 @@
 ---
 title: "Building Thoroughly Tested Semantic Rule Engines in the Age of GenAI"
+award: "Best Paper 🏆"
 date: 2026-09-14 00:01:00 +0800
 selected: false
 pub: "1st Semantic Architectures for Governance and Explainability workshop (SAGE) co-located with the 22nd International Conference on Semantic Systems (SEMANTiCS) conference"
