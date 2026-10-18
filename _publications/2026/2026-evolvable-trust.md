@@ -1,12 +1,12 @@
 ---
-title: "Lifting the Cage of Consent: A Techno-Legal Perspective on Evolvable Trust Relationships"
-date: 2025-12-03 00:01:00 +0800 TODO
+title: "Lifting the Cage of Consent: A Data Perspective on Evolvable Trust Relationships"
+date: 2026-08-03 00:01:00 +0800
 selected: true
 pub: "Data in Brief"
-pub_pre: "Submitted to "
-pub_post: ' (Under review)'
-pub_last: ' <span class="badge rounded-pill badge-publication bg-danger">Preprint</span>'
-pub_date: "2025"
+# pub_pre: "Submitted to "
+# pub_post: ' (Under review)'
+pub_last: ' <span class="badge rounded-pill badge-publication bg-success">Journal</span>'
+pub_date: "2026"
 
 abstract: >-
   This article argues that the core privacy challenge is not excessive data sharing but inefficient data flows that incentivize unlawful shortcuts, exacerbated by punitive interpretations of regulations like the <a href="https://data.europa.eu/eli/reg/2016/679/oj" target="_blank">GDPR</a>. It proposes evolvable, technology-assisted trust systems as a scalable alternative to ill-informed consent, aligning economic incentives with ethical and societal goals to enable sustainable and trustworthy data exchange.
@@ -19,9 +19,9 @@ authors: # * for equal contribution # for corresponding author
   - Ruben Verborgh
 links:
   #DUODRL: https://w3id.org/duodrl
-  #Proceedings: https://doi.org/10.3233/SW-243583
-  #Open-Access: https://doi.org/10.1016/j.dib.2025.111949
+  Open-Access: https://doi.org/10.1016/j.dib.2026.113216
+  UGent Biblio: https://biblio.ugent.be/publication/01M45NHYSFHMAD5CSNS53B1D63
   #Repo: https://w3id.org/duodrl/repo
   #Demo: https://w3id.org/duodrl/app
-  Preprint: https://arxiv.org/pdf/2512.03674
+  # Preprint: https://arxiv.org/pdf/2512.03674
 ---

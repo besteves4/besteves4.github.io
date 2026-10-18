@@ -8,15 +8,15 @@
 [] Add official proceedings link to [_publications/2025/2025-sosy-uma.md](_publications/2025/2025-sosy-uma.md)
 [] Add PKGs-Solid-DataSpaces review when there is a preprint
 [] Add Kush's paper when accepted
-[] Add evolvable trust paper when accepted
 [] Sosy risk publication needs a figure + official proceedings link
 [] SDS paper - add official proceedings link + update photo to not show the legenda
 [] OPAL ODRL3 - add official proceedings link
 [] OPAL DGA - add official proceedings link + slides
 [] OPAL risk - add official proceedings link + slides
-[] semantics - add official proceedings link
-[] nxdg - add official proceedings link + slides
-[] sage - add official proceedings link + slides
+[] semantics - add official proceedings link -- https://ceur-ws.org/Vol-4293/paper6.pdf
+[] nxdg@semantics - add official proceedings link + slides
+[] sage@semantics - add official proceedings link + slides
+[] Evolvable trust paper - arxiv needs to be fixed
 
 ## Talks
 [] Add 2025 PrivaCI symposium panel
@@ -34,6 +34,7 @@
 
 ## Awards
 [] Add FWO fellowship
+[] Pat SAGE workshop best paper (eyeling)
 
 ## Features
 [] Add keyword filtering to publications
