@@ -1,6 +1,6 @@
 ---
 title: "Enforcing Usage Control Policies in Solid using Rule-Based Web Agents"
-date: 2024-05-02 00:01:00 +0800 TODO
+date: 2024-05-02 00:01:00 +0800
 selected: false
 pub: "2nd Privacy & Personal Data Management Session (Privacy) co-located with the 2nd Solid Symposium (SoSy)"
 # pub_pre: "Submitted to "

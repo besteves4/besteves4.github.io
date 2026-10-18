@@ -1,6 +1,6 @@
 ---
 title: "Automated Validation of ODRL Policies for Usage Control and Data Spaces"
-date: 2026-09-15 00:01:00 +0800 TODO
+date: 2026-09-15 00:01:00 +0800
 selected: false
 pub: "3rd NeXt-generation Data Governance workshop (NXDG) co-located with the 22nd International Conference on Semantic Systems (SEMANTiCS) conference"
 # pub_pre: "Submitted to "

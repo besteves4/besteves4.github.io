@@ -1,6 +1,6 @@
 ---
 title: "The Eyeling Playground: N3 rules in your browser"
-date: 2026-09-16 00:01:00 +0800 TODO
+date: 2026-09-16 00:01:00 +0800
 selected: false
 pub: "22nd International Conference on Semantic Systems (SEMANTiCS) conference"
 # pub_pre: "Submitted to "
@@ -23,7 +23,7 @@ authors: # * for equal contribution # for corresponding author
 links:
   Demo: https://eyereasoner.github.io/eyeling/playground
   Eyeling: https://eyereasoner.github.io/eyeling
-  # Proceedings: https://ceur-ws.org/Vol-3705/short04.pdf
+  Proceedings: https://ceur-ws.org/Vol-4293/paper6.pdf
   Preprint: /assets/documents/2026/SEMANTiCS/demo.pdf
   # Slides: https://beatrizesteves.org/sosy2026-privacy/slides/elena.pdf
 ---

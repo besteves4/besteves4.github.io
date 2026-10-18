@@ -13,9 +13,7 @@
 [] OPAL ODRL3 - add official proceedings link
 [] OPAL DGA - add official proceedings link + slides
 [] OPAL risk - add official proceedings link + slides
-[] semantics - add official proceedings link -- https://ceur-ws.org/Vol-4293/paper6.pdf
 [] nxdg@semantics - add official proceedings link + slides
-[] sage@semantics - add official proceedings link + slides
 [] Evolvable trust paper - arxiv needs to be fixed
 
 ## Talks
@@ -31,6 +29,7 @@
 [] Add 2nd HARNESS workshop talk - 1-5 June
 [] FAIR Data workshop - 10 June
 [] W3C ODRL - 20/21 July
+[] AI 4 Health - 1 October
 
 ## Awards
 [] Add FWO fellowship

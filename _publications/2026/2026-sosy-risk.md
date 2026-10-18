@@ -1,6 +1,6 @@
 ---
 title: "Towards a Risk-Based Analysis of Terms of Service for Consumer Decision Support"
-date: 2026-05-01 00:01:00 +0800 TODO
+date: 2026-05-01 00:01:00 +0800
 selected: false
 pub: "4th Privacy & Personal Data Management Session (Privacy) co-located with the 4th Solid Symposium (SoSy)"
 # pub_pre: "Submitted to "

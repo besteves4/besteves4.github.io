@@ -1,6 +1,6 @@
 ---
 title: "Building Thoroughly Tested Semantic Rule Engines in the Age of GenAI"
-date: 2026-09-14 00:01:00 +0800 TODO
+date: 2026-09-14 00:01:00 +0800
 selected: false
 pub: "1st Semantic Architectures for Governance and Explainability workshop (SAGE) co-located with the 22nd International Conference on Semantic Systems (SEMANTiCS) conference"
 # pub_pre: "Submitted to "
@@ -24,7 +24,7 @@ links:
   Demo: https://eyereasoner.github.io/eyeling/playground
   Eyeling: https://eyereasoner.github.io/eyeling
   Notation3 tests: https://w3c-cg.github.io/N3/tests/
-  # Proceedings: https://ceur-ws.org/Vol-3705/short04.pdf
+  Proceedings: https://ceur-ws.org/Vol-4292/SAGE-paper4-short.pdf
   Preprint: /assets/documents/2026/SAGE/rule-engine.pdf
   # Slides: https://beatrizesteves.org/sosy2026-privacy/slides/elena.pdf
 ---

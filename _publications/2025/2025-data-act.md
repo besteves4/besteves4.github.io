@@ -1,6 +1,6 @@
 ---
 title: "A Perspective on the Use of Personal Data Stores in Data Spaces to Support Multiparty Data Access as Required by the Data Act"
-date: 2025-10-01 00:01:00 +0800 TODO
+date: 2025-10-01 00:01:00 +0800
 selected: false
 pub: "Data in Brief"
 # pub_pre: "Submitted to "

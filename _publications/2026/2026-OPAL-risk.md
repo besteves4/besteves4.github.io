@@ -1,6 +1,6 @@
 ---
 title: "Detecting Contractual Risk in ODRL Policies Using DPV"
-date: 2026-05-10 00:01:00 +0800 TODO
+date: 2026-05-10 00:01:00 +0800
 selected: false
 pub: "2nd ODRL and beyond: practical applications and challenges for policy-based access and usage control (OPAL) co-located with the 23rd Extended Semantic Web Conference (ESWC)"
 # pub_pre: "Submitted to "
