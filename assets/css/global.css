@@ -337,10 +337,12 @@ a:hover {
     margin-top:2rem;
 }
 
-.img-blog{
+.img-blog {
     height: 200px;
+    width: auto;
+    max-width: 100%;
     border-radius: 40px;
-    float: right;
+    margin-bottom: 0;
 }
 
 .publication-image {
