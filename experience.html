@@ -10,17 +10,42 @@ body_attr: >-
 <div class="resume-layout mb-5">
     <main class="resume-main">
 
-        {% if site.data.experience.experience %}
-        <h3 id="position">Current & Past Positions</h3>
+        {% if site.data.experience.current %}
+        <h3 id="current">Current Positions</h3>
         <div class="card border-0 shadow-sm bg-white">
             <div class="card-body p-4">
                 <section class="resume-section">
                     <ul class="list-unstyled mb-1">
-                        {% for item in site.data.experience.experience %}
+                        {% for item in site.data.experience.current %}
                         <li class="d-flex mb-1">
                             <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" class="position-logo me-1 mt-1">
                             <div class="flex-grow-1 experience-text">
-                                <div>{{ item.name }}</div>
+                                <div><a href="{{ item.url }}" target="_blank">{{ item.name }}</a></div>
+                                <div class="small">{{ item.dept }}</div>
+                                <div class="small d-flex">
+                                    <div>{{ item.position }}</div>
+                                    <div class="mt-auto ms-auto no-break"><em>{{ item.date }}</em></div>
+                                </div>
+                            </div>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </section>
+            </div>
+        </div>
+        {% endif %}
+
+        {% if site.data.experience.past %}
+        <h3 id="past">Past Positions</h3>
+        <div class="card border-0 shadow-sm bg-white">
+            <div class="card-body p-4">
+                <section class="resume-section">
+                    <ul class="list-unstyled mb-1">
+                        {% for item in site.data.experience.past %}
+                        <li class="d-flex mb-1">
+                            <img src="{{ item.logo | relative_url }}" alt="{{ item.name }}" class="position-logo me-1 mt-1">
+                            <div class="flex-grow-1 experience-text">
+                                <div><a href="{{ item.url }}" target="_blank">{{ item.name }}</a></div>
                                 <div class="small">{{ item.dept }}</div>
                                 <div class="small d-flex">
                                     <div>{{ item.position }}</div>
@@ -83,7 +108,8 @@ body_attr: >-
 
     <aside class="resume-nav">
         <nav id="resume-nav">
-            <a class="nav-link" href="#position">Positions</a>
+            <a class="nav-link" href="#current">Current Positions</a>
+            <a class="nav-link" href="#past">Past Positions</a>
             <a class="nav-link" href="#education">Education</a>
             <a class="nav-link" href="#awards">Honours &amp; Awards</a>
         </nav>

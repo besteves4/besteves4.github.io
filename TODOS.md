@@ -1,7 +1,6 @@
 # TODOs
 
 ## Positions
-[] Add DPVCG co-chairing
 [] Add pool of experts
 
 ## Publications

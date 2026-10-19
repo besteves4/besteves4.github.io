@@ -1,21 +1,78 @@
-experience:
+current:
+- name: Research Foundation Flanders
+  url: https://www.fwo.be/en/
+  logo: /assets/images/badges/fwo.jpeg
+  position: Postdoctoral Fellow
+  date: Oct. 2026 - present
 - name: Ghent University
+  url: https://www.ugent.be/en
+  logo: /assets/images/badges/ugent.png
+  position: Co-lecturer of Legal Compliance & Trust in Big Data Technologies
+  date: Sep. 2026 - present
+- name: EDPB Support Pool of Experts
+  url: https://www.edpb.europa.eu/support-pool-of-experts-spe-programme_en
+  logo: /assets/images/badges/edpb.svg
+  position: I have been selected by the EDPB for the Support Pool of Experts reserve list and I might be assigned a project in the future.<br>This a non-paid, voluntary position.
+  date: Feb. 2026 - present
+- name: W3C Data Privacy Vocabularies and Controls Community Group (DPVCG)
+  url: https://www.w3.org/community/dpvcg/
+  logo: /assets/images/badges/dpv.png
+  position: Co-chair
+  date: Nov. 2025 - present
+- name: Ghent University
+  url: https://www.ugent.be/en
   logo: /assets/images/badges/ugent.png
   position: Postdoctoral Researcher / Team Lead
   date: Jan. 2024 - present
+
+past:
 - name: Universidad Politécnica de Madrid
+  url: https://www.upm.es/internacional
   logo: /assets/images/badges/upm.png
-  position: Early Stage Researcher in MSCA ITN (<a href="https://cordis.europa.eu/project/id/813497" target="_blank">PROTECT</a>)
+  position: Predoctoral Researcher in NextGenerationEU-funded project (<a href="https://inesdata-project.eu/content/es/index.html" target="_blank">INESData</a>)
+  date: Apr. 2023 - Nov. 2023
+- name: Ghent University
+  url: https://www.ugent.be/en
+  logo: /assets/images/badges/ugent.png
+  position: Visiting Researcher
+  date: Mar. 2023 - Apr. 2023
+- name: Universidad Politécnica de Madrid
+  url: https://www.upm.es/internacional
+  logo: /assets/images/badges/upm.png
+  position: Predoctoral Researcher in H2020 Innovation Action (<a href="https://cordis.europa.eu/project/id/101036418" target="_blank">AURORA</a>)
+  date: Jan. 2023 - Mar. 2023
+- name: Universidad Politécnica de Madrid
+  url: https://www.upm.es/internacional
+  logo: /assets/images/badges/upm.png
+  position: Early Stage Researcher in H2020 MSCA ITN (<a href="https://cordis.europa.eu/project/id/813497" target="_blank">PROTECT</a>)
   date: Jan. 2020 - Dec. 2022
+- name: Trinity College Dublin
+  url: https://www.tcd.ie
+  logo: /assets/images/badges/tcd.png
+  position: Visiting Researcher
+  date: Set. 2022 - Nov. 2022
+- name: Inrupt
+  url: https://www.inrupt.com
+  logo: /assets/images/badges/inrupt.jpeg
+  position: Research Internship
+  date: Feb. 2022 - Jul. 2022
+- name: Empushy
+  url: https://www.empushy.com
+  logo: /assets/images/badges/empushy.jpeg
+  position: Research Internship
+  date: Oct. 2021 - Dec. 2021
 - name: BNP Paribas
+  url: https://www.bnpparibas.pt/en/
   logo: /assets/images/badges/bnp.jpeg
   position: Data Scientist
   date: Jul. 2018 - Dec. 2019
 - name: Closer Consulting
+  url: https://closer.pt
   logo: /assets/images/badges/closer.jpeg
   position: Consultant
   date: Jul. 2018 - Dec. 2019
 - name: Altran
+  url: https://www.consultancy.eu/firms/altran
   logo: /assets/images/badges/altran.png
   position: Jr. Consultant / Engineer in Big Data Analytics
   date: Oct. 2017 - Jun. 2018
