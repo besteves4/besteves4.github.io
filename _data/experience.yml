@@ -79,14 +79,17 @@ past:
 
 education:
 - name: Universidad Politécnica de Madrid (Escuela Técnica Superior de Ingenieros Informáticos)
+  url: https://www.upm.es/internacional
   logo: /assets/images/badges/upm.png
   position: Ph.D. in Artificial Intelligence
   date: Jan. 2020 - Dec. 2024
 - name: Universidade NOVA de Lisboa (Faculdade de Ciências e Tecnologia)
+  url: https://www.fct.unl.pt
   logo: /assets/images/badges/fct.png
   position: M.Sc. in Biomedical Engineering
   date: Sep. 2014 - Dec. 2017
 - name: Universidade NOVA de Lisboa (Faculdade de Ciências e Tecnologia)
+  url: https://www.fct.unl.pt
   logo: /assets/images/badges/fct.png
   position: B.Sc. in Biomedical Engineering
   date: Sep. 2011 - Jul. 2014

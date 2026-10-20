@@ -1,7 +1,6 @@
 # TODOs
 
 ## Positions
-[] Add pool of experts
 
 ## Publications
 [] Add official proceedings link to [_publications/2025/2025-sosy-uma.md](_publications/2025/2025-sosy-uma.md)
