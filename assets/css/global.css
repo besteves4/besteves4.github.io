@@ -299,6 +299,13 @@ a:hover {
     align-items:start;
 }
 
+.exp-main{
+    min-width:0;
+    width: 85%;
+    max-width: 1100px;
+    margin-inline: auto;
+}
+
 .resume-main{
     min-width:0;
 }
@@ -347,6 +354,12 @@ a:hover {
 }
 
 .resume-main h3{
+    color:var(--hero-color);
+    margin-bottom:1rem;
+    margin-top:2rem;
+}
+
+.exp-main h3{
     color:var(--hero-color);
     margin-bottom:1rem;
     margin-top:2rem;
@@ -416,6 +429,10 @@ a:hover {
 
     .resume-nav{
         display:none;
+    }
+
+    .exp-main {
+        width: 95%;
     }
 }
 
