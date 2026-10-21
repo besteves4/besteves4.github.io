@@ -1,6 +1,6 @@
 # Beatriz webpage
 
-Generated from https://github.com/luost26/academic-homepage.
+Inspired by https://github.com/luost26/academic-homepage.
 
 ## Running Locally (Debug & Preview)
 
