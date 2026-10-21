@@ -16,7 +16,7 @@ cover: /assets/images/pubs/2026/odrl3.png
 authors: # * for equal contribution # for corresponding author
   - Wouter Termont
   - Wout Slabbinck
-  - Joachim Van Herwegen
+  - Joanna Van Herwegen
   - Patrick Hochstenbach
   - Beatriz Esteves
 links:

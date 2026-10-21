@@ -17,7 +17,7 @@ cover: /assets/images/pubs/2025/loama.svg
 authors: # * for equal contribution # for corresponding author
   - Wout Slabbinck
   - Lennert De Rouck
-  - Joachim Van Herwegen
+  - Joanna Van Herwegen
   - Wouter Termont
   - Beatriz Esteves
   - Ruben Verborgh
