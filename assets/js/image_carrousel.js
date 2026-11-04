@@ -1,23 +1,34 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const track = document.querySelector(".gallery-track");
+    if (!track || track.children.length < 2) return;
 
-    let speed = 1.4; // pixels per frame (~20 px/sec at 60fps)
+    // Respect the "reduce motion" accessibility setting: show the photos without scrolling them
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    const speed = 84;      // pixels per second (same pace as before on a 60 Hz screen,
+                           // but no longer twice as fast on 120 Hz phones and tablets)
     let position = 0;
-    let paused = false;
+    let paused = false;    // mouse over the gallery
+    let visible = true;    // gallery on screen
+    let last = null;
+    let frameId = null;
 
     function getStep() {
         const first = track.firstElementChild;
-        const gap = parseFloat(getComputedStyle(track).gap);
-        return first.offsetHeight + gap;
+        const gap = parseFloat(getComputedStyle(track).rowGap) || 0;
+        const margin = parseFloat(getComputedStyle(first).marginBottom) || 0;
+        return first.offsetHeight + margin + gap;   // include the margin to avoid a jump on each loop
     }
 
-    function animate() {
+    function animate(now) {
 
-        if (!paused) {
+        frameId = null;
 
-            position += speed;
-            track.style.transform = `translateY(-${position}px)`;
+        if (last !== null && !paused) {
+
+            const elapsed = Math.min(now - last, 100) / 1000;   // seconds; capped after a stall
+            position += speed * elapsed;
 
             const step = getStep();
 
@@ -27,19 +38,36 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 track.appendChild(track.firstElementChild);
 
-                track.style.transform = `translateY(-${position}px)`;
-
             }
+
+            track.style.transform = `translateY(-${position}px)`;
 
         }
 
-        requestAnimationFrame(animate);
+        last = now;
 
+        if (visible) frameId = requestAnimationFrame(animate);
+
+    }
+
+    function start() {
+        if (frameId === null) {
+            last = null;
+            frameId = requestAnimationFrame(animate);
+        }
     }
 
     track.addEventListener("mouseenter", () => paused = true);
     track.addEventListener("mouseleave", () => paused = false);
 
-    animate();
+    // Stop animating while the gallery is scrolled out of view (saves battery on phones)
+    if ("IntersectionObserver" in window) {
+        new IntersectionObserver(([entry]) => {
+            visible = entry.isIntersecting;
+            if (visible) start();
+        }).observe(track.parentElement);
+    }
+
+    start();
 
 });

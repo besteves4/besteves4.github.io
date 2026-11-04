@@ -44,8 +44,7 @@ Here's a nice picture of the OPAL attendees!
 <figure>
   <img 
     src="/assets/images/blog/2025/opal/group.jpeg" 
-    class="figure-img img-fluid img-thumbnail" 
-    style="border-radius: 40px; width: 40vw; display: block; margin-left: auto; margin-right: auto;"
+    class="figure-img img-fluid img-thumbnail post-figure"
     data-toggle="tooltip" 
     data-placement="top"
     alt="Group picture of OPAL participants">

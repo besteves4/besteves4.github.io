@@ -11,24 +11,25 @@ body_attr: >-
     <main class="exp-main">
 
         {% if site.data.experience.current %}
-        <h3 id="current">Current Positions</h3>
+        <section id="current">
+        <h3>Current Positions</h3>
         <div class="card border-0 shadow-sm bg-white">
-            <div class="card-body p-4">
+            <div class="card-body p-3 p-sm-4">
                 <section class="resume-section">
                     <ul class="list-unstyled mb-1">
                         {% for item in site.data.experience.current %}
-                        <li class="d-flex align-items-center mb-1">
+                        <li class="d-flex align-items-center mb-3 mb-sm-1">
                             <div class="position-logo-wrapper">
                                 <img src="{{ item.logo | relative_url }}"
                                     alt="{{ item.name }}"
                                     class="position-logo">
                             </div>
-                            <div class="flex-grow-1">
+                            <div class="flex-grow-1 position-body">
                                 <div><a href="{{ item.url }}" target="_blank">{{ item.name }}</a></div>
                                 <div class="small">{{ item.dept }}</div>
-                                <div class="small d-flex">
+                                <div class="small d-flex flex-column flex-sm-row">
                                     <div>{{ item.position }}</div>
-                                    <div class="mt-auto ms-auto no-break"><em>{{ item.date }}</em></div>
+                                    <div class="mt-sm-auto ms-sm-auto no-break"><em>{{ item.date }}</em></div>
                                 </div>
                             </div>
                         </li>
@@ -37,27 +38,29 @@ body_attr: >-
                 </section>
             </div>
         </div>
+        </section>
         {% endif %}
 
         {% if site.data.experience.past %}
-        <h3 id="past">Past Positions</h3>
+        <section id="past">
+        <h3>Past Positions</h3>
         <div class="card border-0 shadow-sm bg-white">
-            <div class="card-body p-4">
+            <div class="card-body p-3 p-sm-4">
                 <section class="resume-section">
                     <ul class="list-unstyled mb-1">
                         {% for item in site.data.experience.past %}
-                        <li class="d-flex align-items-center mb-1">
+                        <li class="d-flex align-items-center mb-3 mb-sm-1">
                             <div class="position-logo-wrapper">
                                 <img src="{{ item.logo | relative_url }}"
                                     alt="{{ item.name }}"
                                     class="position-logo">
                             </div>
-                            <div class="flex-grow-1">
+                            <div class="flex-grow-1 position-body">
                                 <div><a href="{{ item.url }}" target="_blank">{{ item.name }}</a></div>
                                 <div class="small">{{ item.dept }}</div>
-                                <div class="small d-flex">
+                                <div class="small d-flex flex-column flex-sm-row">
                                     <div>{{ item.position }}</div>
-                                    <div class="mt-auto ms-auto no-break"><em>{{ item.date }}</em></div>
+                                    <div class="mt-sm-auto ms-sm-auto no-break"><em>{{ item.date }}</em></div>
                                 </div>
                             </div>
                         </li>
@@ -66,26 +69,28 @@ body_attr: >-
                 </section>
             </div>
         </div>
+        </section>
         {% endif %}
 
         {% if site.data.experience.education %}
-        <h3 id="education">Education</h3>
+        <section id="education">
+        <h3>Education</h3>
         <div class="card border-0 shadow-sm bg-white">
-            <div class="card-body p-4">
+            <div class="card-body p-3 p-sm-4">
                 <section class="resume-section">
                     <ul class="list-unstyled mb-1">
                         {% for item in site.data.experience.education %}
-                        <li class="d-flex align-items-center mb-1">
+                        <li class="d-flex align-items-center mb-3 mb-sm-1">
                             <div class="position-logo-wrapper">
                                 <img src="{{ item.logo | relative_url }}"
                                     alt="{{ item.name }}"
                                     class="position-logo">
                             </div>
-                            <div class="flex-grow-1">
+                            <div class="flex-grow-1 position-body">
                                 <div><a href="{{ item.url }}" target="_blank">{{ item.name }}</a></div>
-                                <div class="small d-flex">
+                                <div class="small d-flex flex-column flex-sm-row">
                                     <div>{{ item.position }}</div>
-                                    <div class="mt-auto ms-auto no-break"><em>{{ item.date }}</em></div>
+                                    <div class="mt-sm-auto ms-sm-auto no-break"><em>{{ item.date }}</em></div>
                                 </div>
                             </div>
                         </li>
@@ -94,19 +99,21 @@ body_attr: >-
                 </section>
             </div>
         </div>
+        </section>
         {% endif %}
 
         {% if site.data.experience.awards %}
-        <h3 id="awards">Honours & Awards</h3>
+        <section id="awards">
+        <h3>Honours & Awards</h3>
         <div class="card border-0 shadow-sm bg-white">
-            <div class="card-body p-4">
+            <div class="card-body p-3 p-sm-4">
                 <section class="resume-section">
                     <ul class="list small pl-3 mb-1">
                         {% for item in site.data.experience.awards %}
-                        <li>
-                            <div class="d-flex">
+                        <li class="mb-2 mb-sm-0">
+                            <div class="d-flex flex-column flex-sm-row">
                                 <div>{{ item.name }}</div>
-                                <div class="ms-auto mt-auto no-break"><em>{{ item.date }}</em></div>
+                                <div class="ms-sm-auto mt-sm-auto no-break"><em>{{ item.date }}</em></div>
                             </div>
                         </li>
                         {% endfor %}
@@ -114,6 +121,7 @@ body_attr: >-
                 </section>
             </div>
         </div>
+        </section>
         {% endif %}
 
     </main>

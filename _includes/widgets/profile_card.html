@@ -29,27 +29,24 @@
         </div>
 
         <div class="card border-0 shadow-sm">
-            <div class="card-body contact">
+            <div class="card-body contact d-flex flex-wrap align-items-center column-gap-3 row-gap-1">
 
-                <strong>Contact me at: </strong>
-                &nbsp;&nbsp;
-                <a class="pr-3 no-break" href="mailto:{{ site.data.profile.email | encode_email }}">
+                <strong>Contact me at:</strong>
+                <a class="no-break" href="mailto:{{ site.data.profile.email | encode_email }}">
                     <i class="fas fa-at"></i> <span class="email-text">{{ site.data.profile.email | replace: "@", "(at)" }}</span>
                 </a>
-                &nbsp;&nbsp;
                 {% if site.data.profile.linkedin %}
-                <a class="pr-3 no-break" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}">
+                <a class="no-break" target="_blank" href="https://www.linkedin.com/in/{{ site.data.profile.linkedin }}">
                     <i class="fab fa-linkedin"></i> LinkedIn
                 </a>
                 {% endif %}
-                &nbsp;&nbsp;
                 {% if site.data.profile.gscholar %}
                 {%- if site.data.profile.gscholar contains 'scholar.google' -%}
                 {%- assign gscholar_url = site.data.profile.gscholar -%}
                 {%- else -%}
                 {%- assign gscholar_url = 'https://scholar.google.com/citations?user=' | append: site.data.profile.gscholar -%}
                 {%- endif -%}
-                <a class="pr-3 no-break" target="_blank" href="{{ gscholar_url }}">
+                <a class="no-break" target="_blank" href="{{ gscholar_url }}">
                     <i class="fab fa-google-scholar"></i> Scholar
                 </a>
                 {% endif %}

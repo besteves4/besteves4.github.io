@@ -1,13 +1,13 @@
 <footer>
     <div class="{% if page.container_class %}{{ page.container_class }}{% else %}container-lg{% endif %}">
         <div class="row my-2">
-            <div class="col-md-6">
+            <div class="col-md-6 mb-2 mb-md-0">
                 <div class="text-muted small">
                     {{ site.data.display.license }}
                 </div>
             </div>
             <div class="col-md-6">
-                <div class="text-right text-muted small" style="text-align: right;">
+                <div class="text-md-end text-muted small">
                     {{ site.data.display.footer_text }} <br>
                     <i>Last updated: {{ "now" | date: "%b %Y" }}</i>
                 </div>
