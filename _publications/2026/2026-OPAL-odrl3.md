@@ -24,7 +24,7 @@ links:
   FORCE ODRL 3.0 proposals: https://w3id.org/force/odrl3proposal
   # Implementation guide: https://w3id.org/dpv/guides/dpv-odrl
   # Examples: https://github.com/besteves4/SDS2026-DPV-ODRL-mapping
-  # Proceedings: https://doi.org/10.3233/SW-243583
+  Proceedings: https://easychair.org/publications/paper/BrFn
   # Repo: hhttps://github.com/w3c-cg/dpv
   Slides: https://docs.google.com/presentation/d/1wI5DOjtxAfR7ZHuI6PcAdKZy1tV_gB2ghSGDRmcX3qY/edit?slide=id.g3d89b224de4_0_0#slide=id.g3d89b224de4_0_0
 ---

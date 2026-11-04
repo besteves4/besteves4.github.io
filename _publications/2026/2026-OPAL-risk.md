@@ -24,7 +24,7 @@ links:
   TOSL spec: https://w3id.org/tosl
   Demo: https://isa-group.github.io/risk-e-tos/
   Notation3 rules: https://github.com/isa-group/risk-e-tos/tree/main/rules
-  # Proceedings: https://ceur-ws.org/Vol-3705/short04.pdf
+  Proceedings: https://easychair.org/publications/paper/Cx5h
   Preprint: /assets/documents/2026/OPAL/risk.pdf
   # Repo: https://github.com/SolidLabResearch/user-managed-access/
   # Slides: https://beatrizesteves.org/sosy2026-privacy/slides/elena.pdf

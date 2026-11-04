@@ -8,9 +8,6 @@
 [] Add Kush's paper when accepted
 [] Sosy risk publication needs a figure + official proceedings link
 [] SDS paper - add official proceedings link + update photo to not show the legenda
-[] OPAL ODRL3 - add official proceedings link
-[] OPAL DGA - add official proceedings link + slides
-[] OPAL risk - add official proceedings link + slides
 [] nxdg@semantics - add official proceedings link + slides
 [] Evolvable trust paper - arxiv needs to be fixed
 
