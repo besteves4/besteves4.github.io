@@ -15,6 +15,11 @@ permalink: /blog/
         For <b>peer-reviewed work</b>, check out my <a href="{{ 'publications' | relative_url }}">publications</a>.
     </div>
     <div class="text-center mt-2">
+        <a href="{{ '/feed.xml' | relative_url }}" title="RSS/Atom feed of this blog">
+            <i class="fa-solid fa-rss fa-sm"></i> Subscribe via RSS
+        </a>
+    </div>
+    <div class="text-center mt-2">
         {% for tag in site.data.display.tags %}
             <a href="{{site.baseurl}}/archive.html#{{tag | slugize}}" style="padding-right: 10px;">
                 <i class="fa-solid fa-hashtag fa-sm"></i>{{ tag }}

@@ -14,6 +14,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://beatrizesteves.org" # base URL, used for the absolute links in the feed
+
+# Feed metadata (used by jekyll-feed)
+title: "Beatriz Esteves"
+description: "Blog posts by Beatriz Esteves, postdoctoral researcher at KNoWS (IDLab, Ghent University - imec)."
+lang: en
+author:
+  name: "Beatriz Esteves"
+  uri: "https://beatrizesteves.org"
 
 # Build settings
 markdown: kramdown
@@ -24,6 +33,7 @@ kramdown:
 plugins:
   - jekyll-email-protect
   - jekyll-archives-v2
+  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

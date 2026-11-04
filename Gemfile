@@ -21,6 +21,7 @@ gem "jekyll", "~> 3.9"
 group :jekyll_plugins do
   gem "jekyll-email-protect"
   gem 'jekyll-archives-v2'
+  gem "jekyll-feed", "~> 0.18"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
