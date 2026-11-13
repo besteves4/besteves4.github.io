@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UK Data Protection Law extensions for DPV (UK GDPR, DPA 2018, PECR)</title>
+<!-- ReSpec is what DPV documentation uses. If it cannot load (offline, sandboxed preview),
+     the inline fallback stylesheet below keeps the page readable. -->
+<script class="remove">
+var respecConfig = {
+  specStatus: "unofficial",
+  shortName: "dpv-legal-gb-proposal",
+  subtitle: "Proposal to the W3C Data Privacy Vocabularies and Controls Community Group (DPVCG)",
+  publishDate: "2026-11-10",
+  editors: [{ name: "Beatriz Esteves", company: "IDLab, IMEC, Ghent University" }],
+  github: "w3c/dpv",
+  noRecTrack: true,
+  localBiblio: {
+    "DPV": { title: "Data Privacy Vocabulary (DPV)", href: "https://w3id.org/dpv", publisher: "W3C DPVCG" },
+    "EU-GDPR": { title: "EU General Data Protection Regulation (GDPR) extension for DPV, version 2.3", href: "https://w3c-cg.github.io/dpv/2.3/legal/eu/gdpr/", publisher: "W3C DPVCG" },
+    "LEGAL-GB": { title: "Legal Concepts for United Kingdom of Great Britain and Northern Ireland, version 2.3", href: "https://w3c-cg.github.io/dpv/2.3/legal/gb/", publisher: "W3C DPVCG" },
+    "LEGAL-EU": { title: "Legal Concepts for European Union (EU), version 2.3", href: "https://w3c-cg.github.io/dpv/2.3/legal/eu/", publisher: "W3C DPVCG" },
+    "UK-GDPR": { title: "UK General Data Protection Regulation (retained Regulation (EU) 2016/679)", href: "https://www.legislation.gov.uk/eur/2016/679/contents", publisher: "legislation.gov.uk" },
+    "DPA-2018": { title: "Data Protection Act 2018", href: "https://www.legislation.gov.uk/ukpga/2018/12/contents", publisher: "legislation.gov.uk" },
+    "ICO-DUAA": { title: "Statement on the commencement of the Data (Use and Access) Act (DUAA)", href: "https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/02/statement-on-the-commencement-of-the-data-use-and-access-act-duaa/", publisher: "Information Commissioner's Office", date: "February 2026" },
+    "DUAA-DATED": { title: "Data (Use and Access) Act 2025: Every Data Protection Change, Dated", href: "https://governancedocs.com/data-use-and-access-act-2025/", publisher: "Governance Docs" },
+    "DUAA-COMMENCEMENT": { title: "Data Use and Access Act 2025 Commencement Changes", href: "https://bratby.law/data-use-and-access-act-2025-commencement/", publisher: "Bratby Law" }
+  }
+};
+</script>
+<script class="remove">
+// Fallback when ReSpec cannot load: resolve [[REF]] citations and list the references.
+function respecFallback(){
+  var run=function(){
+    var bib=respecConfig.localBiblio, used=[];
+    document.querySelectorAll('p, td, div.verify').forEach(function(el){
+      el.innerHTML=el.innerHTML.replace(/\[\[([A-Z0-9-]+)\]\]/g,function(m,k){
+        if(!bib[k]) return m; if(used.indexOf(k)<0) used.push(k);
+        return '[<a href="#bib-'+k+'">'+k+'</a>]';});
+    });
+    var sec=document.createElement('section');
+    sec.innerHTML='<h2>References</h2><ul>'+used.map(function(k){var b=bib[k];
+      return '<li id="bib-'+k+'">['+k+'] <a href="'+b.href+'">'+b.title+'</a>. '+(b.publisher||'')+'.</li>';}).join('')+'</ul>';
+    document.body.appendChild(sec);
+  };
+  if(document.readyState==='loading') document.addEventListener('DOMContentLoaded',run); else run();
+}
+</script>
+<script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer onerror="respecFallback()"></script>
+<style>
+/* Fallback and table styling; ReSpec adds the W3C stylesheet on top when it loads. */
+:root { --fg:#1a1a1a; --bg:#ffffff; --muted:#5a6270; --line:#d5d9e0; --head:#005a9c; --tint:#f3f6fa; --note:#fff8e1; --noteline:#e0b200; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --fg:#e6e8eb; --bg:#15181c; --muted:#a0a8b4; --line:#39404a; --head:#7db8ea; --tint:#1e232a; --note:#2e2a17; --noteline:#b89400; }
+}
+:root[data-theme="dark"] { --fg:#e6e8eb; --bg:#15181c; --muted:#a0a8b4; --line:#39404a; --head:#7db8ea; --tint:#1e232a; --note:#2e2a17; --noteline:#b89400; }
+body { background:var(--bg); color:var(--fg); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; line-height:1.55; max-width:60rem; margin:0 auto; padding:1.5rem 1rem 4rem; }
+h1, h2, h3 { color:var(--head); line-height:1.25; }
+h2 { margin-top:2.4rem; border-bottom:1px solid var(--line); padding-bottom:.25rem; }
+code, pre { font-family: ui-monospace, Menlo, Consolas, monospace; font-size:.9em; }
+pre { background:var(--tint); border:1px solid var(--line); padding:.8rem 1rem; overflow-x:auto; border-radius:4px; }
+.tablewrap { overflow-x:auto; }
+table.simple { border-collapse:collapse; width:100%; margin:1rem 0; font-size:.94em; }
+table.simple th, table.simple td { border:1px solid var(--line); padding:.4rem .6rem; text-align:left; vertical-align:top; }
+table.simple th { background:var(--tint); }
+td.num, th.num { text-align:right; font-variant-numeric: tabular-nums; }
+.verify { background:var(--note); border-left:4px solid var(--noteline); padding:.6rem 1rem; margin:1rem 0; }
+.muted { color:var(--muted); }
+</style>
+</head>
+<body>
+<h1 id="title">UK Data Protection Law extensions for DPV (UK GDPR, DPA 2018, PECR)</h1>
+
+<section id="abstract">
+<h2>Abstract</h2>
+<p>This document proposes extending the Data Privacy Vocabulary [[DPV]] with the data protection law of the United Kingdom. It defines three law-specific vocabularies: <code>gb-gdpr</code> for the UK GDPR as amended by the Data (Use and Access) Act 2025 (DUAA), <code>gb-dpa</code> for a minimal slice of the Data Protection Act 2018, and <code>gb-pecr</code> for the Privacy and Electronic Communications Regulations 2003. It also updates the existing <code>legal-gb</code> vocabulary. The design follows the EU GDPR extension [[EU-GDPR]].</p>
+</section>
+
+<section id="sotd">
+<h2>Status of This Document</h2>
+<p>This is an unofficial proposal for discussion in the DPVCG. It is not a DPVCG deliverable. Concept names, counts and IRIs are provisional.</p>
+<div class="verify"><strong>Legal accuracy.</strong> Legal statements come from the ICO [[ICO-DUAA]] and secondary summaries [[DUAA-DATED]] [[DUAA-COMMENCEMENT]]. They have not yet been checked line by line against legislation.gov.uk. Article sub-paragraph letters, the omission of Art. 77 UK GDPR, the PECR Schedule A1 exceptions and the Information Commission date need confirming before publication.</div>
+</section>
+
+<section id="introduction">
+<h2>Introduction</h2>
+<p>DPV users cannot currently state a UK legal basis, right or transfer mechanism without borrowing <code>eu-gdpr</code> terms, which point at the wrong law. The current <code>legal-gb</code> vocabulary [[LEGAL-GB]] has only three concepts: <code>law-DPA</code>, <code>law-GDPR</code> and the authority <code>DPA-GB</code>.</p>
+<p>Reusing <code>eu-gdpr</code> was a tolerable shortcut while the two texts were near-identical. Since the DUAA's main data protection provisions took effect on 5 February 2026 [[ICO-DUAA]], it gives wrong answers in several places:</p>
+<ul>
+<li><strong>Legal bases.</strong> UK Art. 6(1)(ea), recognised legitimate interests, has no EU counterpart and needs no balancing test.</li>
+<li><strong>Automated decisions.</strong> UK Arts. 22A to 22D replace the Art. 22 prohibition with a permission-plus-safeguards model.</li>
+<li><strong>Transfers.</strong> The UK uses adequacy regulations with a "not materially lower" data protection test, the IDTA and the UK Addendum.</li>
+<li><strong>Complaints.</strong> The right to complain moved to the DPA 2018, with a new right to complain to the controller first.</li>
+<li><strong>Governance.</strong> There is no one-stop-shop, lead authority or EDPB.</li>
+</ul>
+<p>The extension serves organisations operating in both the EU and UK, UK health and research data users, and policy tooling (for example ODRL policies using DPV) that must name the applicable UK provision. It also addresses DPVCG issue 171 on consolidated legal bases and rights per jurisdiction.</p>
+</section>
+
+<section id="scope">
+<h2>Scope</h2>
+<p>The first release covers the UK GDPR as amended by the DUAA, the parts of the DPA 2018 that the UK GDPR cannot be used without, and the core PECR rules. The DUAA is in scope as a source of amendments, not as a vocabulary of its own.</p>
+<div class="tablewrap"><table class="simple">
+<thead><tr><th>Law</th><th>Role in UK data protection</th><th>Treatment</th><th>Phase</th></tr></thead>
+<tbody>
+<tr><td>UK GDPR [[UK-GDPR]]</td><td>General processing regime: principles, legal bases, rights, transfers</td><td>New extension <code>gb-gdpr</code></td><td>1</td></tr>
+<tr><td>Data (Use and Access) Act 2025, Part 5</td><td>Amends the UK GDPR, DPA 2018 and PECR</td><td><code>legal-gb:law-DUAA</code> plus provenance on each concept it added or changed</td><td>1</td></tr>
+<tr><td>Data Protection Act 2018 [[DPA-2018]], Part 2, Schedules 1 to 4, Part 6</td><td>Schedule 1 conditions, exemptions, complaint rights, the regulator</td><td>New extension <code>gb-dpa</code>, minimal slice</td><td>1</td></tr>
+<tr><td>PECR 2003</td><td>Cookies, direct marketing, communications breaches</td><td><code>legal-gb:law-PECR</code> plus new extension <code>gb-pecr</code></td><td>1</td></tr>
+<tr><td>DPA 2018, Parts 3 and 4</td><td>Law enforcement and intelligence services processing</td><td>Extend <code>gb-dpa</code> if there is demand</td><td>2</td></tr>
+<tr><td>DUAA Parts 1 to 4</td><td>Smart data, digital verification services, registers</td><td>Out of scope; not data protection law</td><td>None</td></tr>
+</tbody></table></div>
+<p><strong>Why the DPA 2018 is included.</strong> UK Art. 9(2)(b), (g), (h), (i) and (j) only apply when a DPA 2018 Schedule 1 condition is met. The exemptions from rights live in Schedules 2 to 4. After the DUAA, the right to complain to the controller is DPA 2018 s.164A, and the right to complain to the regulator sits in s.165 because the DUAA omits Art. 77 UK GDPR [[DUAA-COMMENCEMENT]].</p>
+<p><strong>Why the DUAA is not its own extension.</strong> Almost every data protection provision in the DUAA inserts or rewrites an article of the UK GDPR or a section of the DPA 2018. A reader citing "Art. 6(1)(ea) UK GDPR" expects to find it under the UK GDPR.</p>
+<p><strong>Commencement.</strong> Royal Assent was 19 June 2025. Most data protection provisions commenced on 5 February 2026, and the complaints procedure was due on 19 June 2026 [[ICO-DUAA]]. Secondary sources report the Information Commission replaced the ICO on 30 September 2026 [[DUAA-DATED]].</p>
+</section>
+
+<section id="design">
+<h2>Design</h2>
+<p>The UK extension copies the two-layer pattern DPV uses for the EU [[LEGAL-EU]]: a jurisdiction vocabulary that lists laws and authorities, and law-specific vocabularies that hold the concepts of one law. UK concepts are defined independently of <code>eu-gdpr</code> and linked to it by SKOS mapping, never by subclassing, because the UK GDPR is a separate legal instrument.</p>
+
+<section id="namespaces">
+<h3>Namespaces</h3>
+<div class="tablewrap"><table class="simple">
+<thead><tr><th>Vocabulary</th><th>Namespace</th><th>Prefix</th><th>Status</th></tr></thead>
+<tbody>
+<tr><td>UK jurisdiction</td><td><code>https://w3id.org/dpv/legal/gb#</code></td><td><code>legal-gb</code></td><td>Exists, updated</td></tr>
+<tr><td>UK GDPR</td><td><code>https://w3id.org/dpv/legal/gb/gdpr#</code></td><td><code>gb-gdpr</code></td><td>New</td></tr>
+<tr><td>DPA 2018</td><td><code>https://w3id.org/dpv/legal/gb/dpa#</code></td><td><code>gb-dpa</code></td><td>New</td></tr>
+<tr><td>PECR</td><td><code>https://w3id.org/dpv/legal/gb/pecr#</code></td><td><code>gb-pecr</code></td><td>New</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="modelling-rules">
+<h3>Modelling rules</h3>
+<ol>
+<li><strong>IRIs follow the article number</strong>, as in <code>eu-gdpr</code>: <code>gb-gdpr:A6-1-ea</code>, <code>gb-gdpr:A22A</code>, <code>gb-gdpr:A45A</code>. DPA 2018 terms use section and schedule numbers: <code>gb-dpa:S164A</code>, <code>gb-dpa:Sch1-P1-2</code>.</li>
+<li><strong>Parents are DPV core concepts.</strong> For example <code>gb-gdpr:A6-1-a</code> has parent <code>dpv:Consent</code>.</li>
+<li><strong>Links to the EU GDPR use SKOS mapping properties</strong>: <code>skos:exactMatch</code> where the UK text is unchanged, <code>skos:closeMatch</code> where the DUAA altered it, and no mapping for UK-only concepts.</li>
+<li><strong>Every concept carries its legal source</strong> via <code>dct:source</code>. Concepts added or changed by the DUAA also carry the DUAA as source and a <code>dct:temporal</code> start date equal to commencement.</li>
+<li><strong>Replaced provisions are kept.</strong> The old <code>gb-gdpr:A22</code> and <code>gb-gdpr:A77</code> are published with an end date and <code>dct:isReplacedBy</code>, so earlier records remain valid.</li>
+<li><strong>Labels say "UK GDPR"</strong> in full, to avoid confusion when both extensions are loaded.</li>
+</ol>
+</section>
+
+<section id="legal-gb-changes">
+<h3>Changes to <code>legal-gb</code></h3>
+<div class="tablewrap"><table class="simple">
+<thead><tr><th>Concept</th><th>Change</th><th>Reason</th></tr></thead>
+<tbody>
+<tr><td><code>legal-gb:law-GDPR</code></td><td>Relabel to "UK General Data Protection Regulation (UK GDPR)"; review the start date (currently 2019-02-28) against 31 December 2020</td><td>Label is indistinguishable from the EU law; date predates the end of the transition period</td></tr>
+<tr><td><code>legal-gb:law-DPA</code></td><td>Relabel to "Data Protection Act 2018"</td><td>"DPA" also abbreviates the authority</td></tr>
+<tr><td><code>legal-gb:law-DUAA</code></td><td>Add, with Royal Assent 19 June 2025</td><td>Source of the amendments</td></tr>
+<tr><td><code>legal-gb:law-PECR</code></td><td>Add</td><td>Applicable law for <code>gb-pecr</code></td></tr>
+<tr><td><code>legal-gb:DPA-GB</code></td><td>Retype from <code>eu-gdpr:DataProtectionAuthority</code> to <code>dpv:DataProtectionAuthority</code>; update label once the Information Commission date is confirmed</td><td>The ICO is not an EU GDPR supervisory authority</td></tr>
+<tr><td><code>legal-gb:Adequacy-GB-&lt;country&gt;</code></td><td>Add one per UK adequacy regulation, mirroring <code>legal-eu:Adequacy-EU-&lt;country&gt;</code></td><td>Needed for Art. 45A transfers</td></tr>
+</tbody></table></div>
+</section>
+</section>
+
+<section id="concepts">
+<h2>Proposed concepts</h2>
+<p>The first release proposes about 157 concepts in 15 groups. Counts are estimates to size the work.</p>
+<div class="tablewrap"><table class="simple">
+<thead><tr><th>Group</th><th>Vocabulary</th><th class="num">Approx. concepts</th><th class="num">UK-only</th></tr></thead>
+<tbody>
+<tr><td>Art. 6 legal bases</td><td><code>gb-gdpr</code></td><td class="num">7</td><td class="num">1</td></tr>
+<tr><td>Annex 1 recognised legitimate interests</td><td><code>gb-gdpr</code></td><td class="num">5</td><td class="num">5</td></tr>
+<tr><td>Art. 9(2) special category legal bases</td><td><code>gb-gdpr</code></td><td class="num">10</td><td class="num">0</td></tr>
+<tr><td>Schedule 1 conditions</td><td><code>gb-dpa</code></td><td class="num">27</td><td class="num">27</td></tr>
+<tr><td>Transfer legal bases (Arts. 45A to 49A)</td><td><code>gb-gdpr</code></td><td class="num">18</td><td class="num">3</td></tr>
+<tr><td>Transfer tools</td><td><code>gb-gdpr</code></td><td class="num">6</td><td class="num">6</td></tr>
+<tr><td>Principles</td><td><code>gb-gdpr</code></td><td class="num">9</td><td class="num">0</td></tr>
+<tr><td>Rights</td><td><code>gb-gdpr</code>, <code>gb-dpa</code></td><td class="num">18</td><td class="num">7</td></tr>
+<tr><td>Notices</td><td><code>gb-gdpr</code></td><td class="num">4</td><td class="num">0</td></tr>
+<tr><td>Justifications for rights exercise</td><td><code>gb-gdpr</code></td><td class="num">10</td><td class="num">2</td></tr>
+<tr><td>DPIA</td><td><code>gb-gdpr</code></td><td class="num">10</td><td class="num">0</td></tr>
+<tr><td>Data breach</td><td><code>gb-gdpr</code></td><td class="num">8</td><td class="num">0</td></tr>
+<tr><td>Compliance</td><td><code>gb-gdpr</code></td><td class="num">8</td><td class="num">0</td></tr>
+<tr><td>Other DUAA additions</td><td><code>gb-gdpr</code></td><td class="num">5</td><td class="num">5</td></tr>
+<tr><td>PECR rules</td><td><code>gb-pecr</code></td><td class="num">12</td><td class="num">12</td></tr>
+</tbody></table></div>
+
+<section id="legal-bases">
+<h3>Legal bases (Art. 6)</h3>
+<div class="tablewrap"><table class="simple">
+<thead><tr><th>Concept</th><th>Label</th><th>DPV parent</th><th>EU mapping</th></tr></thead>
+<tbody>
+<tr><td><code>gb-gdpr:A6-1-a</code></td><td>Art. 6(1)(a) consent</td><td><code>dpv:Consent</code></td><td>exact <code>eu-gdpr:A6-1-a</code></td></tr>
+<tr><td><code>gb-gdpr:A6-1-b</code></td><td>Art. 6(1)(b) contract</td><td><code>dpv:Contract</code></td><td>exact <code>eu-gdpr:A6-1-b</code></td></tr>
+<tr><td><code>gb-gdpr:A6-1-c</code></td><td>Art. 6(1)(c) legal obligation</td><td><code>dpv:LegalObligation</code></td><td>exact <code>eu-gdpr:A6-1-c</code></td></tr>
+<tr><td><code>gb-gdpr:A6-1-d</code></td><td>Art. 6(1)(d) vital interests</td><td><code>dpv:VitalInterest</code></td><td>exact <code>eu-gdpr:A6-1-d</code></td></tr>
+<tr><td><code>gb-gdpr:A6-1-e</code></td><td>Art. 6(1)(e) public task</td><td><code>dpv:PublicInterest</code></td><td>exact <code>eu-gdpr:A6-1-e</code></td></tr>
+<tr><td><code>gb-gdpr:A6-1-ea</code></td><td>Art. 6(1)(ea) recognised legitimate interests</td><td><code>dpv:LegalBasis</code> (see open issues)</td><td>none</td></tr>
+<tr><td><code>gb-gdpr:A6-1-f</code></td><td>Art. 6(1)(f) legitimate interests</td><td><code>dpv:LegitimateInterest</code></td><td>close <code>eu-gdpr:A6-1-f</code></td></tr>
+</tbody></table></div>
+<p>Art. 6(1)(f) is a close match only, because the DUAA added statutory examples of legitimate interests (direct marketing, intra-group transmission, network security) to the article.</p>
+</section>
+
+<section id="annex1">
+<h3>Recognised legitimate interests (Annex 1)</h3>
+<p>Each Annex 1 condition is a sub-concept of <code>gb-gdpr:A6-1-ea</code>, so a record can state which condition it relies on.</p>
+<div class="tablewrap"><table class="simple">
+<thead><tr><th>Concept</th><th>Annex 1 condition</th></tr></thead>
+<tbody>
+<tr><td><code>gb-gdpr:Annex1-PublicTaskDisclosure</code></td><td>Disclosure to a body that requests the data for its public task</td></tr>
+<tr><td><code>gb-gdpr:Annex1-NationalSecurity</code></td><td>National security, public security and defence</td></tr>
+<tr><td><code>gb-gdpr:Annex1-Emergencies</code></td><td>Responding to emergencies</td></tr>
+<tr><td><code>gb-gdpr:Annex1-Crime</code></td><td>Detecting, investigating or preventing crime</td></tr>
+<tr><td><code>gb-gdpr:Annex1-Safeguarding</code></td><td>Safeguarding vulnerable individuals</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="special-category">
+<h3>Special category data (Art. 9 and DPA 2018 Schedule 1)</h3>
+<p><code>gb-gdpr:A9-2-a</code> to <code>gb-gdpr:A9-2-j</code> mirror the EU letters. The Schedule 1 conditions are separate <code>gb-dpa</code> legal bases, each with a <code>skos:broader</code> link to the Art. 9(2) letter it implements.</p>
+<div class="tablewrap"><table class="simple">
+<thead><tr><th>Concept range</th><th>Schedule 1 part</th><th>Content</th><th>Implements</th></tr></thead>
+<tbody>
+<tr><td><code>gb-dpa:Sch1-P1-1</code> to <code>-4</code></td><td>Part 1</td><td>Employment and social protection; health or social care; public health; research</td><td>Art. 9(2)(b), (h), (i), (j)</td></tr>
+<tr><td><code>gb-dpa:Sch1-P2-6</code> to <code>-28</code></td><td>Part 2</td><td>23 substantial public interest conditions, for example statutory purposes, preventing fraud, safeguarding, insurance</td><td>Art. 9(2)(g)</td></tr>
+<tr><td><code>gb-dpa:Sch1-P3</code></td><td>Part 3</td><td>Additional conditions for criminal offence data</td><td>Art. 10</td></tr>
+<tr><td><code>gb-dpa:AppropriatePolicyDocument</code></td><td>Part 4</td><td>The policy document most conditions require; a <code>dpv:Policy</code></td><td>Safeguard</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="rights">
+<h3>Rights</h3>
+<div class="tablewrap"><table class="simple">
+<thead><tr><th>Concept</th><th>Right</th><th>Compared with EU</th></tr></thead>
+<tbody>
+<tr><td><code>gb-gdpr:A13</code>, <code>A14</code></td><td>Information when data is collected directly or indirectly</td><td>Exact, with a new research exemption</td></tr>
+<tr><td><code>gb-gdpr:A15</code></td><td>Access</td><td>Close; limited to a reasonable and proportionate search by Art. 15(1A)</td></tr>
+<tr><td><code>gb-gdpr:A16</code> to <code>A21</code></td><td>Rectification, erasure, restriction, notification, portability, objection</td><td>Exact</td></tr>
+<tr><td><code>gb-gdpr:A22C-Information</code></td><td>To be told about a significant automated decision</td><td>UK-only</td></tr>
+<tr><td><code>gb-gdpr:A22C-Representations</code></td><td>To make representations about it</td><td>UK-only</td></tr>
+<tr><td><code>gb-gdpr:A22C-HumanIntervention</code></td><td>To obtain human intervention</td><td>Close <code>eu-gdpr:A22</code></td></tr>
+<tr><td><code>gb-gdpr:A22C-Contest</code></td><td>To contest the decision</td><td>Close <code>eu-gdpr:A22</code></td></tr>
+<tr><td><code>gb-gdpr:A7-3</code></td><td>Withdraw consent</td><td>Exact</td></tr>
+<tr><td><code>gb-dpa:S164A</code></td><td>Complain to the controller</td><td>UK-only</td></tr>
+<tr><td><code>gb-dpa:S165</code></td><td>Complain to the Commissioner</td><td>Close <code>eu-gdpr:A77</code></td></tr>
+<tr><td><code>gb-gdpr:A78</code>, <code>A79</code></td><td>Judicial remedy against the Commissioner or a controller</td><td>Exact</td></tr>
+</tbody></table></div>
+<p><code>gb-gdpr:A22B</code> (restriction on significant automated decisions using special category data) is modelled as a rule concept, not a right. Rights impacts (seven sub-types per right in <code>eu-gdpr</code>) are deferred to a second phase.</p>
+</section>
+
+<section id="transfers">
+<h3>International transfers</h3>
+<div class="tablewrap"><table class="simple">
+<thead><tr><th>Concept</th><th>Meaning</th><th>DPV parent</th></tr></thead>
+<tbody>
+<tr><td><code>gb-gdpr:A45A</code></td><td>Transfer approved by adequacy regulations</td><td><code>dpv:DataTransferLegalBasis</code></td></tr>
+<tr><td><code>gb-gdpr:A46</code> and sub-paragraphs</td><td>Transfer subject to appropriate safeguards</td><td><code>dpv:DataTransferLegalBasis</code></td></tr>
+<tr><td><code>gb-gdpr:A49-1-a</code> to <code>-g</code></td><td>Derogations for specific situations</td><td><code>dpv:DataTransferLegalBasis</code></td></tr>
+<tr><td><code>gb-gdpr:A49A</code></td><td>Regulations restricting transfers for public interest reasons</td><td>Rule concept</td></tr>
+<tr><td><code>gb-gdpr:DataProtectionTest</code></td><td>The "not materially lower" test of Arts. 45B and 46</td><td><code>dpv:Assessment</code></td></tr>
+<tr><td><code>gb-gdpr:AdequacyRegulations</code></td><td>UK adequacy instrument</td><td>Tool</td></tr>
+<tr><td><code>gb-gdpr:IDTA</code></td><td>International Data Transfer Agreement</td><td>Tool</td></tr>
+<tr><td><code>gb-gdpr:UKAddendum</code></td><td>UK Addendum to the EU Commission SCCs</td><td>Tool</td></tr>
+<tr><td><code>gb-gdpr:UKBindingCorporateRules</code></td><td>UK BCRs approved by the Commissioner</td><td>Tool</td></tr>
+<tr><td><code>gb-gdpr:TransferRiskAssessment</code></td><td>Controller's assessment for a safeguarded transfer</td><td><code>dpv:Assessment</code></td></tr>
+</tbody></table></div>
+</section>
+
+<section id="duaa-other">
+<h3>Other DUAA additions</h3>
+<div class="tablewrap"><table class="simple">
+<thead><tr><th>Concept</th><th>Provision</th><th>Purpose</th></tr></thead>
+<tbody>
+<tr><td><code>gb-gdpr:A8A-CompatiblePurpose</code></td><td>Art. 8A and Annex 2</td><td>Purposes treated as compatible with the original purpose</td></tr>
+<tr><td><code>gb-gdpr:A12A-ApplicableTimePeriod</code></td><td>Art. 12A</td><td>Response period for requests, with extension and pause</td></tr>
+<tr><td><code>gb-gdpr:ChildrensHigherProtectionMatters</code></td><td>Art. 25(1A)</td><td>Design duty for services likely to be accessed by children</td></tr>
+<tr><td><code>gb-gdpr:ScientificResearch</code></td><td>DUAA s.67</td><td>Statutory meaning of scientific research</td></tr>
+<tr><td><code>gb-gdpr:ResearchAreaConsent</code></td><td>DUAA s.68</td><td>Consent to an area of scientific research; a <code>dpv:Consent</code> type</td></tr>
+</tbody></table></div>
+<p>Principles, notices, DPIA, data breach and compliance concepts are direct counterparts of the <code>eu-gdpr</code> ones. They will be generated from the <code>eu-gdpr</code> spreadsheet with labels and sources replaced.</p>
+</section>
+
+<section id="pecr">
+<h3>PECR</h3>
+<p><code>gb-pecr</code> covers the three PECR areas the DUAA changed. There is no DPV extension for the ePrivacy Directive, so these concepts carry no EU mapping.</p>
+<div class="tablewrap"><table class="simple">
+<thead><tr><th>Concept</th><th>Regulation</th><th>Meaning</th><th>DPV parent</th></tr></thead>
+<tbody>
+<tr><td><code>gb-pecr:R6-Consent</code></td><td>Reg. 6</td><td>Consent to store or access information on a device</td><td><code>dpv:Consent</code></td></tr>
+<tr><td><code>gb-pecr:SchA1-StrictlyNecessary</code></td><td>Reg. 6, Sch. A1</td><td>Exception: strictly necessary for the requested service</td><td><code>dpv:LegalBasis</code></td></tr>
+<tr><td><code>gb-pecr:SchA1-Statistical</code></td><td>Reg. 6, Sch. A1</td><td>Exception: statistics to improve the service, with an objection route</td><td><code>dpv:LegalBasis</code></td></tr>
+<tr><td><code>gb-pecr:SchA1-AppearanceFunction</code></td><td>Reg. 6, Sch. A1</td><td>Exception: adapting appearance or functionality to user preferences</td><td><code>dpv:LegalBasis</code></td></tr>
+<tr><td><code>gb-pecr:SchA1-Emergency</code></td><td>Reg. 6, Sch. A1</td><td>Exception: emergency assistance</td><td><code>dpv:LegalBasis</code></td></tr>
+<tr><td><code>gb-pecr:R6-Objection</code></td><td>Reg. 6, Sch. A1</td><td>Right to object to storage or access under an exception</td><td><code>dpv:DataSubjectRight</code></td></tr>
+<tr><td><code>gb-pecr:R5A-BreachNotice</code></td><td>Reg. 5A</td><td>Communications breach notification to the Commissioner</td><td><code>dpv:DataBreachNotice</code></td></tr>
+<tr><td><code>gb-pecr:R19</code> to <code>R21</code></td><td>Regs. 19 to 21</td><td>Rules for automated calls, fax and live marketing calls</td><td>Rule concepts</td></tr>
+<tr><td><code>gb-pecr:R22-Consent</code></td><td>Reg. 22</td><td>Consent to electronic mail marketing</td><td><code>dpv:Consent</code></td></tr>
+<tr><td><code>gb-pecr:R22-SoftOptIn</code></td><td>Reg. 22(3)</td><td>Soft opt-in for existing customers, extended to charities by the DUAA</td><td><code>dpv:LegalBasis</code></td></tr>
+</tbody></table></div>
+</section>
+</section>
+
+<section id="mapping">
+<h2>Mapping to the EU GDPR extension</h2>
+<p>The extension ships a machine-readable alignment between <code>gb-gdpr</code>/<code>gb-dpa</code> and <code>eu-gdpr</code>, in a separate file, so loading <code>gb-gdpr</code> does not import <code>eu-gdpr</code>. The table covers <code>eu-gdpr</code> concepts with no UK counterpart or a changed one.</p>
+<div class="tablewrap"><table class="simple">
+<thead><tr><th><code>eu-gdpr</code> concept</th><th>UK position</th><th>Mapping</th></tr></thead>
+<tbody>
+<tr><td><code>A22</code></td><td>Replaced by Arts. 22A to 22D; a general prohibition remains only for special category data</td><td>Close match to <code>gb-gdpr:A22C-*</code>, with a <code>skos:scopeNote</code></td></tr>
+<tr><td><code>A77</code></td><td>Omitted by the DUAA; now DPA 2018 s.165, preceded by s.164A</td><td>Close match to <code>gb-dpa:S165</code></td></tr>
+<tr><td><code>A45-3</code>, <code>AdequacyDecision</code></td><td>Adequacy regulations under Art. 45A with a different test</td><td>Close match to <code>gb-gdpr:A45A</code></td></tr>
+<tr><td><code>SCCByCommission</code>, <code>SCCBySupervisoryAuthority</code></td><td>Not valid alone; usable with the UK Addendum</td><td>Related match to <code>gb-gdpr:UKAddendum</code></td></tr>
+<tr><td><code>BindingCorporateRules</code></td><td>UK BCRs need separate approval by the Commissioner</td><td>Close match</td></tr>
+<tr><td><code>MainEstablishment</code>, <code>LeadSupervisoryAuthority</code>, <code>ConcernedSupervisoryAuthority</code>, <code>LocalSupervisoryAuthority</code></td><td>No one-stop-shop in the UK</td><td>No mapping</td></tr>
+<tr><td><code>A6-1-f</code></td><td>Same test, with statutory examples added</td><td>Close match</td></tr>
+<tr><td><code>DPIAOutcomeDPAConsultation</code></td><td>Prior consultation is with the Commissioner</td><td>Exact match, different authority</td></tr>
+</tbody></table></div>
+</section>
+
+<section id="examples">
+<h2>Examples</h2>
+<p>The snippets parse together as valid Turtle with these prefixes. Proposed terms are illustrative until the concept list is agreed.</p>
+<pre class="nohighlight">@prefix dpv: &lt;https://w3id.org/dpv#&gt; .
+@prefix legal-gb: &lt;https://w3id.org/dpv/legal/gb#&gt; .
+@prefix gb-gdpr: &lt;https://w3id.org/dpv/legal/gb/gdpr#&gt; .
+@prefix gb-dpa: &lt;https://w3id.org/dpv/legal/gb/dpa#&gt; .
+@prefix eu-gdpr: &lt;https://w3id.org/dpv/legal/eu/gdpr#&gt; .
+@prefix loc: &lt;https://w3id.org/dpv/loc#&gt; .
+@prefix pd: &lt;https://w3id.org/dpv/pd#&gt; .
+@prefix skos: &lt;http://www.w3.org/2004/02/skos/core#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix dct: &lt;http://purl.org/dc/terms/&gt; .
+@prefix time: &lt;http://www.w3.org/2006/time#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+@prefix ex: &lt;https://example.com/&gt; .</pre>
+
+<section id="ex-definition">
+<h3>Defining a UK-only legal basis</h3>
+<pre class="example" title="Recognised legitimate interests with DUAA provenance">gb-gdpr:A6-1-ea a rdfs:Class, skos:Concept, dpv:LegalBasis ;
+    skos:prefLabel "Art 6(1-ea) recognised legitimate interests (UK GDPR)"@en ;
+    skos:definition "Processing is necessary for the purposes of a recognised legitimate interest, meaning one that meets a condition in Annex 1 of the UK GDPR"@en ;
+    skos:broader dpv:LegalBasis ;
+    dpv:hasApplicableLaw legal-gb:law-GDPR ;
+    dct:source &lt;https://www.legislation.gov.uk/eur/2016/679/article/6&gt; , legal-gb:law-DUAA ;
+    dct:temporal [ a time:ProperInterval ;
+        time:hasBeginning [ time:inXSDDate "2026-02-05"^^xsd:date ] ] .
+
+gb-gdpr:Annex1-Safeguarding a rdfs:Class, skos:Concept, dpv:LegalBasis ;
+    skos:prefLabel "Annex 1 safeguarding vulnerable individuals (UK GDPR)"@en ;
+    skos:broader gb-gdpr:A6-1-ea .</pre>
+</section>
+
+<section id="ex-health">
+<h3>A healthcare use case: safeguarding referral</h3>
+<p>A hospital discloses a health record to a local authority. The record names the Art. 6 basis, the Art. 9 basis and the Schedule 1 condition that makes the Art. 9 basis available.</p>
+<pre class="example" title="Safeguarding referral">ex:SafeguardingReferral a dpv:Process ;
+    dpv:hasDataController ex:HospitalTrust ;
+    dpv:hasPurpose dpv:PublicBenefit ;
+    dpv:hasProcessing dpv:Disclose ;
+    dpv:hasPersonalData pd:HealthRecord ;
+    dpv:hasRecipient ex:LocalAuthority ;
+    dpv:hasJurisdiction loc:GB ;
+    dpv:hasApplicableLaw legal-gb:law-GDPR , legal-gb:law-DPA ;
+    dpv:hasLegalBasis gb-gdpr:Annex1-Safeguarding ,
+        gb-gdpr:A9-2-g , gb-dpa:Sch1-P2-18 .</pre>
+</section>
+
+<section id="ex-transfer">
+<h3>A transfer using the IDTA</h3>
+<pre class="example" title="Third-country transfer">ex:AnalyticsTransfer a dpv:Process ;
+    dpv:hasDataExporter ex:UKClinic ;
+    dpv:hasDataImporter ex:CloudProvider ;
+    dpv:hasProcessing dpv:Transfer ;
+    dpv:hasApplicableLaw legal-gb:law-GDPR ;
+    dpv:hasLegalBasis gb-gdpr:A46-2-d ;
+    dpv:hasTechnicalOrganisationalMeasure gb-gdpr:IDTA ,
+        ex:TRA-2026-014 .
+
+ex:TRA-2026-014 a gb-gdpr:TransferRiskAssessment ;
+    dpv:hasStatus dpv:AuditApproved .</pre>
+</section>
+
+<section id="ex-alignment">
+<h3>Alignment with the EU extension</h3>
+<pre class="example" title="SKOS alignment">gb-gdpr:A6-1-a skos:exactMatch eu-gdpr:A6-1-a .
+gb-gdpr:A6-1-f skos:closeMatch eu-gdpr:A6-1-f .
+gb-dpa:S165 skos:closeMatch eu-gdpr:A77 .</pre>
+</section>
+</section>
+
+<section id="work-plan">
+<h2>Work plan</h2>
+<ol>
+<li>Open a DPVCG GitHub issue with this proposal and link it to issue 171.</li>
+<li>Fix <code>legal-gb</code> (labels, dates, authority type, new laws).</li>
+<li>Draft the <code>gb-gdpr</code> concept spreadsheet by copying the <code>eu-gdpr</code> one, replacing labels and sources and marking each row exact, close or UK-only.</li>
+<li>Add the UK-only concepts: Art. 6(1)(ea) and Annex 1, Arts. 22A to 22D, transfers, the <code>gb-dpa</code> Schedule 1 and complaint concepts, and the <code>gb-pecr</code> concepts.</li>
+<li>Generate RDF and HTML with the DPV scripts, write the alignment file, and add the examples to the DPV examples set.</li>
+<li>Legal review of definitions against the consolidated legislation.gov.uk text, ideally by a UK practitioner, before the extension enters a DPV release.</li>
+</ol>
+</section>
+
+<section id="open-issues">
+<h2>Open issues for the DPVCG</h2>
+<ul>
+<li>Should DPV core gain a parent for "legitimate interest recognised by law", so <code>gb-gdpr:A6-1-ea</code> does not sit directly under <code>dpv:LegalBasis</code>? It is not <code>dpv:LegitimateInterest</code>, because no balancing test applies.</li>
+<li>Keep <code>gb-dpa</code> separate, or fold the Schedule 1 conditions and complaint rights into <code>gb-gdpr</code>?</li>
+<li>Should superseded provisions (pre-DUAA Art. 22 and Art. 77) be published as deprecated concepts with end dates, or left out?</li>
+<li>Is the alignment with <code>eu-gdpr</code> published inside the extension or as a separate mapping file?</li>
+<li>Should rights impacts be generated for the UK now or deferred?</li>
+<li>How should the regulator be modelled across the ICO to Information Commission change: one concept relabelled, or two with dates?</li>
+</ul>
+</section>
+
+</body>
+</html>
