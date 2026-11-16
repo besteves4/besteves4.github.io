@@ -59,3 +59,18 @@
 .highlight .vg { color: #bb60d5 } /* Name.Variable.Global */
 .highlight .vi { color: #bb60d5 } /* Name.Variable.Instance */
 .highlight .il { color: #40a070 } /* Literal.Number.Integer.Long */
+
+/* Turtle / TriG: colours per kind of term. Inside turtle blocks these replace the generic colours
+   above, whether the block is written with the Liquid highlight tag or as a fenced code block. */
+.highlight .language-turtle .kd, .language-turtle .highlight .kd { color: #8250df; font-weight: bold } /* Keyword.Declaration: @prefix, @base */
+.highlight .language-turtle .nn, .language-turtle .highlight .nn { color: #e8751a; font-weight: normal } /* Name.Namespace: prefix of a name, e.g. odrl: */
+.highlight .language-turtle .n, .language-turtle .highlight .n { color: #1f2328 } /* Name: local name, e.g. Agreement */
+.highlight .language-turtle .nl, .language-turtle .highlight .nl { color: #1a7f37; font-weight: normal } /* Name.Label: full IRI, e.g. <https://ex.org/> */
+.highlight .language-turtle .k, .language-turtle .highlight .k { color: #c51350; font-weight: bold } /* Keyword: a (rdf:type), GRAPH */
+.highlight .language-turtle .kc, .language-turtle .highlight .kc { color: #c51350; font-weight: bold } /* Keyword.Constant: true, false */
+.highlight .language-turtle .s, .language-turtle .highlight .s { color: #a04b00 } /* Literal.String: string literal */
+.highlight .language-turtle .na, .language-turtle .highlight .na { color: #8250df } /* Name.Attribute: language tag, e.g. @en */
+.highlight .language-turtle .mi, .language-turtle .highlight .mi { color: #0550ae } /* Literal.Number.Integer */
+.highlight .language-turtle .mf, .language-turtle .highlight .mf { color: #0550ae } /* Literal.Number.Float: decimal, double */
+.highlight .language-turtle .c1, .language-turtle .highlight .c1 { color: #6a737d; font-style: italic } /* Comment.Single */
+.highlight .language-turtle .p, .language-turtle .highlight .p { color: #6e7781 } /* Punctuation: . ; , [ ] ( ) ^^ */
