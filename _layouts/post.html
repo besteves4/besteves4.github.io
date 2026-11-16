@@ -1,17 +1,65 @@
 ---
 layout: default
 ---
+{%- comment -%}
+  Blog post template: article on the left, sidebar with related material on the right.
+  Optional front matter used by the sidebar (see _includes/widgets/post_sidebar.html):
+    related_publications, related_posts, related_links
+{%- endcomment -%}
+{%- assign words = content | strip_html | number_of_words -%}
+{%- assign reading_time = words | divided_by: 200 | at_least: 1 -%}
+{%- comment -%}
+  The summary under the title is the "excerpt" of the front matter. Without one, Jekyll uses
+  the first paragraph of the post as excerpt, which would then be shown twice: skip it.
+{%- endcomment -%}
+{%- assign lead = page.excerpt | strip_html | strip -%}
+{%- assign body_start = content | strip_html | strip | slice: 0, lead.size -%}
+{%- if body_start == lead -%}{%- assign lead = "" -%}{%- endif -%}
 
-<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-<i style="padding-right: 10px;">Published on <b>{{ page.date | date: "%B %d, %Y" }}</b></i>
-{% for tag in page.tags %}
-<a href="{{site.baseurl}}/archive.html#{{tag | slugize}}" class="text-nowrap" style="padding-right: 10px;">
-    <i class="fa-solid fa-hashtag fa-sm"></i>{{ tag }}
-</a>
-{% endfor %}
-<hr>
-{{ page.excerpt }}
-<hr>
-<div class="post-content">
+<div class="post-layout">
+    <article class="post-main">
+        <header class="post-header">
+            <a class="post-back" href="{{ '/blog/' | relative_url }}"><i class="fa-solid fa-arrow-left fa-sm"></i> Blog</a>
+            <h1 class="post-title">{{ page.title }}</h1>
+            <p class="post-meta">
+                <span class="text-nowrap"><i class="fa-regular fa-calendar fa-sm"></i>
+                    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time></span>
+                <span class="post-meta-sep" aria-hidden="true">&middot;</span>
+                <span class="text-nowrap"><i class="fa-regular fa-clock fa-sm"></i> {{ reading_time }} min read</span>
+            </p>
+            {% if page.tags.size > 0 %}
+            <p class="post-tags">
+                {% for tag in page.tags %}
+                <a href="{{site.baseurl}}/archive.html#{{tag | slugize}}" class="post-tag"><i class="fa-solid fa-hashtag fa-xs"></i>{{ tag }}</a>
+                {% endfor %}
+            </p>
+            {% endif %}
+            {% if lead != "" %}
+            <div class="post-lead">{{ page.excerpt }}</div>
+            {% endif %}
+        </header>
+
+        <div class="post-content">
 {{ content }}
+        </div>
+
+        {% if page.previous or page.next %}
+        <nav class="post-nav" aria-label="More posts">
+            {% if page.previous %}
+            <a class="post-nav-link" href="{{ page.previous.url | relative_url }}">
+                <span class="post-nav-label"><i class="fa-solid fa-arrow-left fa-sm"></i> Older post</span>
+                <span class="post-nav-title">{{ page.previous.title }}</span>
+            </a>
+            {% else %}<span></span>{% endif %}
+            {% if page.next %}
+            <a class="post-nav-link post-nav-next" href="{{ page.next.url | relative_url }}">
+                <span class="post-nav-label">Newer post <i class="fa-solid fa-arrow-right fa-sm"></i></span>
+                <span class="post-nav-title">{{ page.next.title }}</span>
+            </a>
+            {% endif %}
+        </nav>
+        {% endif %}
+    </article>
+
+    {% include widgets/post_sidebar.html %}
 </div>

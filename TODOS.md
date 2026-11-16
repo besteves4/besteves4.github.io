@@ -10,6 +10,7 @@
 [] SDS paper - add official proceedings link + update photo to not show the legenda
 [] nxdg@semantics - add official proceedings link + slides
 [] Evolvable trust paper - arxiv needs to be fixed
+[] add semantics journal
 
 ## Talks
 [] Add 2025 PrivaCI symposium panel

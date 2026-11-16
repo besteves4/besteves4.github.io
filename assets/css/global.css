@@ -7,7 +7,8 @@
     --avatar-size: 100px;
     --navbar-color: #e8751a;
     --hero-color: rgb(197, 19, 80);
-    --navbar-color-soft: #FAEDD3;
+    --navbar-color-soft: #fcf3e3;
+    --post-sidebar-bg: #fcf3e3;   /* background colour of the sidebar (a lighter --navbar-color-soft) */
     /* Height of the part of the header that stays pinned while scrolling */
     --header-offset: calc(var(--navbar-height) + var(--hero-height));
 }
@@ -665,5 +666,465 @@ a:hover {
 
     .position-logo {
         max-height: 32px;
+    }
+}
+
+/* =========================================================
+   Blog post (_layouts/post.html)
+   >= 992px  article on the left, sidebar with related material
+             on the right, separated by a vertical bar
+   <  992px  the sidebar moves below the article
+   ========================================================= */
+
+.post-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 320px;
+    gap: 3rem;
+    max-width: 1120px;
+    margin-inline: auto;
+    padding: 1rem 0 0;
+    margin-bottom: 2rem;
+}
+
+.post-main {
+    min-width: 0;
+    padding-bottom: 2rem;
+}
+
+/* --- Header: back link, title, date, tags and summary --- */
+.post-back {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-family: Georgia, "Lato", sans-serif;
+    font-size: .8rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+
+.post-title {
+    margin: 0 0 1rem;
+    font-size: clamp(1.9rem, 1.2rem + 2.6vw, 2.75rem);
+    font-weight: 700;
+    line-height: 1.15;
+    color: #1f2328;
+    text-wrap: balance;
+}
+
+.post-meta {
+    margin-bottom: .75rem;
+    font-family: Georgia, "Lato", sans-serif;
+    font-size: .95rem;
+    color: #6c757d;
+}
+
+.post-meta-sep {
+    margin: 0 .4rem;
+}
+
+.post-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    margin-bottom: 1.5rem;
+}
+
+.post-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: .2rem;
+    padding: .2rem .75rem;
+    border: 1px solid rgba(197, 19, 80, .3);
+    border-radius: 50rem;
+    background-color: #fff;
+    font-family: Georgia, "Lato", sans-serif;
+    font-size: .85rem;
+    white-space: nowrap;
+    transition: background-color .2s, color .2s, border-color .2s;
+}
+
+.post-tag:hover {
+    background-color: var(--hero-color);
+    border-color: var(--hero-color);
+    color: #fff;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.post-lead {
+    padding: .25rem 0 .25rem 1.25rem;
+    border-left: 4px solid var(--hero-color);
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 1.6;
+    color: #495057;
+}
+
+.post-header {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+/* --- Article text --- */
+.post-content {
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    color: #2b2f33;
+    overflow-wrap: break-word;
+}
+
+.post-content h2,
+.post-content h3 {
+    margin: 2.75rem 0 1rem;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    color: var(--hero-color);
+}
+
+.post-content h4 {
+    margin: 2.25rem 0 .75rem;
+    font-size: 1.25rem;
+    line-height: 1.3;
+    color: #1f2328;
+}
+
+.post-content h5,
+.post-content h6 {
+    margin: 1.75rem 0 .5rem;
+    font-size: 1.0625rem;
+}
+
+.post-content p,
+.post-content ul,
+.post-content ol {
+    margin-bottom: 1.15rem;
+}
+
+.post-content li + li {
+    margin-top: .3rem;
+}
+
+.post-content li::marker {
+    color: var(--hero-color);
+}
+
+.post-content a {
+    text-decoration: underline;
+    text-decoration-color: rgba(197, 19, 80, .3);
+    text-decoration-thickness: 1px;
+    text-underline-offset: .2em;
+}
+
+.post-content a:hover {
+    text-decoration-color: currentColor;
+}
+
+.post-content blockquote {
+    margin: 1.75rem 0;
+    padding: .25rem 0 .25rem 1.25rem;
+    border-left: 4px solid var(--navbar-color);
+    font-style: italic;
+    color: #495057;
+}
+
+.post-content blockquote > :last-child {
+    margin-bottom: 0;
+}
+
+.post-content hr {
+    margin: 2.5rem 0;
+}
+
+.post-content figure {
+    margin: 2rem 0;
+}
+
+.post-content figcaption {
+    margin-top: .25rem;
+    font-size: .9rem;
+    color: #6c757d;
+}
+
+.post-content .post-figure {
+    width: min(100%, 34rem);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
+}
+
+.post-content table {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    font-size: .95rem;
+}
+
+.post-content th,
+.post-content td {
+    padding: .5rem .75rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+/* Code: long lines scroll inside the block instead of running off the page */
+.post-content pre {
+    margin: 0 0 1.5rem;
+    padding: 1rem 1.25rem;
+    overflow-x: auto;
+    border: 1px solid rgba(0, 0, 0, .08);
+    border-left: 4px solid var(--navbar-color);
+    border-radius: 10px;
+    background-color: #fff;
+    font-size: .85rem;
+    line-height: 1.6;
+}
+
+.post-content figure.highlight {
+    margin: 1.5rem 0;
+}
+
+.post-content figure.highlight pre {
+    margin-bottom: 0;
+}
+
+.post-content :not(pre) > code {
+    padding: .1em .4em;
+    border-radius: 6px;
+    background-color: var(--navbar-color-soft);
+    color: #8a3d00;
+    font-size: .875em;
+}
+
+/* --- Older / newer post links at the end of the article --- */
+.post-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.post-nav-link {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    padding: 1rem 1.25rem;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+    transition: transform .2s, box-shadow .2s;
+}
+
+.post-nav-link:hover {
+    opacity: 1;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+.post-nav-next {
+    grid-column: 2;
+    text-align: right;
+}
+
+.post-nav-label {
+    font-family: Georgia, "Lato", sans-serif;
+    font-size: .75rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: #6c757d;
+}
+
+.post-nav-title {
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+/* --- Sidebar --- */
+.post-sidebar {
+    position: relative;
+    align-self: stretch;        /* the panel runs down to the end of the article */
+    padding: 1.5rem 1.5rem 1.75rem 1.75rem;
+    border-radius: 0 14px 14px 0;
+    background-color: var(--post-sidebar-bg);
+}
+
+/* the vertical bar on the left edge of the sidebar */
+.post-sidebar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 3px;
+    border-radius: 3px;
+    background: linear-gradient(to bottom, var(--navbar-color), var(--hero-color));
+}
+
+.post-sidebar-section + .post-sidebar-section {
+    margin-top: 2.25rem;
+}
+
+.post-sidebar-heading {
+    margin: 0 0 1rem;
+    font-family: Georgia, "Lato", sans-serif;
+    font-size: .8rem;
+    font-weight: 900;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--hero-color);
+}
+
+.post-sidebar-list,
+.post-sidebar-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.post-sidebar-item {
+    display: flex;
+    align-items: flex-start;
+    gap: .85rem;
+}
+
+.post-sidebar-item + .post-sidebar-item,
+.post-sidebar-links li + li {
+    margin-top: 1.1rem;
+}
+
+.post-sidebar-thumb {
+    flex: 0 0 56px;
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    object-fit: cover;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .08);
+}
+
+/* publication covers are logos and diagrams: show them whole */
+.post-sidebar-thumb-pub {
+    padding: 4px;
+    object-fit: contain;
+}
+
+.post-sidebar-thumb-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    color: var(--navbar-color);
+    font-size: 1.25rem;
+}
+
+.post-sidebar-item-body {
+    min-width: 0;
+}
+
+.post-sidebar-item-title,
+.post-sidebar-links a {
+    display: block;
+    font-size: .95rem;
+    font-weight: 600;
+    line-height: 1.35;
+    color: #1f2328;
+}
+
+.post-sidebar-item-title:hover,
+.post-sidebar-links a:hover {
+    color: var(--hero-color);
+    opacity: 1;
+}
+
+.post-sidebar-item-meta {
+    display: block;
+    margin-top: .25rem;
+    font-family: Georgia, "Lato", sans-serif;
+    font-size: .8rem;
+    color: #6c757d;
+}
+
+.post-sidebar-item-meta .badge {
+    margin-left: .15rem;
+    font-size: .7rem;
+    vertical-align: 1px;
+}
+
+.post-sidebar-more {
+    display: inline-block;
+    margin-top: 1rem;
+    font-family: Georgia, "Lato", sans-serif;
+    font-size: .85rem;
+    font-weight: 700;
+}
+
+.post-sidebar-text {
+    margin: 0;
+    font-size: .95rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 991.98px) {
+    /* --- Sidebar below the article; the bar becomes a horizontal divider --- */
+    .post-layout {
+        display: block;
+        max-width: 46rem;
+        padding-top: .5rem;
+    }
+
+    .post-sidebar {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 2rem 2.5rem;
+        margin-top: 3rem;
+        padding: 1.75rem 1.25rem 1.5rem;
+        border-radius: 0 0 14px 14px;
+    }
+
+    .post-sidebar::before {
+        right: 0;
+        bottom: auto;
+        width: auto;
+        height: 3px;
+        background: linear-gradient(to right, var(--navbar-color), var(--hero-color));
+    }
+
+    .post-sidebar-section + .post-sidebar-section {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .post-header {
+        margin-bottom: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .post-lead {
+        font-size: 1.1rem;
+    }
+
+    .post-content {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .post-content h2,
+    .post-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .post-content pre {
+        padding: .85rem 1rem;
+        font-size: .8rem;
+    }
+
+    .post-nav {
+        grid-template-columns: 1fr;
+    }
+
+    .post-nav-next {
+        grid-column: auto;
+        text-align: left;
     }
 }

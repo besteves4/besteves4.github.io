@@ -1,0 +1,13 @@
+{%- comment -%} One post in the sidebar of a blog post. Usage: include widgets/post_sidebar_post.html post=post {%- endcomment -%}
+{%- assign p = include.post -%}
+<li class="post-sidebar-item">
+    {% if p.image -%}
+    <img class="post-sidebar-thumb" src="{{ p.image | relative_url }}" alt="" loading="lazy">
+    {%- else -%}
+    <span class="post-sidebar-thumb post-sidebar-thumb-icon" aria-hidden="true"><i class="fa-solid fa-pen-nib"></i></span>
+    {%- endif %}
+    <div class="post-sidebar-item-body">
+        <a class="post-sidebar-item-title" href="{{ p.url | relative_url }}">{{ p.title }}</a>
+        <span class="post-sidebar-item-meta">{{ p.date | date: "%B %-d, %Y" }}</span>
+    </div>
+</li>

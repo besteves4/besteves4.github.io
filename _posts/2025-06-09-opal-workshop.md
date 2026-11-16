@@ -7,6 +7,16 @@ categories: blog
 tags: [conferences, ODRL, OPAL, policies]
 image: /assets/images/blog/2025/opal/group.jpeg
 navbar_title: BLOG
+# Shown in the sidebar of the post (all optional, see _includes/widgets/post_sidebar.html)
+related_publications: # file names in _publications, without ".md"
+  - 2025-policy-engine
+  - 2025-opal-health
+  - 2025-opal-negotiation
+  - 2025-force
+related_links:               # anything else worth reading
+  - title: "ODRL Information Model"
+    url: https://www.w3.org/TR/odrl-model/
+    description: "W3C Recommendation"
 ---
 
 2025 marked my second attendance of the [Extended Semantic Web Conference (ESWC 2025)](https://2025.eswc-conferences.org/)
@@ -88,7 +98,9 @@ Check out a cool example derived from [GitHub’s ToS](https://docs.github.com/e
 
 # Liability definition
 :liability01 a tosl:Liability ;
-  dcterms:description "GitHub's maximum liability to Customer for any incident (...) will not exceed the amount Customer paid for the Product during the 12 months before the incident" ;
+  dcterms:description '''GitHub's maximum liability to Customer
+  for any incident (...) will not exceed the amount Customer
+  paid for the Product during the 12 months before the incident''' ;
   rdf:value tosl:anyLiability ;
   tosl:liableParty :github ;
   tosl:targetParty :customer01 ;
@@ -101,7 +113,8 @@ Check out a cool example derived from [GitHub’s ToS](https://docs.github.com/e
 
 # Dispute resolution definition
 :litigation01 a tosl:Litigation;
-  dcterms:description "If Customer's principal office is European Union (...) Agreement will be governed by the laws of Ireland" ;
+  dcterms:description '''If Customer's principal office is European
+  Union (...) Agreement will be governed by the laws of Ireland''' ;
   tosl:takesPlaceIn :DublinCourts ;
   tosl:governedBy :IrelandLaw ;
   tosl:targetParty :customer01 ;
@@ -140,7 +153,7 @@ and provide first steps for a *declarative semantics* of ODRL, namely looking at
 - introducing temporal constraints to comply with duties,
 amongst others.
 
-As for [Cimmino and Fornara]((https://ceur-ws.org/Vol-3977/OPAL2025-6.pdf)),
+As for [Cimmino and Fornara](https://ceur-ws.org/Vol-3977/OPAL2025-6.pdf),
 they highlighted gaps on ODRL to be solved on a *future version 3.0*,
 categorising them in terms of *descriptive* and *behavioural* semantics,
 and offered a series of proposals to tackle them, namely by:

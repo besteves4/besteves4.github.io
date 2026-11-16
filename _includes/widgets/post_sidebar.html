@@ -1,0 +1,148 @@
+{%- comment -%}
+  Sidebar of a blog post (right-hand bar on desktop, below the post on tablets and phones).
+
+  Everything is driven by the front matter of the post; every field is optional:
+
+    related_publications:        # file names in _publications, without the year folder and ".md"
+      - 2025-policy-engine
+    related_posts:               # file names in _posts, without ".md"
+      - 2025-06-09-opal-workshop
+    related_links:               # anything else worth reading
+      - title: "ODRL Information Model"
+        url: https://www.w3.org/TR/odrl-model/
+        description: "W3C Recommendation"   # optional
+
+  Posts that share a tag with the current post are added automatically after the
+  hand-picked related_posts (4 in total). If nothing is related, the latest posts are shown.
+{%- endcomment -%}
+{%- assign max_posts = 4 -%}
+
+{%- comment -%} 1. Related posts: hand-picked first, then posts sharing a tag {%- endcomment -%}
+{%- capture related_posts_html -%}
+    {%- assign shown = 0 -%}
+    {%- assign shown_urls = "|" | append: page.url | append: "|" -%}
+    {%- for slug in page.related_posts -%}
+        {%- for post in site.posts -%}
+            {%- assign post_file = post.path | split: "/" | last | replace: ".md", "" | replace: ".markdown", "" -%}
+            {%- assign marker = "|" | append: post.url | append: "|" -%}
+            {%- if post_file == slug and shown < max_posts -%}
+                {%- unless shown_urls contains marker -%}
+                    {%- include widgets/post_sidebar_post.html post=post -%}
+                    {%- assign shown = shown | plus: 1 -%}
+                    {%- assign shown_urls = shown_urls | append: post.url | append: "|" -%}
+                {%- endunless -%}
+            {%- endif -%}
+        {%- endfor -%}
+    {%- endfor -%}
+    {%- for post in site.posts -%}
+        {%- assign marker = "|" | append: post.url | append: "|" -%}
+        {%- if shown >= max_posts or shown_urls contains marker -%}{%- continue -%}{%- endif -%}
+        {%- assign shares_tag = false -%}
+        {%- for tag in post.tags -%}
+            {%- if page.tags contains tag -%}{%- assign shares_tag = true -%}{%- endif -%}
+        {%- endfor -%}
+        {%- if shares_tag -%}
+            {%- include widgets/post_sidebar_post.html post=post -%}
+            {%- assign shown = shown | plus: 1 -%}
+            {%- assign shown_urls = shown_urls | append: post.url | append: "|" -%}
+        {%- endif -%}
+    {%- endfor -%}
+{%- endcapture -%}
+{%- assign related_posts_html = related_posts_html | strip -%}
+
+{%- comment -%} Fallback: the latest posts, when nothing is related {%- endcomment -%}
+{%- capture latest_posts_html -%}
+    {%- if related_posts_html == "" -%}
+        {%- assign shown = 0 -%}
+        {%- for post in site.posts -%}
+            {%- if post.url == page.url or shown >= 3 -%}{%- continue -%}{%- endif -%}
+            {%- include widgets/post_sidebar_post.html post=post -%}
+            {%- assign shown = shown | plus: 1 -%}
+        {%- endfor -%}
+    {%- endif -%}
+{%- endcapture -%}
+{%- assign latest_posts_html = latest_posts_html | strip -%}
+
+<aside class="post-sidebar" aria-label="Related content">
+    {% if page.related_publications.size > 0 %}
+    <section class="post-sidebar-section">
+        <h2 class="post-sidebar-heading">Related publications</h2>
+        <ul class="post-sidebar-list">
+            {%- for slug in page.related_publications -%}
+            {%- assign item = site.publications | where: "slug", slug | first -%}
+            {%- if item -%}
+            {%- comment -%} title links to the open version of the paper when there is one {%- endcomment -%}
+            {%- assign item_url = item.links["Open-Access"] | default: item.links["Preprint"] | default: item.links["Proceedings"] -%}
+            {%- unless item_url -%}
+                {%- for link in item.links limit: 1 -%}{%- assign item_url = link[1] -%}{%- endfor -%}
+            {%- endunless -%}
+            {%- if item_url.url -%}{%- assign item_url = item_url.url -%}{%- endif -%}
+            <li class="post-sidebar-item">
+                {% if item.cover -%}
+                <img class="post-sidebar-thumb post-sidebar-thumb-pub" src="{{ item.cover | relative_url }}" alt="" loading="lazy">
+                {%- else -%}
+                <span class="post-sidebar-thumb post-sidebar-thumb-icon" aria-hidden="true"><i class="fa-regular fa-file-lines"></i></span>
+                {%- endif %}
+                <div class="post-sidebar-item-body">
+                    {% if item_url -%}
+                    <a class="post-sidebar-item-title" href="{{ item_url }}" target="_blank" rel="noopener">{{ item.title }}</a>
+                    {%- else -%}
+                    <span class="post-sidebar-item-title">{{ item.title }}</span>
+                    {%- endif %}
+                    <span class="post-sidebar-item-meta">{{ item.pub_date }}{{ item.pub_last }}</span>
+                    {% if item.award %}<span class="post-sidebar-item-meta">{{ item.award }}</span>{% endif %}
+                </div>
+            </li>
+            {%- endif -%}
+            {%- endfor %}
+        </ul>
+        <a class="post-sidebar-more" href="{{ '/publications' | relative_url }}">All publications <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+    </section>
+    {% endif %}
+
+    {% if related_posts_html != "" %}
+    <section class="post-sidebar-section">
+        <h2 class="post-sidebar-heading">Related posts</h2>
+        <ul class="post-sidebar-list">{{ related_posts_html }}</ul>
+    </section>
+    {% elsif latest_posts_html != "" %}
+    <section class="post-sidebar-section">
+        <h2 class="post-sidebar-heading">More from the blog</h2>
+        <ul class="post-sidebar-list">{{ latest_posts_html }}</ul>
+    </section>
+    {% endif %}
+
+    {% if page.related_links.size > 0 %}
+    <section class="post-sidebar-section">
+        <h2 class="post-sidebar-heading">Further reading</h2>
+        <ul class="post-sidebar-links">
+            {% for link in page.related_links %}
+            <li>
+                <a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.title }}</a>
+                {% if link.description %}<span class="post-sidebar-item-meta">{{ link.description }}</span>{% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+    {% endif %}
+
+    {% if page.tags.size > 0 %}
+    <section class="post-sidebar-section">
+        <h2 class="post-sidebar-heading">Discover more on</h2>
+        <p class="post-tags mb-0">
+            {% for tag in page.tags %}
+            <a href="{{site.baseurl}}/archive.html#{{tag | slugize}}" class="post-tag"><i class="fa-solid fa-hashtag fa-xs"></i>{{ tag }}</a>
+            {% endfor %}
+        </p>
+    </section>
+    {% endif %}
+
+    <section class="post-sidebar-section">
+        <h2 class="post-sidebar-heading">Stay in touch</h2>
+        <p class="post-sidebar-text">
+            Enjoyed this post?
+            <a href="{{ '/feed.xml' | relative_url }}" title="RSS/Atom feed of this blog"><i class="fa-solid fa-rss fa-sm"></i> Subscribe to the feed</a>
+            or go back to <a href="{{ '/blog/' | relative_url }}">all posts</a>.
+        </p>
+    </section>
+</aside>
